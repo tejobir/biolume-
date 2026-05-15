@@ -6,7 +6,6 @@ import {
   Sparkles,
   Bone,
   Scan,
-  Smile,
   Baby,
   Wrench,
   Zap,
@@ -18,7 +17,7 @@ const services = [
     icon: Bone,
     name: "Dental Implants",
     blurb:
-      "Single tooth to full-arch — surgically guided implants placed for a lifetime of comfortable function.",
+      "Single tooth to full-arch, surgically guided implants placed for a lifetime of comfortable function.",
   },
   {
     icon: Zap,
@@ -30,7 +29,7 @@ const services = [
     icon: Sparkles,
     name: "Smile Design",
     blurb:
-      "Veneers, whitening, and contouring composed around your face — restrained, not theatrical.",
+      "Veneers, whitening, and contouring composed around your face: restrained, not theatrical.",
   },
   {
     icon: Scan,
@@ -48,7 +47,7 @@ const services = [
     icon: Baby,
     name: "Paediatric Care",
     blurb:
-      "Gentle, fear-free visits for children — preventive sealants, fluoride, and habit guidance.",
+      "Gentle, fear-free visits for children: preventive sealants, fluoride, and habit guidance.",
   },
 ];
 
@@ -87,7 +86,7 @@ export function Services() {
             <motion.article
               key={s.name}
               variants={staggerItem}
-              className="group relative bg-offwhite p-9 md:p-10 transition-colors duration-500 hover:bg-cream cursor-pointer"
+              className="group relative bg-offwhite p-9 md:p-10 transition-colors duration-500 hover:bg-cream"
             >
               <div className="flex items-start justify-between mb-8">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal/8 text-teal transition-all duration-500 group-hover:bg-teal group-hover:text-cream">

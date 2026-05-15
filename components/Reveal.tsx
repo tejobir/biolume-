@@ -11,7 +11,7 @@ type RevealProps = {
   as?: "div" | "section" | "li" | "h2" | "p";
 };
 
-export function Reveal({ children, delay = 0, y = 18, className, as = "div" }: RevealProps) {
+export function Reveal({ children, delay = 0, y = 24, className, as = "div" }: RevealProps) {
   const reduce = useReducedMotion();
   const MotionTag = motion[as] as typeof motion.div;
   return (
@@ -19,7 +19,7 @@ export function Reveal({ children, delay = 0, y = 18, className, as = "div" }: R
       initial={reduce ? { opacity: 1 } : { opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
       className={className}
     >
       {children}
@@ -33,6 +33,6 @@ export const staggerContainer: Variants = {
 };
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } },
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
 };

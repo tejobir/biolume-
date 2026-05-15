@@ -8,10 +8,6 @@
     --foreground: #2A1520;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -23,6 +19,12 @@
   ::selection {
     background-color: #1A6E7E;
     color: #F0EEEB;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

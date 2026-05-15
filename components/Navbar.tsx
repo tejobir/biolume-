@@ -51,7 +51,7 @@ export function Navbar() {
                 key={l.href}
                 href={l.href}
                 className={cn(
-                  "text-sm tracking-wide hover:text-teal transition-colors duration-200 cursor-pointer",
+                  "text-sm tracking-wide hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded",
                   scrolled ? "text-plum/70" : "text-white"
                 )}
               >
@@ -62,7 +62,7 @@ export function Navbar() {
 
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center gap-2 rounded-full bg-plum text-cream px-5 py-2.5 text-sm tracking-wide hover:bg-teal transition-colors duration-300 cursor-pointer"
+            className="hidden md:inline-flex items-center gap-2 rounded-full bg-plum text-cream px-5 py-2.5 text-sm tracking-wide hover:bg-teal transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60 focus-visible:ring-offset-2"
           >
             Book a Visit
             <span className="h-1 w-1 rounded-full bg-mint" />
@@ -114,7 +114,7 @@ export function Navbar() {
                     hidden: { opacity: 0, y: 14 },
                     show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } },
                   }}
-                  className="font-display text-4xl text-cream hover:text-mint transition-colors"
+                  className="font-display text-4xl text-cream hover:text-mint transition-colors focus-visible:outline-none focus-visible:text-mint"
                 >
                   {l.label}
                 </motion.a>
@@ -126,7 +126,7 @@ export function Navbar() {
                   hidden: { opacity: 0, y: 14 },
                   show: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
                 }}
-                className="mt-6 inline-flex w-fit rounded-full bg-mint text-plum px-6 py-3 text-sm tracking-wide"
+                className="mt-6 inline-flex w-fit rounded-full bg-mint text-plum px-6 py-3 text-sm tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plum/40"
               >
                 Book a Visit
               </motion.a>

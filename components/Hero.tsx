@@ -76,7 +76,7 @@ export function Hero() {
         >
           <a
             href="#contact"
-            className="group inline-flex items-center gap-3 rounded-full bg-white text-plum px-7 py-3.5 text-sm tracking-wide hover:bg-mint hover:text-white transition-colors duration-300 cursor-pointer"
+            className="group inline-flex items-center gap-3 rounded-full bg-cream text-plum px-7 py-3.5 text-sm tracking-wide hover:bg-mint hover:text-cream transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream/80 focus-visible:ring-offset-2 focus-visible:ring-offset-plum/50"
           >
             Book an Appointment
             <ArrowDownRight
@@ -87,7 +87,7 @@ export function Hero() {
           </a>
           <a
             href="#services"
-            className="text-sm tracking-wide text-white/70 hover:text-white underline underline-offset-[6px] decoration-white/30 hover:decoration-white transition-colors cursor-pointer"
+            className="text-sm tracking-wide text-white/70 hover:text-white underline underline-offset-[6px] decoration-white/30 hover:decoration-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/60 focus-visible:rounded"
           >
             Explore Our Services
           </a>

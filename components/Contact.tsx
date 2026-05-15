@@ -53,7 +53,7 @@ const clinicInfo = [
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon — Sat · 10:00 AM – 8:00 PM\nSunday · By appointment",
+    value: "Mon–Sat · 10:00 AM–8:00 PM\nSunday · By appointment",
   },
 ];
 
@@ -156,13 +156,13 @@ export function Contact() {
                   {...register("message")}
                   rows={4}
                   placeholder="Briefly describe what you'd like to address."
-                  className="field-input resize-none mt-1"
+                  className="field-input resize-none"
                 />
               </Field>
 
               <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
                 <p className="text-[12.5px] text-plum/55 max-w-xs">
-                  Your information stays with our front desk — never shared.
+                  Your information stays with our front desk. Never shared.
                 </p>
                 <button
                   type="submit"
@@ -208,13 +208,16 @@ export function Contact() {
                   border-radius: 0.75rem;
                   padding: 0.85rem 1rem;
                   font-size: 14.5px;
+                  font-family: inherit;
                   color: #2a1520;
                   outline: none;
-                  transition: border-color 0.25s ease, background-color 0.25s ease;
+                  transition: border-color 0.25s ease, background-color 0.25s ease,
+                    box-shadow 0.25s ease;
                 }
-                .field-input:focus {
+                .field-input:focus-visible {
                   border-color: #1a6e7e;
                   background: #faf9f7;
+                  box-shadow: 0 0 0 3px rgba(26, 110, 126, 0.12);
                 }
                 .field-input::placeholder {
                   color: rgba(42, 21, 32, 0.35);

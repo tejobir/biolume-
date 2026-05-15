@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-15T00:00:00Z",
+  "title": "Design System: Bio Lume",
+  "extensions": {
+    "colorMeta": {
+      "harbour-teal": {
+        "role": "primary",
+        "displayName": "Harbour Teal",
+        "canonical": "oklch(46% 0.085 200)",
+        "tonalRamp": ["#091e23", "#0f3038", "#154350", "#1a6e7e", "#2a8a9e", "#4baabb", "#7dc8d4", "#b4e2e9"]
+      },
+      "harbour-teal-light": {
+        "role": "primary-tonal",
+        "displayName": "Harbour Teal Light",
+        "canonical": "oklch(54% 0.09 200)",
+        "tonalRamp": ["#0f3038", "#154350", "#1a6e7e", "#2a8a9e", "#4baabb", "#7dc8d4", "#b4e2e9", "#d9f1f4"]
+      },
+      "harbour-teal-dark": {
+        "role": "primary-deep",
+        "displayName": "Harbour Teal Dark",
+        "canonical": "oklch(35% 0.07 200)",
+        "tonalRamp": ["#061318", "#0a2530", "#0f4f5c", "#1a6e7e", "#2a8a9e", "#4baabb", "#7dc8d4", "#b4e2e9"]
+      },
+      "misted-mint": {
+        "role": "secondary",
+        "displayName": "Misted Mint",
+        "canonical": "oklch(72% 0.12 155)",
+        "tonalRamp": ["#1a3d2c", "#245838", "#2e7a4c", "#3fa66e", "#5ebf8a", "#8fd4ac", "#b9e8cc", "#dff4e9"]
+      },
+      "misted-mint-soft": {
+        "role": "secondary-tonal",
+        "displayName": "Misted Mint Soft",
+        "canonical": "oklch(82% 0.08 155)",
+        "tonalRamp": ["#2e7a4c", "#3fa66e", "#5ebf8a", "#8fd4ac", "#b9e8cc", "#d5f1e3", "#ebf9f2", "#f5fdf8"]
+      },
+      "still-plum": {
+        "role": "neutral-text",
+        "displayName": "Still Plum",
+        "canonical": "oklch(16% 0.04 330)",
+        "tonalRamp": ["#0e0509", "#1c0d15", "#2a1520", "#3d1e2f", "#5a2c45", "#7d4463", "#b07a96", "#d8b4c8"]
+      },
+      "still-plum-deep": {
+        "role": "neutral-text-deep",
+        "displayName": "Still Plum Deep",
+        "canonical": "oklch(11% 0.025 330)",
+        "tonalRamp": ["#080309", "#1c0d15", "#2a1520", "#3d1e2f", "#5a2c45", "#7d4463", "#b07a96", "#d8b4c8"]
+      },
+      "warm-greige": {
+        "role": "neutral-secondary",
+        "displayName": "Warm Greige",
+        "canonical": "oklch(63% 0.01 55)",
+        "tonalRamp": ["#2e2b28", "#3f3b37", "#554f4a", "#6e6660", "#a09890", "#bdb5ae", "#d4cfc9", "#ede9e5"]
+      },
+      "warm-linen": {
+        "role": "neutral-bg",
+        "displayName": "Warm Linen",
+        "canonical": "oklch(94% 0.006 55)",
+        "tonalRamp": ["#3f3b37", "#6e6660", "#a09890", "#c5bfb9", "#d9d5d0", "#e8e5e1", "#f0eeeb", "#faf9f7"]
+      },
+      "cloud-cream": {
+        "role": "neutral-bg-elevated",
+        "displayName": "Cloud Cream",
+        "canonical": "oklch(98% 0.003 50)",
+        "tonalRamp": ["#6e6660", "#a09890", "#c5bfb9", "#d9d5d0", "#e8e5e1", "#f0eeeb", "#faf9f7", "#fefefe"]
+      },
+      "soft-ash": {
+        "role": "neutral-divider",
+        "displayName": "Soft Ash",
+        "canonical": "oklch(85% 0.008 50)",
+        "tonalRamp": ["#554f4a", "#7a736d", "#a09890", "#bdb5ae", "#d4cfc9", "#d9d5d0", "#e8e5e1", "#f0eeeb"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only. One per page." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings. text-balance. One italic emphasis word in teal or mint." },
+      "title": { "displayName": "Title", "purpose": "Component-level headings: service names, pillar titles, doctor credentials." },
+      "body": { "displayName": "Body", "purpose": "All paragraph copy. Light weight. 65-72ch max line length. text-pretty." },
+      "label": { "displayName": "Label / Eyebrow", "purpose": "Section eyebrows. Uppercase. Hairline prefix. Harbour Teal at 80%." }
+    },
+    "shadows": [
+      {
+        "name": "soft-ambient",
+        "value": "0 8px 30px rgba(42, 21, 32, 0.06)",
+        "purpose": "Floating elements (modals, popovers). Flat at rest; shadow on lift only."
+      },
+      {
+        "name": "teal-glow",
+        "value": "0 12px 40px rgba(26, 110, 126, 0.15)",
+        "purpose": "Harbour Teal element hover emphasis. Used on CTA buttons and focused teal components."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All entrance and state-transition animations. The system's only easing."
+      },
+      {
+        "name": "entrance-word",
+        "value": "duration: 1s, delay staggered 0.09s per word, y: 110% → 0",
+        "purpose": "Hero headline word-by-word reveal."
+      },
+      {
+        "name": "entrance-fade",
+        "value": "duration: 0.8s, opacity 0→1, y 16→0",
+        "purpose": "Subtitle, CTA, and section content fade-in on viewport enter."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (Hero CTA)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "White pill with plum text. Appears on dark hero backgrounds. Hover: mint fill.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#contact\">Book an Appointment <svg class=\"ds-btn-icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"/><polyline points=\"7 7 17 7 17 17\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 12px; border-radius: 9999px; background: #F0EEEB; color: #2A1520; padding: 14px 28px; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; border: none; cursor: pointer; transition: background 300ms cubic-bezier(0.16,1,0.3,1), color 300ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:hover { background: #5EBF8A; color: #FAF9F7; } .ds-btn-icon { transition: transform 300ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:hover .ds-btn-icon { transform: translate(2px, 2px); } .ds-btn-primary:focus-visible { outline: 2px solid #1A6E7E; outline-offset: 3px; }"
+    },
+    {
+      "name": "Nav CTA Button",
+      "kind": "button",
+      "refersTo": "button-cta",
+      "description": "Plum pill with cream text. Fixed navbar booking action. Hover: teal fill.",
+      "html": "<a class=\"ds-btn-cta\" href=\"#contact\">Book a Visit <span class=\"ds-btn-dot\"></span></a>",
+      "css": ".ds-btn-cta { display: inline-flex; align-items: center; gap: 8px; border-radius: 9999px; background: #2A1520; color: #FAF9F7; padding: 10px 20px; font-size: 14px; letter-spacing: 0.05em; text-decoration: none; cursor: pointer; transition: background 300ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-cta:hover { background: #1A6E7E; } .ds-btn-dot { display: inline-block; width: 4px; height: 4px; border-radius: 9999px; background: #5EBF8A; } .ds-btn-cta:focus-visible { outline: 2px solid #5EBF8A; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Text Link",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Underlined text link for secondary CTAs on dark backgrounds.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#services\">Explore Our Services</a>",
+      "css": ".ds-btn-ghost { font-size: 14px; letter-spacing: 0.05em; color: rgba(255,255,255,0.7); text-decoration: underline; text-underline-offset: 6px; text-decoration-color: rgba(255,255,255,0.3); transition: color 200ms, text-decoration-color 200ms; cursor: pointer; } .ds-btn-ghost:hover { color: #FAF9F7; text-decoration-color: rgba(255,255,255,1); } .ds-btn-ghost:focus-visible { outline: 2px solid #5EBF8A; outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "service-card",
+      "description": "Content tile in the services grid. Icon circle, heading, blurb. Hover: cloud cream bg, teal icon, bottom-line reveal.",
+      "html": "<article class=\"ds-service-card\"><div class=\"ds-service-card__top\"><span class=\"ds-service-card__icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7z\"/><circle cx=\"12\" cy=\"9\" r=\"2.5\"/></svg></span><svg class=\"ds-service-card__arrow\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"/><polyline points=\"7 7 17 7 17 17\"/></svg></div><h3 class=\"ds-service-card__name\">Dental Implants</h3><p class=\"ds-service-card__blurb\">Single tooth to full-arch — surgically guided implants placed for a lifetime of comfortable function.</p><span class=\"ds-service-card__line\"></span></article>",
+      "css": ".ds-service-card { position: relative; background: #F0EEEB; padding: 36px 40px; cursor: pointer; transition: background 500ms; overflow: hidden; } .ds-service-card:hover { background: #FAF9F7; } .ds-service-card__top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 32px; } .ds-service-card__icon { display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 9999px; background: rgba(26,110,126,0.08); color: #1A6E7E; transition: background 500ms, color 500ms; } .ds-service-card:hover .ds-service-card__icon { background: #1A6E7E; color: #FAF9F7; } .ds-service-card__arrow { color: rgba(42,21,32,0.3); transition: color 500ms, transform 500ms; } .ds-service-card:hover .ds-service-card__arrow { color: #1A6E7E; transform: translate(2px, -2px); } .ds-service-card__name { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 400; color: #2A1520; letter-spacing: -0.015em; line-height: 1.2; } .ds-service-card__blurb { margin-top: 16px; font-size: 14.5px; line-height: 1.7; color: rgba(42,21,32,0.65); } .ds-service-card__line { position: absolute; bottom: 0; left: 40px; right: 40px; height: 1px; background: #1A6E7E; transform: scaleX(0); transform-origin: left; transition: transform 500ms cubic-bezier(0.16,1,0.3,1); } .ds-service-card:hover .ds-service-card__line { transform: scaleX(1); } .ds-service-card:focus-visible { outline: 2px solid #1A6E7E; outline-offset: -2px; }"
+    },
+    {
+      "name": "Section Eyebrow Label",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Uppercase label that opens every section. Hairline prefix + teal text. Appears above every headline.",
+      "html": "<div class=\"ds-eyebrow\"><span class=\"ds-eyebrow__line\"></span>The Clinic</div>",
+      "css": ".ds-eyebrow { display: flex; align-items: center; font-family: Inter, system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(26,110,126,0.8); } .ds-eyebrow__line { display: inline-block; height: 1px; width: 32px; background: rgba(26,110,126,0.4); margin-right: 12px; flex-shrink: 0; }"
+    },
+    {
+      "name": "Navbar (Scrolled State)",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Fixed header. Transparent at top; frosted warm-linen at scroll. Nav links shift from white to plum/70.",
+      "html": "<header class=\"ds-navbar ds-navbar--scrolled\"><div class=\"ds-navbar__inner\"><a class=\"ds-navbar__logo\" href=\"#top\"><span class=\"ds-navbar__logo-bio\">Bio</span><span class=\"ds-navbar__logo-lume\">Lume</span><span class=\"ds-navbar__logo-dot\"></span></a><nav class=\"ds-navbar__nav\"><a class=\"ds-navbar__link\" href=\"#about\">Clinic</a><a class=\"ds-navbar__link\" href=\"#services\">Services</a><a class=\"ds-navbar__link\" href=\"#contact\">Contact</a></nav><a class=\"ds-btn-cta ds-navbar__cta\" href=\"#contact\">Book a Visit <span class=\"ds-btn-dot\"></span></a></div></header>",
+      "css": ".ds-navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 40; transition: background 500ms, border-color 500ms; } .ds-navbar--scrolled { background: rgba(240,238,235,0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(42,21,32,0.05); } .ds-navbar__inner { max-width: 1280px; margin: 0 auto; padding: 0 64px; height: 80px; display: flex; align-items: center; justify-content: space-between; } .ds-navbar__logo { display: flex; align-items: baseline; gap: 2px; text-decoration: none; } .ds-navbar__logo-bio { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; color: #2A1520; letter-spacing: -0.02em; } .ds-navbar__logo-lume { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-style: italic; color: #1A6E7E; letter-spacing: -0.02em; } .ds-navbar__logo-dot { width: 6px; height: 6px; border-radius: 9999px; background: #5EBF8A; margin-left: 4px; margin-bottom: 2px; } .ds-navbar__nav { display: flex; align-items: center; gap: 36px; } .ds-navbar__link { font-size: 14px; letter-spacing: 0.04em; color: rgba(42,21,32,0.7); text-decoration: none; transition: color 200ms; } .ds-navbar__link:hover { color: #1A6E7E; } .ds-navbar__cta { margin-left: 20px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Practitioner's Edit",
+    "overview": "Bio Lume's design system is built on a single conviction: that expertise speaks through what is removed, not what is added. Every token, spacing decision, and component choice exists because it earns its place — like an instrument tray where each tool has a precise reason for being there and nothing else. The system projects quiet authority: the kind of confidence that doesn't need to announce itself.\n\nThe palette carries warmth without softness, precision without coldness. Harbour Teal and Still Plum pair as complements that hold the site's emotional range, anchored by Warm Linen surfaces that read like good paper stock rather than clinical white. Misted Mint appears sparingly — the one voice that signals delight without performing it.\n\nMotion is purposeful and rare. Entrances earn attention. Transitions confirm state. Nothing moves to decorate. Typography does the heavy lifting: the serif display face carries authority and unhurried confidence, while the light-weight sans body text signals clarity over effort.",
+    "keyCharacteristics": [
+      "Restrained color strategy: teal accent on ≤10% of surface; plum and linen carry the load",
+      "Serif display font at tight negative tracking (-0.04em) for editorial authority",
+      "Generous vertical rhythm (1.8 line-height in body) that slows the read down",
+      "Flat surfaces with rare tonal hover transitions; no decorative shadows",
+      "Motion: entrances only, expo ease-out, reduced-motion respected throughout"
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "Harbour Teal appears on ≤10% of any given screen. Its scarcity makes it meaningful. If a new element reaches for teal because it 'feels premium', reconsider.", "section": "colors" },
+      { "name": "The No-Pure-White Rule", "body": "#fff is prohibited. Every surface uses Warm Linen (#F0EEEB) or Cloud Cream (#FAF9F7). The warmth is intentional; clinical white belongs to the anti-reference, not the product.", "section": "colors" },
+      { "name": "The Tracking Contract", "body": "Display type is tight (-0.04em); label type is wide (+0.22em). Nothing in between uses arbitrary tracking. This range is the system's typographic signature.", "section": "typography" },
+      { "name": "The Italic Emphasis Rule", "body": "Italic is reserved for a single emphasis word per section heading. It appears in Harbour Teal or Misted Mint, never in Still Plum.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Components are flat at rest. A shadow appears only in response to state (hover elevation, modal layer, focused CTA). Reach for a background tint before a shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use text-pretty and text-balance on all heading and paragraph copy.",
+      "Do use serif italics for a single emphasis word per section heading — in Harbour Teal or Misted Mint.",
+      "Do use the label eyebrow pattern (hairline + uppercase label) to open every section.",
+      "Do keep spacing varied for rhythm: section verticals at py-28/py-36, internal gaps non-uniform.",
+      "Do keep Harbour Teal on ≤10% of any surface.",
+      "Do respect prefers-reduced-motion throughout.",
+      "Do use Warm Linen as the universal canvas. Cloud Cream only for elevated or hovered surfaces.",
+      "Do use the bottom-line reveal (scaleX 0→1, origin-left) as the hover accent for service-style cards.",
+      "Do write copy that earns its specificity: 'Class-B autoclaved instruments, sealed packaging' beats 'highest hygiene standards'."
+    ],
+    "donts": [
+      "Don't use #fff or #000. Both are banned.",
+      "Don't use border-left or border-right greater than 1px as a colored stripe. Rewrite with background tints or the bottom-line reveal.",
+      "Don't use background-clip: text with a gradient. Gradient text is prohibited.",
+      "Don't apply glassmorphism decoratively. Backdrop blur appears only on the navbar scroll state and mobile overlay.",
+      "Don't create identical card grids.",
+      "Don't make the site look like a dental clinic: no blue crosses, no stock photo smiles, no clinical white.",
+      "Don't import luxury spa aesthetics: no marble textures, no gold foil, no 'wellness journey' framing.",
+      "Don't use SaaS metric templates: no hero numbers, no icon-grid feature lists, no gradient stat cards.",
+      "Don't animate layout properties. Transitions use opacity and y/x transforms only.",
+      "Don't open a modal when inline or progressive disclosure would work."
+    ]
+  }
+}

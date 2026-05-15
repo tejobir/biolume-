@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Reveal } from "./Reveal";
+import { Reveal, staggerContainer, staggerItem } from "./Reveal";
 import { Award, GraduationCap, Stethoscope } from "lucide-react";
 
 const credentials = [
   { icon: GraduationCap, label: "BDS, Maharashtra University of Health Sciences" },
-  { icon: Award, label: "Advanced Implantology — Certified" },
-  { icon: Stethoscope, label: "Diode Laser Dentistry — Certified" },
+  { icon: Award, label: "Advanced Implantology: Certified" },
+  { icon: Stethoscope, label: "Diode Laser Dentistry: Certified" },
 ];
 
 const specialties = [
@@ -31,7 +31,7 @@ export function Doctor() {
               <div className="absolute inset-0 grain opacity-60" />
               <div className="absolute inset-0 flex items-end p-7">
                 <div className="text-plum">
-                  <div className="text-[10px] tracking-[0.22em] uppercase text-teal/80">
+                  <div className="text-[11px] tracking-[0.22em] uppercase text-teal/80">
                     Lead Dentist
                   </div>
                   <div className="mt-2 font-display text-3xl leading-tight">Dr. Dishani Jain</div>
@@ -65,25 +65,29 @@ export function Doctor() {
           <Reveal delay={0.08}>
             <p className="mt-7 text-[15.5px] leading-[1.8] text-plum/65 max-w-xl text-pretty">
               Dr. Dishani Jain is the founding dentist of Bio Lume. Trained in implantology and
-              laser dentistry, her practice is shaped by an instinct for restraint — doing only
+              laser dentistry, her practice is shaped by an instinct for restraint: doing only
               what each tooth genuinely needs, and explaining every step before it happens.
             </p>
           </Reveal>
 
-          <Reveal delay={0.15}>
-            <ul className="mt-10 space-y-4">
-              {credentials.map((c, i) => (
-                <li key={i} className="flex items-start gap-4">
-                  <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-teal/8 text-teal">
-                    <c.icon size={16} strokeWidth={1.5} />
-                  </span>
-                  <span className="text-[14.5px] text-plum/80 leading-relaxed pt-1.5">
-                    {c.label}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
+          <motion.ul
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-60px" }}
+            className="mt-10 space-y-4"
+          >
+            {credentials.map((c, i) => (
+              <motion.li key={i} variants={staggerItem} className="flex items-start gap-4">
+                <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-teal/8 text-teal">
+                  <c.icon size={16} strokeWidth={1.5} />
+                </span>
+                <span className="text-[14.5px] text-plum/80 leading-relaxed pt-1.5">
+                  {c.label}
+                </span>
+              </motion.li>
+            ))}
+          </motion.ul>
 
           <Reveal delay={0.22}>
             <div className="mt-12">

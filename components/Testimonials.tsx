@@ -7,7 +7,7 @@ import { Quote, Star } from "lucide-react";
 const stories = [
   {
     quote:
-      "Six months of consultations and I'd resigned to losing two molars. Dr. Dishani's implant plan saved them. Calmest dental visit of my life.",
+      "Six months of consultations and I’d resigned to losing two molars. Dr. Dishani’s implant plan saved them. Calmest dental visit of my life.",
     name: "Aarav Mehta",
     initials: "AM",
     detail: "Implant Patient · Vashi",
@@ -16,7 +16,7 @@ const stories = [
   },
   {
     quote:
-      "Brought my eight-year-old in dreading a meltdown. She walked out clutching a sticker, asking when we're coming back. That's a magic trick.",
+      "Brought my eight-year-old in dreading a meltdown. She walked out clutching a sticker, asking when we’re coming back. That’s a magic trick.",
     name: "Priya Shenoy",
     initials: "PS",
     detail: "Parent · Nerul",
@@ -25,7 +25,7 @@ const stories = [
   },
   {
     quote:
-      "I came for whitening, stayed for the consultation. They redesigned my smile in restrained, beautiful proportions — exactly what I wanted.",
+      "I came for whitening, stayed for the consultation. They redesigned my smile in restrained, beautiful proportions: exactly what I wanted.",
     name: "Kabir Sethi",
     initials: "KS",
     detail: "Smile Design · Belapur",
@@ -106,8 +106,8 @@ export function Testimonials() {
               className="group relative rounded-2xl border border-cream/10 bg-cream/[0.03] p-8 backdrop-blur-sm hover:bg-cream/[0.06] hover:border-mint/30 transition-all duration-500"
             >
               <Quote size={22} strokeWidth={1.3} className="text-mint/70 mb-6" />
-              <blockquote className="font-display text-[18px] leading-[1.5] text-cream/90 text-balance">
-                "{t.quote}"
+              <blockquote className="font-display text-[19.5px] leading-[1.55] text-cream/90 text-balance">
+                &#8220;{t.quote}&#8221;
               </blockquote>
               <figcaption className="mt-8 pt-6 border-t border-cream/10 flex items-center gap-3.5">
                 {/* Avatar placeholder */}

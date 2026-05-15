@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
 import { ArrowUpRight } from "lucide-react";
 
@@ -59,6 +59,8 @@ const tiles: Tile[] = [
 ];
 
 export function Studio() {
+  const reduce = useReducedMotion();
+
   return (
     <section id="studio" className="relative py-28 md:py-36">
       <div className="container-x">
@@ -77,7 +79,7 @@ export function Studio() {
           </div>
           <Reveal delay={0.05} className="lg:col-span-7 lg:pt-10">
             <p className="text-[15.5px] leading-[1.8] text-plum/65 max-w-xl text-pretty">
-              Every corner of Bio Lume — from the chair to the sterilisation bay — is designed
+              Every corner of Bio Lume, from the chair to the sterilisation bay, is designed
               around a single idea: that good dentistry feels like nothing more than
               good hospitality. Take a look around.
             </p>
@@ -96,7 +98,7 @@ export function Studio() {
             <motion.figure
               key={t.number}
               variants={staggerItem}
-              className={`group relative overflow-hidden rounded-2xl border border-plum/10 cursor-pointer ${t.span}`}
+              className={`group relative overflow-hidden rounded-2xl border border-plum/10 ${t.span}`}
             >
               {/* Gradient placeholder background */}
               <div
@@ -111,7 +113,7 @@ export function Studio() {
               {t.number === "01" && (
                 <motion.div
                   aria-hidden
-                  animate={{ rotate: 360 }}
+                  animate={reduce ? {} : { rotate: 360 }}
                   transition={{ duration: 36, repeat: Infinity, ease: "linear" }}
                   className="absolute top-6 right-6 h-24 w-24 rounded-full border border-cream/15 flex items-center justify-center"
                 >
@@ -134,7 +136,7 @@ export function Studio() {
                       {t.label}
                     </div>
                     <div
-                      className="text-[12.5px] text-cream/70 mt-1.5 max-w-[260px] leading-snug overflow-hidden transition-[max-height,opacity] duration-500 ease-out max-h-0 opacity-0 group-hover:max-h-20 group-hover:opacity-100"
+                      className="text-[12.5px] text-cream/70 mt-1.5 max-w-[260px] leading-snug opacity-0 translate-y-1.5 transition-[opacity,transform] duration-500 ease-out-expo group-hover:opacity-100 group-hover:translate-y-0"
                     >
                       {t.caption}
                     </div>

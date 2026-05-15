@@ -7,7 +7,7 @@ const pillars = [
   {
     k: "01",
     t: "Considered Architecture",
-    d: "A calm, light-filled studio designed to slow the visit down — warm woods, soft acoustics, no clinical glare.",
+    d: "A calm, light-filled studio designed to slow the visit down: warm woods, soft acoustics, no clinical glare.",
   },
   {
     k: "02",
@@ -17,7 +17,7 @@ const pillars = [
   {
     k: "03",
     t: "Technology, Quiet",
-    d: "Digital imaging, diode laser, intra-oral scanning — advanced tools we'd rather use than mention.",
+    d: "Digital imaging, diode laser, intra-oral scanning: advanced tools we'd rather use than mention.",
   },
 ];
 

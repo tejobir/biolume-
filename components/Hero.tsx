@@ -16,12 +16,12 @@ export function Hero() {
     >
       {/* Background image */}
       <Image
-        src="/best-dental-clinic-in-cranbrook.jpg"
-        alt="Patient smiling at Bio Lume Dental Clinic"
+        src="/ai-generated-young-woman-smiling-during-a-dental-check-up-photo.jpeg"
+        alt="Patient smiling during a dental check-up at Bio Lume"
         fill
         priority
-        quality={100}
-        className="object-cover object-center"
+        quality={90}
+        className="object-cover object-top"
       />
 
       {/* Layered gradient overlay — top dark for nav, bottom dark for text */}

@@ -58,8 +58,8 @@ export function Services() {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 mb-16 lg:mb-20">
           <div className="lg:col-span-5">
             <Reveal>
-              <div className="text-[11px] uppercase tracking-[0.22em] text-teal/80">
-                <span className="inline-block h-px w-8 bg-teal/40 align-middle mr-3" />
+              <div className="eyebrow text-teal/80">
+                <span className="eyebrow-rule" />
                 Treatments
               </div>
               <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-plum text-balance">
@@ -88,7 +88,21 @@ export function Services() {
               variants={staggerItem}
               className="group relative bg-offwhite p-9 md:p-10 transition-colors duration-500 hover:bg-cream"
             >
-              <div className="flex items-start justify-between mb-8">
+              {/* Draftsman's contour — incomplete frame, hand-drawn feel */}
+              <svg
+                aria-hidden
+                className="pointer-events-none absolute inset-0 h-full w-full text-teal/35"
+                viewBox="0 0 400 280"
+                preserveAspectRatio="none"
+              >
+                <path
+                  className="contour-path"
+                  style={{ ["--contour-length" as string]: "920" }}
+                  d="M 20 18 L 18 260 Q 19 268 26 268 L 374 269 Q 382 269 382 262 L 384 22"
+                />
+              </svg>
+
+              <div className="relative flex items-start justify-between mb-8">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal/8 text-teal transition-all duration-500 group-hover:bg-teal group-hover:text-cream">
                   <s.icon size={20} strokeWidth={1.4} />
                 </span>
@@ -98,10 +112,10 @@ export function Services() {
                   className="text-plum/30 transition-all duration-500 group-hover:text-teal group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                 />
               </div>
-              <h3 className="font-display text-2xl text-plum tracking-tight leading-tight">
+              <h3 className="relative font-display text-2xl text-plum tracking-tight leading-tight">
                 {s.name}
               </h3>
-              <p className="mt-4 text-[14.5px] leading-[1.7] text-plum/65 text-pretty">
+              <p className="relative mt-4 text-[14.5px] leading-[1.7] text-plum/65 text-pretty">
                 {s.blurb}
               </p>
               {/* Bottom hover line */}

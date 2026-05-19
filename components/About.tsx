@@ -29,8 +29,8 @@ export function About() {
           {/* Left label */}
           <div className="lg:col-span-4">
             <Reveal>
-              <div className="text-[11px] uppercase tracking-[0.22em] text-teal/80">
-                <span className="inline-block h-px w-8 bg-teal/40 align-middle mr-3" />
+              <div className="eyebrow text-teal/80">
+                <span className="eyebrow-rule" />
                 The Clinic
               </div>
               <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-plum text-balance">
@@ -65,7 +65,10 @@ export function About() {
                   className="group grid grid-cols-[auto_1fr] gap-7 md:gap-10 border-t border-plum/10 pt-7"
                 >
                   <div className="font-display text-2xl text-teal/70 group-hover:text-teal transition-colors">
-                    {p.k}
+                    <span className="inline-flex flex-col">
+                      <span>{p.k}</span>
+                      <span className="index-underline w-7" />
+                    </span>
                   </div>
                   <div>
                     <h3 className="font-display text-2xl text-plum tracking-tight">{p.t}</h3>

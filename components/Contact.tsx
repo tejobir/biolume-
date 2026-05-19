@@ -84,8 +84,8 @@ export function Contact() {
         <div className="grid lg:grid-cols-12 gap-10 mb-16 lg:mb-20">
           <div className="lg:col-span-6">
             <Reveal>
-              <div className="text-[11px] uppercase tracking-[0.22em] text-teal/80">
-                <span className="inline-block h-px w-8 bg-teal/40 align-middle mr-3" />
+              <div className="eyebrow text-teal/80">
+                <span className="eyebrow-rule" />
                 Visit Bio Lume
               </div>
               <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-plum text-balance">

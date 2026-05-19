@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { ArrowDownRight } from "lucide-react";
+import { HeroArc } from "./HeroArc";
 
 const headline = ["Quiet", "luxury", "for", "your", "smile."];
 
@@ -30,10 +31,13 @@ export function Hero() {
       {/* Subtle teal tint at the very top edge */}
       <div className="absolute top-0 inset-x-0 h-48 bg-gradient-to-b from-teal/30 to-transparent" />
 
+      {/* Draftsman's flourish — drawn after the headline settles */}
+      <HeroArc />
+
       {/* Content — pinned to bottom third */}
       <div className="relative z-10 container-x h-full flex flex-col justify-end pb-24 md:pb-32">
-        {/* H1 */}
-        <h1 className="font-display text-[clamp(2.8rem,7vw,6rem)] leading-[1.0] tracking-tightest text-cream text-balance">
+        {/* H1 — recedes on scroll-out via scroll-driven CSS */}
+        <h1 className="hero-recede font-display text-[clamp(2.8rem,7vw,6rem)] leading-[1.0] tracking-tightest text-cream text-balance">
           {headline.map((word, i) => (
             <span
               key={i}

@@ -53,8 +53,8 @@ export function Doctor() {
         {/* Bio */}
         <div className="lg:col-span-7">
           <Reveal>
-            <div className="text-[11px] uppercase tracking-[0.22em] text-teal/80">
-              <span className="inline-block h-px w-8 bg-teal/40 align-middle mr-3" />
+            <div className="eyebrow text-teal/80">
+              <span className="eyebrow-rule" />
               Meet Your Doctor
             </div>
             <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-plum text-balance">

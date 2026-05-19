@@ -48,8 +48,8 @@ export function Testimonials() {
         <div className="grid lg:grid-cols-12 gap-10 mb-16 lg:mb-20 items-end">
           <div className="lg:col-span-7">
             <Reveal>
-              <div className="text-[11px] uppercase tracking-[0.22em] text-mint">
-                <span className="inline-block h-px w-8 bg-mint/40 align-middle mr-3" />
+              <div className="eyebrow text-mint">
+                <span className="eyebrow-rule" />
                 Patient Stories
               </div>
               <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-cream text-balance">

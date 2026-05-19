@@ -4,24 +4,30 @@ import { motion } from "framer-motion";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
 import { Quote, Star } from "lucide-react";
 
+/**
+ * Avatar gradients are built from one rule: linear-gradient(140deg,
+ * oklch(40% C H), oklch(65% C H)). The only thing that varies per
+ * avatar is hue — teal, mint, or plum — so the palette stays a system.
+ */
+const avatarGradient = (hue: number, chroma: number) =>
+  `linear-gradient(140deg, oklch(40% ${chroma} ${hue}) 0%, oklch(65% ${chroma} ${hue}) 100%)`;
+
 const stories = [
   {
     quote:
-      "Six months of consultations and I’d resigned to losing two molars. Dr. Dishani’s implant plan saved them. Calmest dental visit of my life.",
+      "Six months of consultations and I'd resigned to losing two molars. Dr. Dishani's implant plan saved them. Calmest dental visit of my life.",
     name: "Aarav Mehta",
     initials: "AM",
     detail: "Implant Patient · Vashi",
-    avatarFrom: "from-teal",
-    avatarTo: "to-mint",
+    avatar: avatarGradient(200, 0.085), // Harbour Teal
   },
   {
     quote:
-      "Brought my eight-year-old in dreading a meltdown. She walked out clutching a sticker, asking when we’re coming back. That’s a magic trick.",
+      "Brought my eight-year-old in dreading a meltdown. She walked out clutching a sticker, asking when we're coming back. That's a magic trick.",
     name: "Priya Shenoy",
     initials: "PS",
     detail: "Parent · Nerul",
-    avatarFrom: "from-mint",
-    avatarTo: "to-teal-light",
+    avatar: avatarGradient(155, 0.105), // Misted Mint
   },
   {
     quote:
@@ -29,9 +35,15 @@ const stories = [
     name: "Kabir Sethi",
     initials: "KS",
     detail: "Smile Design · Belapur",
-    avatarFrom: "from-plum",
-    avatarTo: "to-teal",
+    avatar: avatarGradient(330, 0.07), // Still Plum
   },
+];
+
+const smallAvatarHues: Array<[number, number]> = [
+  [200, 0.085], // Teal
+  [155, 0.105], // Mint
+  [330, 0.07], // Plum
+  [215, 0.08], // Deep teal
 ];
 
 export function Testimonials() {
@@ -61,14 +73,13 @@ export function Testimonials() {
           <Reveal delay={0.05} className="lg:col-span-5">
             <div className="flex items-center gap-5">
               <div className="flex -space-x-3">
-                {["from-teal to-mint", "from-mint to-teal-light", "from-plum to-teal", "from-greige to-mint"].map(
-                  (g, i) => (
-                    <div
-                      key={i}
-                      className={`h-11 w-11 rounded-full bg-gradient-to-br ${g} ring-2 ring-plum`}
-                    />
-                  ),
-                )}
+                {smallAvatarHues.map(([h, c], i) => (
+                  <div
+                    key={i}
+                    className="h-11 w-11 rounded-full ring-2 ring-plum"
+                    style={{ backgroundImage: avatarGradient(h, c) }}
+                  />
+                ))}
                 <div className="h-11 w-11 rounded-full bg-cream text-plum ring-2 ring-plum flex items-center justify-center text-[11px] font-medium">
                   200+
                 </div>
@@ -113,7 +124,8 @@ export function Testimonials() {
                 {/* Avatar placeholder */}
                 <div className="relative flex-shrink-0">
                   <div
-                    className={`h-12 w-12 rounded-full bg-gradient-to-br ${t.avatarFrom} ${t.avatarTo} flex items-center justify-center font-display text-sm text-cream`}
+                    className="h-12 w-12 rounded-full flex items-center justify-center font-display text-sm text-cream"
+                    style={{ backgroundImage: t.avatar }}
                   >
                     {t.initials}
                   </div>

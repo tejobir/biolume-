@@ -4,13 +4,24 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
 import { ArrowUpRight } from "lucide-react";
 
+/**
+ * Bento gradients are built from one of two depth profiles, with
+ * hue rotated per tile by intent. The system reads as designed:
+ * three "technical" rooms in deeper teal/blue, three "human" rooms
+ * in warmer mint/plum. Same gradient shape; only hue and depth shift.
+ */
+const technical = (h: number) =>
+  `linear-gradient(145deg, oklch(20% 0.05 ${h}) 0%, oklch(40% 0.085 ${h}) 55%, oklch(70% 0.04 ${h}) 100%)`;
+
+const human = (h: number) =>
+  `linear-gradient(145deg, oklch(32% 0.06 ${h}) 0%, oklch(58% 0.10 ${h}) 55%, oklch(88% 0.025 ${h}) 100%)`;
+
 type Tile = {
   label: string;
   caption: string;
   number: string;
-  gradient: string;
+  background: string;
   span: string;
-  aspect?: string;
 };
 
 const tiles: Tile[] = [
@@ -18,42 +29,42 @@ const tiles: Tile[] = [
     label: "Operatory",
     caption: "The chair, redesigned for stillness.",
     number: "01",
-    gradient: "from-teal via-teal-light to-plum",
+    background: technical(200), // Harbour Teal, deep
     span: "md:col-span-7 md:row-span-2",
   },
   {
     label: "Smile Studio",
     caption: "Light-balanced, mirror-fitted, considered.",
     number: "02",
-    gradient: "from-mint/50 via-offwhite to-greige/40",
+    background: human(155), // Misted Mint, optimistic
     span: "md:col-span-5 md:row-span-1",
   },
   {
     label: "Sterilisation",
     caption: "Visible, audited, Class-B.",
     number: "03",
-    gradient: "from-plum via-plum/95 to-teal/60",
+    background: technical(215), // Deepest teal, serious
     span: "md:col-span-5 md:row-span-1",
   },
   {
     label: "Reception",
     caption: "A waiting room you'll forget you waited in.",
     number: "04",
-    gradient: "from-greige/40 via-cream to-mint/30",
+    background: human(330), // Still Plum, welcoming warmth
     span: "md:col-span-4 md:row-span-1",
   },
   {
     label: "Imaging",
     caption: "Digital, low-radiation, sharp.",
     number: "05",
-    gradient: "from-teal/80 via-plum to-mint/30",
+    background: technical(205), // Teal, clinical
     span: "md:col-span-4 md:row-span-1",
   },
   {
     label: "Consultation",
     caption: "Where treatment plans are drawn with you.",
     number: "06",
-    gradient: "from-mint/40 via-teal/30 to-offwhite",
+    background: human(165), // Mint-warm, intimate
     span: "md:col-span-4 md:row-span-1",
   },
 ];
@@ -62,7 +73,10 @@ export function Studio() {
   const reduce = useReducedMotion();
 
   return (
-    <section id="studio" className="relative py-28 md:py-36">
+    <section
+      id="studio"
+      className="surface-warm-plum relative py-28 md:py-36"
+    >
       <div className="container-x">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 mb-14 lg:mb-20">
           <div className="lg:col-span-5">
@@ -100,9 +114,10 @@ export function Studio() {
               variants={staggerItem}
               className={`group relative overflow-hidden rounded-2xl border border-plum/10 ${t.span}`}
             >
-              {/* Gradient placeholder background */}
+              {/* OKLCH gradient surface, scales on hover */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${t.gradient} transition-transform duration-[1200ms] ease-out group-hover:scale-105`}
+                className="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+                style={{ backgroundImage: t.background }}
               />
               <div className="absolute inset-0 grain opacity-50" />
 

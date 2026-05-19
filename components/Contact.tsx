@@ -7,6 +7,7 @@ import { z } from "zod";
 import { motion, AnimatePresence } from "framer-motion";
 import { Reveal } from "./Reveal";
 import { Clock, MapPin, Phone, Mail, ArrowRight, Check } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const schema = z.object({
   name: z.string().min(2, "Please share your full name"),
@@ -79,7 +80,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-28 md:py-36">
+    <section id="contact" className="surface-warm-mint relative py-28 md:py-36">
       <div className="container-x">
         <div className="grid lg:grid-cols-12 gap-10 mb-16 lg:mb-20">
           <div className="lg:col-span-6">
@@ -106,7 +107,10 @@ export function Contact() {
           <Reveal className="lg:col-span-7">
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="rounded-2xl border border-plum/10 bg-cream p-7 md:p-10 shadow-soft"
+              className={cn(
+                "rounded-2xl border border-plum/10 bg-cream p-7 md:p-10 shadow-soft",
+                sent && "form-flash-mint",
+              )}
             >
               <div className="grid sm:grid-cols-2 gap-5">
                 <Field label="Full Name" error={errors.name?.message}>

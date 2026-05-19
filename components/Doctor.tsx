@@ -23,28 +23,40 @@ export function Doctor() {
   return (
     <section id="doctor" className="relative py-28 md:py-36 bg-cream/60">
       <div className="container-x grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-        {/* Portrait placeholder */}
+        {/* Portrait placeholder — editorial mint duotone */}
         <Reveal className="lg:col-span-5">
           <div className="relative aspect-[4/5] w-full max-w-md">
-            <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-mint/20 via-teal/10 to-transparent blur-2xl" />
-            <div className="relative h-full w-full rounded-[1.8rem] overflow-hidden border border-plum/10 bg-gradient-to-br from-greige/40 via-offwhite to-mint/20 shadow-soft">
+            {/* Outer mint glow, soft */}
+            <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-mint/25 to-transparent blur-2xl" />
+            <div
+              className="relative h-full w-full rounded-[1.8rem] overflow-hidden border border-plum/10 shadow-soft"
+              style={{
+                backgroundImage:
+                  "linear-gradient(180deg, oklch(40% 0.06 155) 0%, oklch(58% 0.08 155) 45%, oklch(86% 0.03 155) 100%)",
+              }}
+            >
               <div className="absolute inset-0 grain opacity-60" />
+
+              {/* Subtle right-edge hairline, suggesting depth */}
+              <div className="absolute top-7 bottom-24 right-7 w-px bg-cream/15" />
+
               <div className="absolute inset-0 flex items-end p-7">
-                <div className="text-plum">
-                  <div className="text-[11px] tracking-[0.22em] uppercase text-teal/80">
+                <div className="text-cream">
+                  <div className="text-[11px] tracking-[0.22em] uppercase text-mint/95">
                     Lead Dentist
                   </div>
                   <div className="mt-2 font-display text-3xl leading-tight">Dr. Dishani Jain</div>
                 </div>
               </div>
-              {/* Decorative line */}
+
+              {/* Decorative line — promoted to mint */}
               <motion.div
                 aria-hidden
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute top-7 left-7 right-7 h-px bg-plum/15 origin-left"
+                className="absolute top-7 left-7 right-7 h-px bg-mint/40 origin-left"
               />
             </div>
           </div>
@@ -98,7 +110,7 @@ export function Doctor() {
                 {specialties.map((s) => (
                   <span
                     key={s}
-                    className="rounded-full border border-plum/12 bg-offwhite/60 px-4 py-2 text-xs tracking-wide text-plum/75 hover:border-teal/30 hover:text-teal transition-colors duration-300 cursor-default"
+                    className="rounded-full border border-plum/12 bg-offwhite/60 px-4 py-2 text-xs tracking-wide text-plum/75 hover:border-mint/45 hover:text-mint hover:bg-mint/8 transition-colors duration-300 cursor-default"
                   >
                     {s}
                   </span>

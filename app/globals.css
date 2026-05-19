@@ -85,6 +85,50 @@
   }
 
   /*
+   * Section warmth tints — barely-perceptible OKLCH washes that
+   * give each light-canvas section a different temperature, without
+   * breaking the Warm Linen baseline. Same lightness as offwhite
+   * (#F0EEEB ≈ L 94.6%); only hue and chroma shift.
+   */
+  .surface-warm-plum {
+    background-color: oklch(94.6% 0.008 330);
+  }
+  .surface-warm-teal {
+    background-color: oklch(94.6% 0.008 200);
+  }
+  .surface-warm-mint {
+    background-color: oklch(94.6% 0.008 155);
+  }
+
+  /*
+   * Form success flash — when a contact submission succeeds, the
+   * form briefly glows mint. Single delight pulse, then settles.
+   */
+  .form-flash-mint {
+    animation: form-mint-pulse 1800ms var(--ease-out-expo) both;
+  }
+  @keyframes form-mint-pulse {
+    0% {
+      border-color: rgba(94, 191, 138, 0);
+      box-shadow:
+        0 8px 30px rgba(42, 21, 32, 0.06),
+        0 0 0 0 rgba(94, 191, 138, 0);
+    }
+    20% {
+      border-color: rgba(94, 191, 138, 0.55);
+      box-shadow:
+        0 8px 30px rgba(42, 21, 32, 0.06),
+        0 0 0 6px rgba(94, 191, 138, 0.12);
+    }
+    100% {
+      border-color: rgba(94, 191, 138, 0.18);
+      box-shadow:
+        0 8px 30px rgba(42, 21, 32, 0.06),
+        0 0 0 0 rgba(94, 191, 138, 0);
+    }
+  }
+
+  /*
    * Eyebrow hairline — semantic component for the
    * "── Section Name" pattern that appears above every h2.
    *

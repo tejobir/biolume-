@@ -53,7 +53,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-28 md:py-36">
+    <section id="services" className="surface-warm-teal relative py-28 md:py-36">
       <div className="container-x">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 mb-16 lg:mb-20">
           <div className="lg:col-span-5">

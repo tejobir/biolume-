@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { MessageCircle, Phone } from "lucide-react";
+import Link from "next/link";
 import type { ReactNode } from "react";
+import { servicePages } from "@/lib/servicePages";
 
 const navLinks = [
   { href: "#about", label: "Clinic" },
@@ -79,10 +81,36 @@ export function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/services"
+                  className="text-[14px] text-plum/75 hover:text-teal transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
             </ul>
           </div>
 
-          <div className="md:col-span-4">
+          <div className="md:col-span-2">
+            <div className="text-[10.5px] uppercase tracking-[0.22em] text-plum/45 mb-4">
+              Treatments
+            </div>
+            <ul className="space-y-2.5">
+              {servicePages.map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    href={`/services/${s.slug}`}
+                    className="text-[13px] text-plum/65 hover:text-teal transition-colors leading-snug"
+                  >
+                    {s.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-2">
             <div className="text-[10.5px] uppercase tracking-[0.22em] text-plum/45 mb-4">
               Studio
             </div>

@@ -6,17 +6,20 @@ import { Award, GraduationCap, Stethoscope } from "lucide-react";
 
 const credentials = [
   { icon: GraduationCap, label: "BDS, Maharashtra University of Health Sciences" },
-  { icon: Award, label: "Advanced Implantology: Certified" },
-  { icon: Stethoscope, label: "Diode Laser Dentistry: Certified" },
+  { icon: Award, label: "Fellowship — Dental Implants" },
+  { icon: Award, label: "Fellowship — Laser Dentistry" },
+  { icon: Stethoscope, label: "6 Years Clinical Experience" },
 ];
 
 const specialties = [
-  "Single & Full-Arch Implants",
-  "Laser Gum Therapy",
+  "Dental Implants",
+  "Laser Dentistry",
   "Smile Design",
   "Endodontics",
-  "Paediatric Care",
-  "Invisible Aligners",
+  "Pediatric Care",
+  "Clear Aligners",
+  "Restorative Dentistry",
+  "Periodontics",
 ];
 
 export function Doctor() {
@@ -76,9 +79,13 @@ export function Doctor() {
 
           <Reveal delay={0.08}>
             <p className="mt-7 text-[15.5px] leading-[1.8] text-plum/65 max-w-xl text-pretty">
-              Dr. Dishani Jain is the founding dentist of Bio Lume. Trained in implantology and
-              laser dentistry, her practice is shaped by an instinct for restraint: doing only
-              what each tooth genuinely needs, and explaining every step before it happens.
+              Dr. Dishani Jain brings six years of dedicated clinical experience to Biolume Dental
+              Care, complemented by advanced Fellowship training in dental implants and laser
+              dentistry. Her practice is built on two principles: clinical quality and ethical
+              treatment. Recognising that dental visits can cause anxiety, she focuses on a
+              transparent, patient-first approach — pairing modern methods with minimally invasive
+              technology to ensure your care is always straightforward, comfortable, and tailored
+              to your long-term health.
             </p>
           </Reveal>
 

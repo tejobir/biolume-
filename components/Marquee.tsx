@@ -9,14 +9,16 @@ import {
 } from "framer-motion";
 
 const words = [
-  "Precision",
-  "Comfort",
-  "Implantology",
+  "Dental Implants",
   "Laser Dentistry",
-  "Smile Design",
-  "Sterilised",
-  "Unhurried",
-  "Considered",
+  "Smile Makeover",
+  "Orthodontics",
+  "Root Canal",
+  "Gum Care",
+  "Pediatric Dentistry",
+  "Emergency Care",
+  "Preventive",
+  "Restorative",
   "Navi Mumbai",
 ];
 

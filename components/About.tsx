@@ -6,18 +6,18 @@ import { Reveal, staggerContainer, staggerItem } from "./Reveal";
 const pillars = [
   {
     k: "01",
-    t: "Considered Architecture",
-    d: "A calm, light-filled studio designed to slow the visit down: warm woods, soft acoustics, no clinical glare.",
+    t: "See What's Happening",
+    d: "Intraoral cameras and digital X-rays let you see exactly what's going on in your mouth — making it easier to understand your treatment and catch issues early.",
   },
   {
     k: "02",
-    t: "Sterilisation, Visible",
-    d: "Class-B autoclaved instruments, sealed packaging, single-use kits. Cleanliness you can watch in real time.",
+    t: "Infection Control, Uncompromised",
+    d: "Hospital-grade sterilisation protocols with autoclaved instruments, sealed packaging, and single-use kits. Every visit is held to the same standard.",
   },
   {
     k: "03",
-    t: "Technology, Quiet",
-    d: "Digital imaging, diode laser, intra-oral scanning: advanced tools we'd rather use than mention.",
+    t: "Minimally Invasive by Default",
+    d: "From ultrasonic scaling to laser gum treatment and 3D implant planning, every tool we use is chosen to give better results with less discomfort and faster healing.",
   },
 ];
 
@@ -44,10 +44,10 @@ export function About() {
           <div className="lg:col-span-8">
             <Reveal delay={0.05}>
               <p className="text-[15.5px] leading-[1.8] text-plum/65 max-w-2xl text-pretty">
-                Bio Lume is a contemporary dental studio in the heart of Navi Mumbai, founded
-                on the belief that exceptional dentistry should feel uncomplicated. Each
-                appointment is unhurried, each plan is bespoke, and every interaction is held
-                to a standard that makes returning easy.
+                Biolume Dental Care is a contemporary clinic in Navi Mumbai built on two
+                principles: clinical quality and ethical treatment. Every appointment is
+                unhurried, every plan is explained in full, and every decision is made in
+                your long-term interest — not the other way around.
               </p>
             </Reveal>
 

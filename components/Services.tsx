@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
@@ -115,7 +116,12 @@ const services = [
   },
 ];
 
+const INITIAL_COUNT = 6;
+
 export function Services() {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded ? services : services.slice(0, INITIAL_COUNT);
+
   return (
     <section id="services" className="surface-warm-teal relative py-28 md:py-36">
       <div className="container-x">
@@ -147,7 +153,7 @@ export function Services() {
           viewport={{ once: true, margin: "-60px" }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-plum/10 border border-plum/10 rounded-2xl overflow-hidden"
         >
-          {services.map((s) => (
+          {visible.map((s) => (
             <motion.article
               key={s.name}
               variants={staggerItem}
@@ -223,6 +229,42 @@ export function Services() {
             </motion.article>
           ))}
         </motion.div>
+
+        {/* Expand / collapse */}
+        <AnimatePresence initial={false}>
+          {!expanded && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="mt-10 flex flex-col items-center gap-3"
+            >
+              <button
+                onClick={() => setExpanded(true)}
+                className="group inline-flex items-center gap-3 rounded-full border border-plum/15 bg-offwhite px-7 py-3.5 text-sm tracking-wide text-plum hover:bg-plum hover:text-cream hover:border-plum transition-colors duration-300 cursor-pointer"
+              >
+                View all {services.length} services
+                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-teal/10 text-teal text-[11px] font-medium group-hover:bg-cream/15 group-hover:text-cream transition-colors">
+                  {services.length - INITIAL_COUNT}
+                </span>
+              </button>
+              <span className="text-[12px] text-plum/40">
+                {services.length - INITIAL_COUNT} more treatments
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {expanded && (
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={() => setExpanded(false)}
+              className="text-[13px] text-plum/50 hover:text-teal transition-colors underline underline-offset-4 decoration-plum/20 hover:decoration-teal cursor-pointer"
+            >
+              Show less
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

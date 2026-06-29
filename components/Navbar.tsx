@@ -8,19 +8,19 @@ import { cn } from "@/lib/utils";
 import { servicePages } from "@/lib/servicePages";
 
 const anchorLinks = [
-  { href: "#about", label: "Clinic" },
-  { href: "#doctor", label: "Doctor" },
-  { href: "#studio", label: "Studio" },
-  { href: "#testimonials", label: "Stories" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "Clinic" },
+  { href: "/#doctor", label: "Doctor" },
+  { href: "/#studio", label: "Studio" },
+  { href: "/#testimonials", label: "Stories" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 const mobileAllLinks = [
-  { href: "#about", label: "Clinic" },
-  { href: "#doctor", label: "Doctor" },
-  { href: "#studio", label: "Studio" },
-  { href: "#testimonials", label: "Stories" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "Clinic" },
+  { href: "/#doctor", label: "Doctor" },
+  { href: "/#studio", label: "Studio" },
+  { href: "/#testimonials", label: "Stories" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -149,7 +149,7 @@ export function Navbar() {
           </nav>
 
           <a
-            href="#contact"
+            href="/#contact"
             className="hidden md:inline-flex items-center gap-2 rounded-full bg-plum text-cream px-5 py-2.5 text-sm tracking-wide hover:bg-teal transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60 focus-visible:ring-offset-2"
           >
             Book a Visit
@@ -262,7 +262,7 @@ export function Navbar() {
               </motion.div>
 
               <motion.a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 variants={{
                   hidden: { opacity: 0, y: 14 },

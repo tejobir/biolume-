@@ -7,11 +7,11 @@ import type { ReactNode } from "react";
 import { servicePages } from "@/lib/servicePages";
 
 const navLinks = [
-  { href: "#about", label: "Clinic" },
-  { href: "#doctor", label: "Doctor" },
-  { href: "#services", label: "Services" },
-  { href: "#testimonials", label: "Stories" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "Clinic" },
+  { href: "/#doctor", label: "Doctor" },
+  { href: "/#services", label: "Services" },
+  { href: "/#testimonials", label: "Stories" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Footer() {

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
 import { Award, GraduationCap, Stethoscope } from "lucide-react";
 
@@ -26,19 +27,22 @@ export function Doctor() {
   return (
     <section id="doctor" className="relative py-28 md:py-36 bg-cream/60">
       <div className="container-x grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-        {/* Portrait placeholder — editorial mint duotone */}
+        {/* Portrait — Dr. Dishani Jain */}
         <Reveal className="lg:col-span-5">
           <div className="relative aspect-[4/5] w-full max-w-md">
             {/* Outer mint glow, soft */}
             <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-mint/25 to-transparent blur-2xl" />
-            <div
-              className="relative h-full w-full rounded-[1.8rem] overflow-hidden border border-plum/10 shadow-soft"
-              style={{
-                backgroundImage:
-                  "linear-gradient(180deg, oklch(40% 0.06 155) 0%, oklch(58% 0.08 155) 45%, oklch(86% 0.03 155) 100%)",
-              }}
-            >
-              <div className="absolute inset-0 grain opacity-60" />
+            <div className="relative h-full w-full rounded-[1.8rem] overflow-hidden border border-plum/10 shadow-soft">
+              <Image
+                src="/dr-dishani-jain.jpeg"
+                alt="Dr. Dishani Jain, Lead Dentist at Biolume Dental Care"
+                fill
+                quality={90}
+                className="object-cover object-top"
+              />
+
+              {/* Scrim for label legibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-plum/85 via-plum/10 to-transparent" />
 
               {/* Subtle right-edge hairline, suggesting depth */}
               <div className="absolute top-7 bottom-24 right-7 w-px bg-cream/15" />

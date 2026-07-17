@@ -2,12 +2,13 @@
 
 import { motion } from "framer-motion";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
-import { Quote, Star } from "lucide-react";
+import { Star } from "lucide-react";
+import { Sparkle } from "./Sparkle";
 
 /**
- * Avatar gradients are built from one rule: linear-gradient(140deg,
- * oklch(40% C H), oklch(65% C H)). The only thing that varies per
- * avatar is hue — teal, mint, or plum — so the palette stays a system.
+ * Avatar gradients follow one rule: linear-gradient(140deg,
+ * oklch(40% C H), oklch(65% C H)). Only hue varies per avatar —
+ * pine, sage, or bark — so the palette stays a system.
  */
 const avatarGradient = (hue: number, chroma: number) =>
   `linear-gradient(140deg, oklch(40% ${chroma} ${hue}) 0%, oklch(65% ${chroma} ${hue}) 100%)`;
@@ -19,7 +20,7 @@ const stories = [
     name: "Aarav Mehta",
     initials: "AM",
     detail: "Implant Patient · Vashi",
-    avatar: avatarGradient(200, 0.085), // Harbour Teal
+    avatar: avatarGradient(178, 0.07), // Pine
   },
   {
     quote:
@@ -27,7 +28,7 @@ const stories = [
     name: "Priya Shenoy",
     initials: "PS",
     detail: "Parent · Nerul",
-    avatar: avatarGradient(155, 0.105), // Misted Mint
+    avatar: avatarGradient(152, 0.06), // Sage
   },
   {
     quote:
@@ -35,52 +36,47 @@ const stories = [
     name: "Kabir Sethi",
     initials: "KS",
     detail: "Smile Design · Belapur",
-    avatar: avatarGradient(330, 0.07), // Still Plum
+    avatar: avatarGradient(45, 0.05), // Bark
   },
 ];
 
 const smallAvatarHues: Array<[number, number]> = [
-  [200, 0.085], // Teal
-  [155, 0.105], // Mint
-  [330, 0.07], // Plum
-  [215, 0.08], // Deep teal
+  [178, 0.07], // Pine
+  [152, 0.06], // Sage
+  [45, 0.05], // Bark
+  [188, 0.065], // Deep pine
 ];
 
 export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative py-28 md:py-36 bg-plum text-cream overflow-hidden"
+      className="relative py-24 md:py-32 bg-teal text-offwhite overflow-hidden"
     >
       {/* Ambient glow */}
-      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[800px] rounded-full bg-teal/20 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-[300px] w-[500px] rounded-full bg-mint/10 blur-3xl" />
+      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[800px] rounded-full bg-mint/15 blur-3xl" />
 
       <div className="container-x relative">
-        <div className="grid lg:grid-cols-12 gap-10 mb-16 lg:mb-20 items-end">
+        <div className="grid lg:grid-cols-12 gap-10 mb-14 lg:mb-20 items-end">
           <div className="lg:col-span-7">
             <Reveal>
-              <div className="eyebrow text-mint">
-                <span className="eyebrow-rule" />
-                Patient Stories
-              </div>
-              <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-cream text-balance">
-                Quiet praise from the
-                <em className="italic text-mint"> people who matter</em>.
+              <Sparkle size={26} strokeWidth={1.1} className="text-mint mb-6" />
+              <h2 className="uppercase text-offwhite font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
+                Kind words from patients
               </h2>
             </Reveal>
           </div>
           <Reveal delay={0.05} className="lg:col-span-5">
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-5 lg:justify-end">
               <div className="flex -space-x-3">
                 {smallAvatarHues.map(([h, c], i) => (
                   <div
                     key={i}
-                    className="h-11 w-11 rounded-full ring-2 ring-plum"
+                    className="h-11 w-11 rounded-full ring-2 ring-teal"
                     style={{ backgroundImage: avatarGradient(h, c) }}
                   />
                 ))}
-                <div className="h-11 w-11 rounded-full bg-cream text-plum ring-2 ring-plum flex items-center justify-center text-[11px] font-medium">
+                <div className="h-11 w-11 rounded-full bg-offwhite text-teal ring-2 ring-teal flex items-center justify-center text-[11px] font-semibold">
                   200+
                 </div>
               </div>
@@ -95,7 +91,7 @@ export function Testimonials() {
                     />
                   ))}
                 </div>
-                <div className="text-[12px] text-cream/65 mt-1">
+                <div className="text-[12px] text-offwhite/75 mt-1">
                   4.9 from 200+ reviews
                 </div>
               </div>
@@ -114,36 +110,24 @@ export function Testimonials() {
             <motion.figure
               key={i}
               variants={staggerItem}
-              className="group relative rounded-2xl border border-cream/10 bg-cream/[0.03] p-8 backdrop-blur-sm hover:bg-cream/[0.06] hover:border-mint/30 transition-all duration-500"
+              className="relative border border-offwhite/20 p-8 hover:border-mint/60 transition-colors duration-500"
             >
-              <Quote size={22} strokeWidth={1.3} className="text-mint/70 mb-6" />
-              <blockquote className="font-display text-[19.5px] leading-[1.55] text-cream/90 text-balance">
+              <blockquote className="text-[16px] font-light leading-[1.75] text-offwhite/95 text-pretty">
                 &#8220;{t.quote}&#8221;
               </blockquote>
-              <figcaption className="mt-8 pt-6 border-t border-cream/10 flex items-center gap-3.5">
-                {/* Avatar placeholder */}
+              <figcaption className="mt-8 pt-6 border-t border-offwhite/15 flex items-center gap-3.5">
                 <div className="relative flex-shrink-0">
                   <div
-                    className="h-12 w-12 rounded-full flex items-center justify-center font-display text-sm text-cream"
+                    className="h-11 w-11 rounded-full flex items-center justify-center text-[12px] font-semibold text-offwhite"
                     style={{ backgroundImage: t.avatar }}
                   >
                     {t.initials}
                   </div>
-                  <div className="absolute inset-0 rounded-full ring-1 ring-cream/15" />
+                  <div className="absolute inset-0 rounded-full ring-1 ring-offwhite/20" />
                 </div>
                 <div className="min-w-0">
-                  <div className="flex items-center gap-1 mb-1">
-                    {Array.from({ length: 5 }).map((_, j) => (
-                      <Star
-                        key={j}
-                        size={10}
-                        strokeWidth={1.5}
-                        className="fill-mint text-mint"
-                      />
-                    ))}
-                  </div>
-                  <div className="text-[13.5px] text-cream truncate">{t.name}</div>
-                  <div className="text-[11px] uppercase tracking-[0.16em] text-cream/45 mt-0.5 truncate">
+                  <div className="text-[13.5px] text-offwhite truncate">{t.name}</div>
+                  <div className="text-[10.5px] uppercase tracking-[0.16em] text-offwhite/60 mt-1 truncate">
                     {t.detail}
                   </div>
                 </div>

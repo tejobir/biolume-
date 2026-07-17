@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const display = Playfair_Display({
+const body = Nunito({
   subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
-const body = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-  weight: ["300", "400", "500", "600", "700"],
+/*
+ * DAZZLE Unicase Medium — the brand's official display face, provided
+ * by the designer. Used sparingly (logo wordmark only) per brand
+ * guidelines. It is a unicase typeface: upper- and lowercase share the
+ * same height with the signature circular 'e'.
+ */
+const logo = localFont({
+  src: "./fonts/DazzleUnicase-Medium.otf",
+  variable: "--font-logo",
   display: "swap",
+  weight: "500",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${body.variable} ${logo.variable}`}>
       <body className="font-sans antialiased bg-offwhite text-plum">{children}</body>
     </html>
   );

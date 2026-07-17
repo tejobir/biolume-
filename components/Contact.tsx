@@ -37,7 +37,7 @@ const clinicInfo = [
   {
     icon: MapPin,
     label: "Studio",
-    value: "Bio Lume Dental Clinic\nNavi Mumbai, Maharashtra",
+    value: "Biolume Dental Care\nSector 19B, Vashi, Navi Mumbai",
   },
   {
     icon: Phone,
@@ -80,24 +80,20 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="surface-warm-mint relative py-28 md:py-36">
+    <section id="contact" className="surface-warm-mint relative py-24 md:py-32">
       <div className="container-x">
-        <div className="grid lg:grid-cols-12 gap-10 mb-16 lg:mb-20">
+        <div className="grid lg:grid-cols-12 gap-10 mb-14 lg:mb-20">
           <div className="lg:col-span-6">
             <Reveal>
-              <div className="eyebrow text-teal/80">
-                <span className="eyebrow-rule" />
-                Visit Bio Lume
-              </div>
-              <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.05] tracking-tight text-plum text-balance">
-                Book a chair. We'll handle the <em className="italic text-teal">rest</em>.
+              <h2 className="uppercase text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
+                Book a chair. We&rsquo;ll handle the rest.
               </h2>
             </Reveal>
           </div>
-          <Reveal delay={0.05} className="lg:col-span-6 lg:pt-10">
-            <p className="text-[15.5px] leading-[1.8] text-plum/65 max-w-lg text-pretty">
-              Share a few details and we'll confirm an appointment over WhatsApp within
-              the hour. No automated funnels, no forms within forms.
+          <Reveal delay={0.05} className="lg:col-span-6 lg:pt-4">
+            <p className="text-[14px] leading-[1.85] text-plum/80 max-w-lg text-pretty">
+              Share a few details and we&rsquo;ll confirm an appointment over WhatsApp
+              within the hour. No automated funnels, no forms within forms.
             </p>
           </Reveal>
         </div>
@@ -108,7 +104,7 @@ export function Contact() {
             <form
               onSubmit={handleSubmit(onSubmit)}
               className={cn(
-                "rounded-2xl border border-plum/10 bg-cream p-7 md:p-10 shadow-soft",
+                "border border-plum/12 bg-cream p-7 md:p-10 shadow-soft",
                 sent && "form-flash-mint",
               )}
             >
@@ -141,7 +137,7 @@ export function Contact() {
                   <select
                     {...register("service")}
                     defaultValue=""
-                    className="field-input bg-offwhite cursor-pointer"
+                    className="field-input cursor-pointer"
                   >
                     <option value="" disabled>
                       Select a service
@@ -165,13 +161,13 @@ export function Contact() {
               </Field>
 
               <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
-                <p className="text-[12.5px] text-plum/55 max-w-xs">
+                <p className="text-[12.5px] text-plum/65 max-w-xs">
                   Your information stays with our front desk. Never shared.
                 </p>
                 <button
                   type="submit"
                   disabled={isSubmitting || sent}
-                  className="group inline-flex items-center gap-3 rounded-full bg-plum text-cream px-7 py-3.5 text-sm tracking-wide hover:bg-teal transition-colors duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group inline-flex items-center gap-3 border border-teal bg-teal text-offwhite px-8 py-3.5 text-[11px] uppercase tracking-[0.2em] hover:bg-transparent hover:text-teal transition-colors duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <AnimatePresence mode="wait" initial={false}>
                     {sent ? (
@@ -182,7 +178,7 @@ export function Contact() {
                         exit={{ opacity: 0, y: 6 }}
                         className="flex items-center gap-2"
                       >
-                        <Check size={16} strokeWidth={1.6} /> Opening WhatsApp…
+                        <Check size={15} strokeWidth={1.6} /> Opening WhatsApp…
                       </motion.span>
                     ) : (
                       <motion.span
@@ -194,7 +190,7 @@ export function Contact() {
                       >
                         Send Request
                         <ArrowRight
-                          size={16}
+                          size={15}
                           strokeWidth={1.5}
                           className="transition-transform duration-300 group-hover:translate-x-1"
                         />
@@ -207,24 +203,23 @@ export function Contact() {
               <style jsx>{`
                 .field-input {
                   width: 100%;
-                  background: #f0eeeb;
-                  border: 1px solid rgba(42, 21, 32, 0.1);
-                  border-radius: 0.75rem;
+                  background: #efeae4;
+                  border: 1px solid rgba(81, 58, 50, 0.14);
                   padding: 0.85rem 1rem;
                   font-size: 14.5px;
                   font-family: inherit;
-                  color: #2a1520;
+                  color: #513a32;
                   outline: none;
                   transition: border-color 0.25s ease, background-color 0.25s ease,
                     box-shadow 0.25s ease;
                 }
                 .field-input:focus-visible {
-                  border-color: #1a6e7e;
-                  background: #faf9f7;
-                  box-shadow: 0 0 0 3px rgba(26, 110, 126, 0.12);
+                  border-color: #146155;
+                  background: #efeae4;
+                  box-shadow: 0 0 0 3px rgba(20, 97, 85, 0.14);
                 }
                 .field-input::placeholder {
-                  color: rgba(42, 21, 32, 0.35);
+                  color: rgba(81, 58, 50, 0.45);
                 }
               `}</style>
             </form>
@@ -233,7 +228,7 @@ export function Contact() {
           {/* Info + Map */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <Reveal delay={0.05}>
-              <div className="rounded-2xl border border-plum/10 bg-cream p-7 md:p-8 shadow-soft">
+              <div className="border border-plum/12 bg-cream p-7 md:p-8 shadow-soft">
                 <ul className="space-y-6">
                   {clinicInfo.map((item, i) => (
                     <li key={i} className="flex items-start gap-4">
@@ -241,7 +236,7 @@ export function Contact() {
                         <item.icon size={15} strokeWidth={1.6} />
                       </span>
                       <div className="min-w-0">
-                        <div className="text-[10.5px] uppercase tracking-[0.2em] text-plum/50">
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-semibold text-teal/85">
                           {item.label}
                         </div>
                         {item.href ? (
@@ -252,7 +247,7 @@ export function Contact() {
                             {item.value}
                           </a>
                         ) : (
-                          <div className="mt-1 text-[14.5px] text-plum/80 whitespace-pre-line leading-relaxed">
+                          <div className="mt-1 text-[14.5px] text-plum/85 whitespace-pre-line leading-relaxed">
                             {item.value}
                           </div>
                         )}
@@ -264,9 +259,9 @@ export function Contact() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <div className="relative rounded-2xl overflow-hidden border border-plum/10 shadow-soft aspect-[5/4]">
+              <div className="relative overflow-hidden border border-plum/12 shadow-soft aspect-[5/4]">
                 <iframe
-                  title="Bio Lume Dental Clinic Location"
+                  title="Biolume Dental Care Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823914!2d72.92!3d19.0330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1cdd11b6d3b%3A0xc60660ddd1c1bea4!2sNavi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000"
                   width="100%"
                   height="100%"
@@ -295,7 +290,7 @@ function Field({
 }) {
   return (
     <label className="block">
-      <span className="text-[11.5px] uppercase tracking-[0.16em] text-plum/55 block mb-2">
+      <span className="text-[11px] uppercase tracking-[0.16em] text-plum/70 block mb-2">
         {label}
       </span>
       {children}

@@ -2,13 +2,15 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { servicePages } from "@/lib/servicePages";
+import { Sparkle } from "./Sparkle";
 
 const anchorLinks = [
-  { href: "/#about", label: "Clinic" },
+  { href: "/#about", label: "About" },
   { href: "/#doctor", label: "Doctor" },
   { href: "/#studio", label: "Studio" },
   { href: "/#testimonials", label: "Stories" },
@@ -16,7 +18,7 @@ const anchorLinks = [
 ];
 
 const mobileAllLinks = [
-  { href: "/#about", label: "Clinic" },
+  { href: "/#about", label: "About" },
   { href: "/#doctor", label: "Doctor" },
   { href: "/#studio", label: "Studio" },
   { href: "/#testimonials", label: "Stories" },
@@ -48,8 +50,6 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  const textClass = scrolled ? "text-plum/70" : "text-white";
-
   return (
     <>
       <motion.header
@@ -57,28 +57,28 @@ export function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         className={cn(
-          "fixed top-0 inset-x-0 z-40 transition-all duration-500",
-          scrolled
-            ? "bg-offwhite/80 backdrop-blur-xl border-b border-plum/5"
-            : "bg-transparent",
+          "fixed top-0 inset-x-0 z-40 bg-offwhite transition-shadow duration-500",
+          scrolled && "shadow-[0_1px_0_0_rgba(81,58,50,0.1)]",
         )}
       >
         <div className="container-x flex h-20 items-center justify-between">
-          <Link href="/" className="group flex items-baseline gap-1">
-            <span className="font-display text-2xl text-plum tracking-tight">Bio</span>
-            <span className="font-display text-2xl italic text-teal tracking-tight">Lume</span>
-            <span className="ml-1 h-1.5 w-1.5 rounded-full bg-mint translate-y-[-2px] transition-transform group-hover:scale-125" />
+          <Link href="/" aria-label="Biolume Dental Care — home" className="inline-flex items-center">
+            <Image
+              src="/biolume-logo.png"
+              alt="Biolume Dental Care"
+              width={150}
+              height={44}
+              priority
+              className="h-11 w-auto md:h-14"
+            />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-9">
+          <nav className="hidden md:flex items-center gap-8">
             {anchorLinks.slice(0, 2).map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className={cn(
-                  "text-sm tracking-wide hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded",
-                  textClass
-                )}
+                className="text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
               >
                 {l.label}
               </a>
@@ -89,14 +89,11 @@ export function Navbar() {
               <button
                 onClick={() => setServicesOpen((v) => !v)}
                 onMouseEnter={() => setServicesOpen(true)}
-                className={cn(
-                  "flex items-center gap-1 text-sm tracking-wide hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded",
-                  textClass
-                )}
+                className="flex items-center gap-1 text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
               >
                 Services
                 <ChevronDown
-                  size={13}
+                  size={12}
                   strokeWidth={1.5}
                   className={cn("transition-transform duration-200", servicesOpen && "rotate-180")}
                 />
@@ -110,12 +107,12 @@ export function Navbar() {
                     exit={{ opacity: 0, y: 4 }}
                     transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
                     onMouseLeave={() => setServicesOpen(false)}
-                    className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-56 rounded-xl bg-offwhite border border-plum/10 shadow-soft overflow-hidden py-2"
+                    className="absolute left-1/2 -translate-x-1/2 top-full mt-4 w-60 bg-cream border border-plum/10 shadow-soft overflow-hidden py-2"
                   >
                     <Link
                       href="/services"
                       onClick={() => setServicesOpen(false)}
-                      className="flex items-center px-4 py-2.5 text-[13px] text-plum/60 hover:text-teal hover:bg-teal/5 transition-colors font-medium tracking-wide border-b border-plum/8 mb-1"
+                      className="flex items-center px-5 py-2.5 text-[11px] uppercase tracking-[0.16em] text-teal hover:bg-teal/5 transition-colors font-semibold border-b border-plum/8 mb-1"
                     >
                       All Services
                     </Link>
@@ -124,7 +121,7 @@ export function Navbar() {
                         key={s.slug}
                         href={`/services/${s.slug}`}
                         onClick={() => setServicesOpen(false)}
-                        className="flex items-center px-4 py-2 text-[13px] text-plum/70 hover:text-teal hover:bg-teal/5 transition-colors leading-snug"
+                        className="flex items-center px-5 py-2 text-[13px] text-plum/80 hover:text-teal hover:bg-teal/5 transition-colors leading-snug"
                       >
                         {s.title}
                       </Link>
@@ -138,10 +135,7 @@ export function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className={cn(
-                  "text-sm tracking-wide hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded",
-                  textClass
-                )}
+                className="text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
               >
                 {l.label}
               </a>
@@ -150,16 +144,15 @@ export function Navbar() {
 
           <a
             href="/#contact"
-            className="hidden md:inline-flex items-center gap-2 rounded-full bg-plum text-cream px-5 py-2.5 text-sm tracking-wide hover:bg-teal transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60 focus-visible:ring-offset-2"
+            className="hidden md:inline-flex items-center border border-teal px-6 py-2.5 text-[11px] uppercase tracking-[0.2em] text-teal hover:bg-teal hover:text-offwhite transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60 focus-visible:ring-offset-2"
           >
-            Book a Visit
-            <span className="h-1 w-1 rounded-full bg-mint" />
+            Book Now
           </a>
 
           <button
             onClick={() => setOpen(true)}
             aria-label="Open menu"
-            className="md:hidden p-2 -mr-2 text-plum cursor-pointer"
+            className="md:hidden p-2 -mr-2 text-teal cursor-pointer"
           >
             <Menu size={22} strokeWidth={1.5} />
           </button>
@@ -174,16 +167,19 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-plum/95 backdrop-blur-md md:hidden overflow-y-auto"
+            className="fixed inset-0 z-50 bg-teal md:hidden overflow-y-auto"
           >
             <div className="flex items-center justify-between h-20 container-x">
-              <span className="font-display text-2xl text-cream">
-                Bio<span className="italic text-mint"> Lume</span>
+              <span className="flex items-center gap-2.5">
+                <Sparkle size={18} strokeWidth={1.4} className="text-offwhite" />
+                <span className="font-logo text-xl font-medium text-offwhite lowercase tracking-wide">
+                  biolume
+                </span>
               </span>
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close menu"
-                className="p-2 -mr-2 text-cream cursor-pointer"
+                className="p-2 -mr-2 text-offwhite cursor-pointer"
               >
                 <X size={24} strokeWidth={1.5} />
               </button>
@@ -203,7 +199,7 @@ export function Navbar() {
                     hidden: { opacity: 0, y: 14 },
                     show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } },
                   }}
-                  className="font-display text-4xl text-cream hover:text-mint transition-colors focus-visible:outline-none focus-visible:text-mint"
+                  className="text-3xl font-light uppercase tracking-[0.08em] text-offwhite hover:text-mint transition-colors focus-visible:outline-none focus-visible:text-mint"
                 >
                   {l.label}
                 </motion.a>
@@ -218,7 +214,7 @@ export function Navbar() {
               >
                 <button
                   onClick={() => setMobileServicesOpen((v) => !v)}
-                  className="flex items-center gap-3 font-display text-4xl text-cream hover:text-mint transition-colors focus-visible:outline-none"
+                  className="flex items-center gap-3 text-3xl font-light uppercase tracking-[0.08em] text-offwhite hover:text-mint transition-colors focus-visible:outline-none"
                 >
                   Services
                   <ChevronDown
@@ -237,11 +233,11 @@ export function Navbar() {
                       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                       className="overflow-hidden"
                     >
-                      <div className="mt-4 flex flex-col gap-3 pl-2 border-l border-mint/30">
+                      <div className="mt-4 flex flex-col gap-3 pl-2 border-l border-mint/40">
                         <Link
                           href="/services"
                           onClick={() => setOpen(false)}
-                          className="text-[15px] text-mint tracking-wide hover:text-cream transition-colors"
+                          className="text-[13px] uppercase tracking-[0.14em] text-mint hover:text-offwhite transition-colors"
                         >
                           All Services
                         </Link>
@@ -250,7 +246,7 @@ export function Navbar() {
                             key={s.slug}
                             href={`/services/${s.slug}`}
                             onClick={() => setOpen(false)}
-                            className="text-[14px] text-cream/70 hover:text-mint transition-colors leading-snug"
+                            className="text-[14px] text-offwhite/80 hover:text-mint transition-colors leading-snug"
                           >
                             {s.title}
                           </Link>
@@ -268,9 +264,9 @@ export function Navbar() {
                   hidden: { opacity: 0, y: 14 },
                   show: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
                 }}
-                className="mt-4 inline-flex w-fit rounded-full bg-mint text-plum px-6 py-3 text-sm tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plum/40"
+                className="mt-4 inline-flex w-fit border border-offwhite px-7 py-3 text-[11px] uppercase tracking-[0.2em] text-offwhite hover:bg-offwhite hover:text-teal transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60"
               >
-                Book a Visit
+                Book Now
               </motion.a>
             </motion.nav>
           </motion.div>

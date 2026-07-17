@@ -7,6 +7,7 @@ import {
   useVelocity,
   useSpring,
 } from "framer-motion";
+import { Sparkle } from "./Sparkle";
 
 const words = [
   "Dental Implants",
@@ -72,12 +73,12 @@ export function Marquee() {
 
   return (
     <section
-      aria-label="Bio Lume practice values"
-      className="relative bg-plum text-cream border-y border-plum/40 overflow-hidden py-7 md:py-9"
+      aria-label="Biolume practice values"
+      className="relative bg-teal text-offwhite overflow-hidden py-6 md:py-8"
     >
       {/* Side fades */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 z-10 bg-gradient-to-r from-plum to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 z-10 bg-gradient-to-l from-plum to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 z-10 bg-gradient-to-r from-teal to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 z-10 bg-gradient-to-l from-teal to-transparent" />
 
       <div
         ref={trackRef}
@@ -86,12 +87,10 @@ export function Marquee() {
       >
         {items.map((w, i) => (
           <span key={i} className="flex items-center gap-12 flex-shrink-0">
-            <span className="font-display text-[clamp(1.75rem,3.5vw,2.75rem)] leading-none tracking-tight">
+            <span className="uppercase font-light tracking-[0.08em] text-[clamp(1.3rem,2.6vw,2rem)] leading-none">
               {w}
             </span>
-            <span aria-hidden className="text-mint text-2xl">
-              ✦
-            </span>
+            <Sparkle size={18} strokeWidth={1.2} className="text-mint flex-shrink-0" />
           </span>
         ))}
       </div>

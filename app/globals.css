@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: #F0EEEB;
-    --foreground: #2A1520;
+    --background: #efeae4;
+    --foreground: #513a32;
     /* Signature easing curve, available to inline styles */
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -13,14 +13,13 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-feature-settings: "ss01", "cv01", "cv02";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   ::selection {
-    background-color: #1A6E7E;
-    color: #F0EEEB;
+    background-color: #146155;
+    color: #efeae4;
   }
 
   /*
@@ -87,17 +86,17 @@
   /*
    * Section warmth tints — barely-perceptible OKLCH washes that
    * give each light-canvas section a different temperature, without
-   * breaking the Warm Linen baseline. Same lightness as offwhite
-   * (#F0EEEB ≈ L 94.6%); only hue and chroma shift.
+   * breaking the brand Cream baseline. Same lightness as offwhite
+   * (#efeae4 ≈ L 93.8%); only hue and chroma shift toward the brand teals.
    */
   .surface-warm-plum {
-    background-color: oklch(94.6% 0.008 330);
+    background-color: oklch(93.8% 0.01 55);
   }
   .surface-warm-teal {
-    background-color: oklch(94.6% 0.008 200);
+    background-color: oklch(93.8% 0.012 178);
   }
   .surface-warm-mint {
-    background-color: oklch(94.6% 0.008 155);
+    background-color: oklch(93.8% 0.014 152);
   }
 
   /*
@@ -109,22 +108,22 @@
   }
   @keyframes form-mint-pulse {
     0% {
-      border-color: rgba(94, 191, 138, 0);
+      border-color: rgba(134, 172, 142, 0);
       box-shadow:
-        0 8px 30px rgba(42, 21, 32, 0.06),
-        0 0 0 0 rgba(94, 191, 138, 0);
+        0 8px 30px rgba(81, 58, 50, 0.06),
+        0 0 0 0 rgba(134, 172, 142, 0);
     }
     20% {
-      border-color: rgba(94, 191, 138, 0.55);
+      border-color: rgba(134, 172, 142, 0.65);
       box-shadow:
-        0 8px 30px rgba(42, 21, 32, 0.06),
-        0 0 0 6px rgba(94, 191, 138, 0.12);
+        0 8px 30px rgba(81, 58, 50, 0.06),
+        0 0 0 6px rgba(134, 172, 142, 0.14);
     }
     100% {
-      border-color: rgba(94, 191, 138, 0.18);
+      border-color: rgba(134, 172, 142, 0.22);
       box-shadow:
-        0 8px 30px rgba(42, 21, 32, 0.06),
-        0 0 0 0 rgba(94, 191, 138, 0);
+        0 8px 30px rgba(81, 58, 50, 0.06),
+        0 0 0 0 rgba(134, 172, 142, 0);
     }
   }
 

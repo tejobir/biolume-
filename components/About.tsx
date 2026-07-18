@@ -55,7 +55,7 @@ export function About() {
           {/* Copy — heading + twin text columns */}
           <div className="col-span-12 md:col-span-6 md:col-start-7 md:pt-8">
             <Reveal>
-              <h2 className="uppercase text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
+              <h2 className="font-display text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
                 About Biolume Dental Care
               </h2>
             </Reveal>

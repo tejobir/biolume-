@@ -83,7 +83,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-b from-plum/45 via-plum/5 to-transparent" />
 
             {/* Overlaid headline, template-style: white uppercase on the image */}
-            <h1 className="absolute top-8 left-6 md:top-12 md:left-10 lg:left-14 text-offwhite uppercase font-medium leading-[1.06] tracking-[0.02em] text-[clamp(2rem,5.2vw,4.2rem)] max-w-[10ch]">
+            <h1 className="absolute top-8 left-6 md:top-12 md:left-10 lg:left-14 text-offwhite font-display font-medium leading-[1.06] tracking-[0.02em] text-[clamp(2rem,5.2vw,4.2rem)] max-w-[10ch]">
               Boutique dental studio
             </h1>
           </motion.div>
@@ -96,7 +96,7 @@ export function Hero() {
                 strokeWidth={1}
                 className="hidden md:block absolute -top-16 right-0 text-mint"
               />
-              <p className="uppercase text-teal font-medium leading-[1.25] tracking-[0.02em] text-[clamp(1.6rem,3.4vw,2.8rem)] text-balance">
+              <p className="font-display text-teal font-medium leading-[1.25] tracking-[0.02em] text-[clamp(1.6rem,3.4vw,2.8rem)] text-balance">
                 <RotatingWord /> that deserve to last.
               </p>
             </motion.div>

@@ -61,7 +61,7 @@ export function Testimonials() {
           <div className="lg:col-span-7">
             <Reveal>
               <Sparkle size={26} strokeWidth={1.1} className="text-mint mb-6" />
-              <h2 className="uppercase text-offwhite font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
+              <h2 className="font-display text-offwhite font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
                 Kind words from patients
               </h2>
             </Reveal>

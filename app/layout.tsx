@@ -1,26 +1,43 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const body = Nunito({
-  subsets: ["latin"],
+/*
+ * Nunito — the brand's supporting typeface, self-hosted from the
+ * official variable font files (upright + italic, full weight axis).
+ */
+const body = localFont({
+  src: [
+    {
+      path: "./fonts/Nunito-Variable.ttf",
+      weight: "200 1000",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Nunito-Italic-Variable.ttf",
+      weight: "200 1000",
+      style: "italic",
+    },
+  ],
   variable: "--font-body",
-  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 /*
- * DAZZLE Unicase Medium — the brand's official display face, provided
- * by the designer. Used sparingly (logo wordmark only) per brand
- * guidelines. It is a unicase typeface: upper- and lowercase share the
- * same height with the signature circular 'e'.
+ * DAZZLE Unicase — the brand's official display face, provided by the
+ * designer (Thin/Light/Medium/Bold). Used sparingly (logo wordmark
+ * only) per brand guidelines, always lowercase to get the signature
+ * circular 'e'. Upper- and lowercase share the same height.
  */
 const logo = localFont({
-  src: "./fonts/DazzleUnicase-Medium.otf",
+  src: [
+    { path: "./fonts/DazzleUnicase-Thin.otf", weight: "100", style: "normal" },
+    { path: "./fonts/DazzleUnicase-Light.otf", weight: "300", style: "normal" },
+    { path: "./fonts/DazzleUnicase-Medium.otf", weight: "500", style: "normal" },
+    { path: "./fonts/DazzleUnicase-Bold.otf", weight: "700", style: "normal" },
+  ],
   variable: "--font-logo",
   display: "swap",
-  weight: "500",
 });
 
 export const metadata: Metadata = {

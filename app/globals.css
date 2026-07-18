@@ -41,6 +41,17 @@
 }
 
 @layer utilities {
+  /*
+   * DAZZLE Unicase is the display face. Per brand guidelines it must be
+   * set in lowercase to get the signature circular 'e', so the display
+   * utility enforces the transform. Tight negative tracking fights the
+   * geometric unicase forms, so it is normalized here too.
+   */
+  .font-display {
+    text-transform: lowercase;
+    letter-spacing: 0.015em;
+  }
+
   .text-balance {
     text-wrap: balance;
   }

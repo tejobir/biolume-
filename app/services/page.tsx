@@ -95,7 +95,7 @@ export default function ServicesHub() {
                 <div className="absolute inset-0 bg-gradient-to-t from-plum/50 to-transparent" />
               </div>
               <div className="flex flex-col flex-1 p-7">
-                <h2 className="font-display text-xl text-plum tracking-tight group-hover:text-teal transition-colors">
+                <h2 className="text-[13px] uppercase tracking-[0.16em] font-semibold text-teal group-hover:text-plum transition-colors">
                   {s.title}
                 </h2>
                 <p className="mt-3 text-[14px] leading-[1.7] text-plum/60 text-pretty flex-1">

@@ -32,7 +32,7 @@ export function Doctor() {
             <div className="text-[12px] lowercase tracking-[0.14em] text-teal mb-4">
               meet your doctor
             </div>
-            <h2 className="text-plum font-medium leading-[1.2] tracking-[0.01em] text-[clamp(1.6rem,3vw,2.5rem)] text-balance">
+            <h2 className="font-display text-plum font-medium leading-[1.2] tracking-[0.01em] text-[clamp(1.6rem,3vw,2.5rem)] text-balance">
               <em className="italic text-teal">Scared</em> of dentists?
               <br />
               So was <em className="italic text-teal">I</em>.

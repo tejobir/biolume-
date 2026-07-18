@@ -101,7 +101,7 @@ export function Services() {
         {/* Centered heading, template-style */}
         <div className="max-w-2xl mx-auto text-center mb-16 md:mb-20">
           <Reveal>
-            <h2 className="uppercase text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
+            <h2 className="font-display text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
               A complete range of dental care
             </h2>
           </Reveal>

@@ -19,7 +19,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         aria-expanded={open}
         className="group w-full flex items-start justify-between gap-6 py-6 text-left cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
       >
-        <span className="font-display text-[1.05rem] leading-snug text-plum tracking-tight pr-2 group-hover:text-teal transition-colors">
+        <span className="text-[1rem] font-semibold leading-snug text-plum pr-2 group-hover:text-teal transition-colors">
           {q}
         </span>
         <ChevronDown

@@ -33,7 +33,7 @@ const config: Config = {
         ash: "#d3ccc5",
       },
       fontFamily: {
-        display: ["var(--font-body)", "Nunito", "system-ui", "sans-serif"],
+        display: ["var(--font-logo)", "var(--font-body)", "system-ui", "sans-serif"],
         sans: ["var(--font-body)", "Nunito", "system-ui", "sans-serif"],
         logo: ["var(--font-logo)", "Comfortaa", "system-ui", "sans-serif"],
       },

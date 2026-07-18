@@ -24,7 +24,7 @@ export function Studio() {
       <div className="absolute inset-0 flex items-end">
         <div className="container-x w-full pb-12 md:pb-16 flex flex-wrap items-end justify-between gap-8">
           <Reveal>
-            <h2 className="uppercase text-offwhite font-medium leading-[1.12] tracking-[0.02em] text-[clamp(1.7rem,4vw,3.2rem)] max-w-[16ch] text-balance">
+            <h2 className="font-display text-offwhite font-medium leading-[1.12] tracking-[0.02em] text-[clamp(1.7rem,4vw,3.2rem)] max-w-[16ch] text-balance">
               You&rsquo;re exactly where you&rsquo;re meant to be
             </h2>
           </Reveal>

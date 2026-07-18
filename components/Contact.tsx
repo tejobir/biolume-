@@ -85,7 +85,7 @@ export function Contact() {
         <div className="grid lg:grid-cols-12 gap-10 mb-14 lg:mb-20">
           <div className="lg:col-span-6">
             <Reveal>
-              <h2 className="uppercase text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
+              <h2 className="font-display text-teal font-medium leading-[1.15] tracking-[0.02em] text-[clamp(1.5rem,2.8vw,2.3rem)] text-balance">
                 Book a chair. We&rsquo;ll handle the rest.
               </h2>
             </Reveal>

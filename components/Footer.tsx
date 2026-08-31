@@ -31,8 +31,8 @@ export function Footer() {
           <Image
             src="/biolume-logo.png"
             alt="Biolume Dental Care"
-            width={340}
-            height={100}
+            width={1400}
+            height={368}
             className="h-auto w-[300px] md:w-[440px]"
           />
         </motion.div>

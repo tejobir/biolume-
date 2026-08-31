@@ -66,8 +66,8 @@ export function Navbar() {
             <Image
               src="/biolume-logo.png"
               alt="Biolume Dental Care"
-              width={150}
-              height={44}
+              width={1400}
+              height={368}
               priority
               className="h-11 w-auto md:h-14"
             />

@@ -61,8 +61,8 @@ export function DigitalCard() {
           <Image
             src="/biolume-logo.png"
             alt="Biolume Dental Care"
-            width={440}
-            height={130}
+            width={1400}
+            height={368}
             priority
             className="h-auto w-full"
           />

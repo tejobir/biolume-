@@ -1,5 +1,6 @@
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { SmoothAnchors } from "@/components/SmoothAnchors";
+import { Preloader } from "@/components/Preloader";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
@@ -14,6 +15,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
+      <Preloader />
       <ScrollProgress />
       <SmoothAnchors />
       <Navbar />

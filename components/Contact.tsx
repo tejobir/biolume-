@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Reveal } from "./Reveal";
 import { Clock, MapPin, Phone, Mail, ArrowRight, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { doctor } from "@/lib/doctor";
 
 const schema = z.object({
   name: z.string().min(2, "Please share your full name"),
@@ -37,24 +38,24 @@ const clinicInfo = [
   {
     icon: MapPin,
     label: "Studio",
-    value: "Biolume Dental Care\nSector 19B, Vashi, Navi Mumbai",
+    value: doctor.addressLines.join("\n"),
   },
   {
     icon: Phone,
     label: "Speak with us",
-    value: "+91 XXXXX XXXXX",
-    href: "tel:+91XXXXXXXXXX",
+    value: doctor.phoneDisplay,
+    href: doctor.phoneHref,
   },
   {
     icon: Mail,
     label: "Write to us",
-    value: "hello@biolumedental.in",
-    href: "mailto:hello@biolumedental.in",
+    value: doctor.email,
+    href: doctor.emailHref,
   },
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon–Sat · 10:00 AM–8:00 PM\nSunday · By appointment",
+    value: doctor.hours.join("\n"),
   },
 ];
 
@@ -71,7 +72,7 @@ export function Contact() {
     const text = encodeURIComponent(
       `New appointment request from ${data.name}\n\nPhone: ${data.phone}\nEmail: ${data.email || "—"}\nService: ${data.service}\nMessage: ${data.message || "—"}`,
     );
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${text}`, "_blank");
+    window.open(`${doctor.whatsappHref}?text=${text}`, "_blank");
     setSent(true);
     setTimeout(() => {
       setSent(false);

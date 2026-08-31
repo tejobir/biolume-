@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { servicePages } from "@/lib/servicePages";
+import { doctor } from "@/lib/doctor";
 
 const navLinks = [
   { href: "/#about", label: "About" },
@@ -45,8 +46,8 @@ export function Footer() {
             <div className="mt-7 flex items-center gap-3">
               {(
                 [
-                  { icon: <Phone size={14} strokeWidth={1.6} />, label: "Call", href: "tel:+91XXXXXXXXXX" },
-                  { icon: <MessageCircle size={14} strokeWidth={1.6} />, label: "WhatsApp", href: "https://wa.me/91XXXXXXXXXX" },
+                  { icon: <Phone size={14} strokeWidth={1.6} />, label: "Call", href: doctor.phoneHref },
+                  { icon: <MessageCircle size={14} strokeWidth={1.6} />, label: "WhatsApp", href: doctor.whatsappHref },
                   {
                     icon: (
                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -128,10 +129,10 @@ export function Footer() {
               Navi Mumbai, Maharashtra
               <br />
               <a
-                href="tel:+91XXXXXXXXXX"
+                href={doctor.phoneHref}
                 className="hover:text-teal transition-colors cursor-pointer"
               >
-                +91 XXXXX XXXXX
+                {doctor.phoneDisplay}
               </a>
             </address>
           </div>

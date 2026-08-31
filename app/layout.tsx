@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { siteUrl } from "@/lib/doctor";
 
 /*
  * Nunito — the brand's supporting typeface, self-hosted from the
@@ -41,6 +42,7 @@ const logo = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Bio Lume Dental Clinic — Dr. Dishani Jain | Navi Mumbai",
   description:
     "Premium dental care in Navi Mumbai. Implantology, laser dentistry, cosmetic & restorative treatments led by Dr. Dishani Jain, BDS — 6+ years of experience.",

@@ -15,7 +15,7 @@
  */
 
 /** Canonical origin — used for absolute OG/JSON-LD URLs and the vCard. */
-export const siteUrl = "https://biolumedental.in";
+export const siteUrl = "https://www.biolumedentalcare.com";
 
 /**
  * Digits-only, E.164 without the leading "+" — what wa.me expects.
@@ -55,7 +55,7 @@ export const doctor = {
   email: "hello@biolumedental.in",
   emailHref: "mailto:hello@biolumedental.in",
   website: siteUrl,
-  websiteDisplay: "biolumedental.in",
+  websiteDisplay: "biolumedentalcare.com",
 
   // Address — kept as parts so the vCard ADR field can be built properly
   address: {

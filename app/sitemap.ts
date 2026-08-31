@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { servicePages } from "@/lib/servicePages";
 
-const base = "https://biolumedental.in";
+const base = "https://www.biolumedentalcare.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

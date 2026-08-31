@@ -39,7 +39,7 @@ export function generateMetadata({ params }: Props): Metadata {
 
 function buildJsonLd(page: ReturnType<typeof getServicePage>) {
   if (!page) return null;
-  const base = "https://biolumedental.in";
+  const base = "https://www.biolumedentalcare.com";
   return {
     "@context": "https://schema.org",
     "@graph": [

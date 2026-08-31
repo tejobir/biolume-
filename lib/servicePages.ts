@@ -2,11 +2,28 @@ export interface ServiceSection {
   heading: string;
   body: string;
   bullets?: string[];
+  /** Optional "Learn more" link rendered under the section, e.g. a cross-link to the Laser Dentistry page. */
+  link?: { label: string; href: string };
 }
 
 export interface ServiceFaq {
   q: string;
   a: string;
+}
+
+export interface ServiceStep {
+  title: string;
+  body: string;
+}
+
+export interface ServiceAftercare {
+  intro: string;
+  items: string[];
+}
+
+export interface ServiceHighlightCard {
+  heading: string;
+  items: string[];
 }
 
 export interface ServicePage {
@@ -19,7 +36,14 @@ export interface ServicePage {
   heroPhotographer: string;
   heroPhotographerUrl: string;
   h1: string;
+  /** One or two sentences shown directly under the H1 in the hero. */
+  tagline?: string;
   intro: [string, string];
+  /** "Signs you may need this" / "Where we use this" card shown beside the intro. */
+  highlightCard?: ServiceHighlightCard;
+  /** Numbered walk-through of a typical appointment. */
+  appointmentSteps?: ServiceStep[];
+  aftercare?: ServiceAftercare;
   sections: ServiceSection[];
   faqs: ServiceFaq[];
   ctaHeading: string;
@@ -40,10 +64,50 @@ export const servicePages: ServicePage[] = [
     heroPhotographer: "Jonathan Borba",
     heroPhotographerUrl: "https://www.pexels.com/@jonathanborba",
     h1: "Dental Implants in Vashi, Navi Mumbai",
+    tagline:
+      "A titanium root, a custom crown, and a plan built on a 3D scan of your own jaw before we ever pick up a drill.",
     intro: [
       "A dental implant is a titanium post placed directly into your jawbone to replace a missing tooth root. Once the bone fuses around it — a process called osseointegration — a crown is fixed on top, giving you a tooth that functions and looks like the natural one that was lost. At Biolume Dental Care in Vashi, every implant placement is preceded by 3D CBCT imaging so we know exactly what we are working with before the procedure begins.",
       "Dr. Dishani Jain has completed Fellowship-level training in dental implantology and has been placing implants for six years at our clinic in Sector 19B, Vashi, Navi Mumbai. Whether you need a single tooth replaced or a full arch supported by implants, the process at Biolume is the same: plan thoroughly, operate precisely, and give you a clear picture of what to expect at every stage.",
     ],
+    highlightCard: {
+      heading: "Signs You May Need an Implant",
+      items: [
+        "A missing tooth you've been living around rather than replacing",
+        "A loose, uncomfortable denture or bridge",
+        "Difficulty chewing comfortably on one side of your mouth",
+        "Bone loss starting to show where a tooth used to be",
+        "A gap you find yourself covering when you smile",
+      ],
+    },
+    appointmentSteps: [
+      {
+        title: "3D scan & planning",
+        body: "A CBCT scan maps your bone density and the exact space available, so the angle, depth, and size of the implant are decided before anyone touches a drill.",
+      },
+      {
+        title: "Implant placement",
+        body: "The titanium post is placed under local anaesthesia. Most patients go home the same day and are back to normal activity within a day or two.",
+      },
+      {
+        title: "Healing (osseointegration)",
+        body: "Over two to four months, bone grows around the implant and locks it in place. This is the part that takes patience — there's little to do but let it heal.",
+      },
+      {
+        title: "Crown fitting",
+        body: "Once integration is confirmed, a custom, colour-matched crown is fitted and your bite is adjusted until it feels natural.",
+      },
+    ],
+    aftercare: {
+      intro: "What you do in the days after placement affects how smoothly the implant integrates.",
+      items: [
+        "Mild swelling or tenderness for two to three days is normal and settles with the pain relief you're given.",
+        "Stick to soft food for the first few days, and avoid chewing directly on the implant site until cleared.",
+        "Keep the area clean with gentle brushing — a dislodged clot or trapped debris is the most avoidable cause of delayed healing.",
+        "Avoid smoking during healing; it's one of the biggest controllable risks to implant success.",
+        "Come in for the follow-up visit even if everything feels fine — it's how we confirm integration before moving to the crown.",
+      ],
+    },
     sections: [
       {
         heading: "How Dental Implants Work",
@@ -70,6 +134,14 @@ export const servicePages: ServicePage[] = [
       {
         heading: "What to Expect at Biolume Dental Care, Vashi",
         body: "Your first implant consultation at our Vashi clinic involves a clinical exam, a review of your dental and medical history, and — if indicated — the CBCT scan. We walk you through the imaging together so you understand what we found. Treatment planning is discussed openly: how many visits, what each stage involves, healing time, and what the crown will look like. Pricing is discussed at the consultation; there are no hidden charges. Post-placement, you receive written aftercare instructions and direct contact for any questions during the healing period.",
+      },
+      {
+        heading: "Laser Support at the Implant Stage",
+        body: "Laser dentistry is not the main event in implant treatment, but it plays a supporting role at a few points: shaping and uncovering gum tissue at the extraction site before placement, and — if an implant later shows early signs of inflammation around it — decontaminating the site without cutting into healthy tissue. It's used only where it adds a genuine advantage over the conventional approach.",
+        link: {
+          label: "See where else we use laser treatment",
+          href: "/services/laser-dentistry-vashi-navi-mumbai",
+        },
       },
     ],
     faqs: [
@@ -116,10 +188,53 @@ export const servicePages: ServicePage[] = [
     heroPhotographer: "Cedric Fauntleroy",
     heroPhotographerUrl: "https://www.pexels.com/@cedric-fauntleroy-3306586",
     h1: "Laser Dentistry in Vashi, Navi Mumbai",
+    tagline:
+      "One instrument, used wherever it genuinely outperforms the conventional alternative — from whitening to healing support after surgery.",
     intro: [
       "Dental laser treatment uses a focused beam of light energy to treat soft tissue — gums, the inner lining of the mouth, and in some cases, early-stage cavities — with considerably more precision than a conventional scalpel. The laser simultaneously cuts and seals, which means less bleeding during the procedure, less swelling afterwards, and in most cases no stitches. At Biolume Dental Care in Vashi, laser dentistry is one of the specialties Dr. Dishani Jain holds Fellowship training in.",
       "The most common misconception about dental lasers is that they are a marketing add-on used to charge more for standard procedures. That is not how we use laser treatment at our Sector 19B, Vashi clinic. Laser is offered when it provides a clinically meaningful advantage over the conventional alternative — better healing, less post-procedure discomfort, or a more precise outcome. If the conventional method is equally good or better, we use that instead.",
     ],
+    highlightCard: {
+      heading: "Where We Use Laser Treatment",
+      items: [
+        "Teeth whitening — laser-activated in-chair whitening for faster, more even results",
+        "Smile makeovers — gum contouring and reshaping as part of a full redesign",
+        "Crown lengthening — exposing more tooth structure with minimal bleeding",
+        "Gum depigmentation — evening out dark melanin patches on the gums",
+        "Ulcer healing — speeding recovery from mouth ulcers and soft-tissue sores",
+        "TMJ therapy — easing jaw joint pain and muscle tension",
+        "Extraction & implant healing — supporting faster, more comfortable recovery",
+        "Bacterial decontamination — sterilising infected gum pockets before they progress",
+        "Root canal treatment — disinfecting canals that hand instruments can't fully reach",
+      ],
+    },
+    appointmentSteps: [
+      {
+        title: "Assessment",
+        body: "We examine the area and confirm laser genuinely is the better tool for what you need — not the default option because it sounds advanced.",
+      },
+      {
+        title: "Comfort first",
+        body: "Most laser procedures need little to no anaesthesia. Where it's needed, the area is numbed before we begin.",
+      },
+      {
+        title: "The laser procedure",
+        body: "The laser cuts and seals tissue at the same time, so bleeding stays minimal and most procedures finish in well under an hour.",
+      },
+      {
+        title: "Same-visit recovery check",
+        body: "You leave with clear aftercare instructions and, for most procedures, no stitches to think about afterwards.",
+      },
+    ],
+    aftercare: {
+      intro: "Laser recovery is typically shorter and gentler than conventional surgery, but a few habits protect the result.",
+      items: [
+        "Stick to soft, lukewarm food for the first 24 hours if soft tissue was treated.",
+        "Avoid spicy, acidic, or very hot food until any sensitivity settles.",
+        "Keep the area clean with gentle brushing — skip vigorous rinsing on day one.",
+        "Mild warmth or tingling for a day or two is normal; pain that worsens rather than settles is not — call the clinic if that happens.",
+      ],
+    },
     sections: [
       {
         heading: "What Dental Laser Treatment Can Address",
@@ -189,10 +304,50 @@ export const servicePages: ServicePage[] = [
     heroPhotographer: "Pavel Danilyuk",
     heroPhotographerUrl: "https://www.pexels.com/@pavel-danilyuk",
     h1: "Smile Makeover in Vashi, Navi Mumbai",
+    tagline:
+      "A planned combination of cosmetic and restorative work — previewed digitally before anything is touched.",
     intro: [
       "A smile makeover is a planned combination of cosmetic and restorative procedures aimed at changing the appearance of your teeth, gums, and overall smile. It is not one procedure — it might be veneers alone, or a combination of whitening, bonding, gum contouring, and orthodontics, depending on what your teeth actually need. At Biolume Dental Care in Vashi, we start every smile makeover by understanding what you dislike and what you want, then designing a treatment plan that addresses those specific things.",
       "The part most patients appreciate is the digital preview. Before any treatment starts, Dr. Dishani Jain uses digital imaging to show you a simulation of the expected result — what the veneers will look like, how the gum line will sit, what happens to the overall proportions. This is not a binding guarantee of outcome, but it is a meaningful starting point that lets you direct the design rather than simply accept whatever we propose. Our Sector 19B, Vashi clinic treats smile design as a collaboration, not a prescription.",
     ],
+    highlightCard: {
+      heading: "Signs a Smile Makeover Could Help",
+      items: [
+        "Chipped, worn, or unevenly shaped front teeth",
+        "Yellowing that whitening alone hasn't fixed",
+        "Gaps or slight crowding you'd rather mask than move with braces",
+        "A gummy smile or an uneven gum line",
+        "Teeth that look short after wear or old dental work",
+      ],
+    },
+    appointmentSteps: [
+      {
+        title: "Consultation & digital preview",
+        body: "We photograph your smile and simulate the proposed changes digitally before any treatment starts, so you can ask for adjustments up front.",
+      },
+      {
+        title: "Treatment planning",
+        body: "Once you approve the direction, we sequence the actual procedures — whitening, veneers, bonding, or gum contouring — in the order that gives the best result.",
+      },
+      {
+        title: "Preparation & fitting",
+        body: "Teeth are prepared as needed, and veneers or bonding are shaped and colour-matched chairside or from a lab impression.",
+      },
+      {
+        title: "Final review",
+        body: "We check the bite, shade, and overall look together before you leave, and make small adjustments on the spot if anything's off.",
+      },
+    ],
+    aftercare: {
+      intro: "A smile makeover's result holds up better with a few adjustments in the first couple of weeks.",
+      items: [
+        "Mild sensitivity to hot or cold after whitening or veneer prep usually fades within a few days.",
+        "Avoid staining foods and drinks — coffee, red wine, turmeric — for 48 hours after whitening.",
+        "Composite bonding can chip under hard or sticky foods; treat it gently, especially early on.",
+        "Wear any retainer prescribed if orthodontics was part of the plan — skipping it is the most common reason results shift.",
+        "Keep your six-month check-ups; veneers and bonding are inspected as part of the routine visit.",
+      ],
+    },
     sections: [
       {
         heading: "What a Smile Makeover Can Include",
@@ -216,7 +371,11 @@ export const servicePages: ServicePage[] = [
       },
       {
         heading: "Gum Contouring as Part of Smile Design",
-        body: "The shape and position of your gum line has as much influence on how your smile looks as the teeth themselves. A high or uneven gum line can make teeth appear short, uneven, or too gummy. Gum contouring uses the dental laser to remove and reshape excess gum tissue precisely, exposing more of the tooth surface and creating an even margin. At Biolume Dental Care in Vashi, this is done in the same appointment as other cosmetic procedures where possible, reducing the total number of visits. Recovery is typically minimal — one to two days of mild sensitivity.",
+        body: "The shape and position of your gum line has as much influence on how your smile looks as the teeth themselves. A high or uneven gum line can make teeth appear short, uneven, or too gummy. Gum contouring uses the dental laser to remove and reshape excess gum tissue precisely, exposing more of the tooth surface and creating an even margin. At Biolume Dental Care in Vashi, this is done in the same appointment as other cosmetic procedures where possible, reducing the total number of visits. Recovery is typically minimal — one to two days of mild sensitivity. Crown lengthening and in-chair whitening in a makeover plan are also frequently laser-assisted for the same reason: precision with less bleeding and downtime.",
+        link: {
+          label: "More on laser dentistry at Biolume",
+          href: "/services/laser-dentistry-vashi-navi-mumbai",
+        },
       },
       {
         heading: "Who Should Not Rush into a Smile Makeover",
@@ -336,10 +495,53 @@ export const servicePages: ServicePage[] = [
     heroPhotographer: "Kaboompics",
     heroPhotographerUrl: "https://www.pexels.com/@kaboompics",
     h1: "Root Canal Treatment in Vashi, Navi Mumbai",
+    tagline:
+      "Clears the infection out of the tooth and seals it shut, so extraction isn't the only option left on the table.",
     intro: [
       "Root canal treatment (also called endodontic treatment) removes infected or damaged pulp tissue from inside a tooth, cleans and shapes the root canals, and seals them to prevent reinfection. The tooth is then restored — usually with a crown — and can function normally for years. The procedure has a reputation for being painful that does not match the clinical reality: a properly anaesthetised root canal is no more uncomfortable than a routine filling. The pain patients associate with root canals is usually the infection before treatment, not the procedure itself.",
       "At Biolume Dental Care in Vashi, root canal treatment is performed with dental magnification and modern rotary nickel-titanium instruments. Magnification allows Dr. Dishani Jain to see the canal system clearly — locating all canals, including accessory ones that are easily missed with the naked eye — and to work more accurately inside a space that is only a millimetre or two wide. Rotary instruments clean and shape the canals faster and more precisely than manual files, reducing procedure time and increasing the likelihood of complete cleaning.",
     ],
+    highlightCard: {
+      heading: "Signs You May Need a Root Canal",
+      items: [
+        "Pain that throbs on its own, without anything touching the tooth",
+        "A jolt of pain when you bite or chew on one spot",
+        "Hot or cold sensitivity that lingers well after the drink or food is gone",
+        "A tender bump or pimple on the gum near a specific tooth",
+        "One tooth visibly greying or darkening next to its neighbours",
+      ],
+    },
+    appointmentSteps: [
+      {
+        title: "Exam and imaging",
+        body: "A clinical check plus an X-ray tell us whether the pulp is actually the problem, and map out how many canals we're dealing with before any decision gets made.",
+      },
+      {
+        title: "Getting you numb",
+        body: "We anaesthetise the tooth and the tissue around it, and check in with you before starting — nothing proceeds until you're comfortable.",
+      },
+      {
+        title: "Cleaning and shaping the canals",
+        body: "Under magnification, the infected pulp comes out and each canal is measured, cleaned, and shaped with rotary nickel-titanium instruments.",
+      },
+      {
+        title: "Sealing the tooth",
+        body: "The cleaned canals are packed with gutta-percha to keep bacteria from getting back in, and the tooth is closed with a temporary filling.",
+      },
+      {
+        title: "Crown fitting",
+        body: "A separate, shorter visit within four to six weeks fits the permanent crown — the tooth needs that protection since it's more brittle once root-treated.",
+      },
+    ],
+    aftercare: {
+      intro: "The weeks right after treatment decide whether the tooth stays protected for the long run.",
+      items: [
+        "Some tenderness for a couple of days is expected and usually eases with the pain relief you're prescribed.",
+        "Keep chewing on the other side until the permanent crown or filling is in place.",
+        "Don't skip the crown appointment — an unprotected root-treated tooth is how most of these end up cracking later.",
+        "If the discomfort is getting worse instead of fading, or you notice swelling, that's worth a call rather than waiting it out.",
+      ],
+    },
     sections: [
       {
         heading: "When Root Canal Treatment Is Needed",
@@ -367,6 +569,14 @@ export const servicePages: ServicePage[] = [
       {
         heading: "What Happens After Root Canal Treatment",
         body: "After the procedure, some mild soreness for two to three days is normal — the periapical tissues around the root tip need time to settle. This is managed with over-the-counter pain relief in most cases. A temporary filling is placed on the day of treatment; a crown is usually recommended within four to six weeks to protect the tooth from fracture, as root-treated teeth are more brittle than vital ones. Without a crown, a root-treated back tooth is at significant risk of cracking. We explain this clearly so the restoration does not get overlooked.",
+      },
+      {
+        heading: "Laser-Assisted Disinfection",
+        body: "Rotary instruments clean the canal walls mechanically, but the canal system has microscopic side branches a file physically cannot reach. In select cases, a laser is used after shaping to disinfect the canal more thoroughly — it doesn't replace the mechanical cleaning, it backs it up in the spots instruments can't get to.",
+        link: {
+          label: "More on laser dentistry at Biolume",
+          href: "/services/laser-dentistry-vashi-navi-mumbai",
+        },
       },
     ],
     faqs: [

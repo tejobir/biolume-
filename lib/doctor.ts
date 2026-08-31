@@ -3,7 +3,7 @@
  *
  * Everything that renders a phone number, an email, an address or a
  * WhatsApp link on this site reads from here — the homepage contact
- * block, the footer, and the digital visiting card at /contact.
+ * block, the footer, and the digital visiting card at /dr-dishani-jain.
  * Update a value once and it changes everywhere, including the .vcf
  * that visitors download from the visiting card. The printed QR code
  * encodes the page URL only, so contact details can change freely

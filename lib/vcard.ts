@@ -77,7 +77,7 @@ export function buildVCard(photoBase64?: string): string {
     // ADR is structured: PO box;Extended;Street;Locality;Region;Postal;Country
     `ADR;TYPE=WORK:;;${esc(address.street)};${esc(address.locality)};${esc(address.region)};${esc(address.postalCode)};${esc(address.country)}`,
     `LABEL;TYPE=WORK:${esc(doctor.addressLines.join("\n"))}`,
-    `NOTE:${esc(`${doctor.role}, ${doctor.clinic}. ${doctor.shortBio} Digital card: ${doctor.website}/contact/`)}`,
+    `NOTE:${esc(`${doctor.role}, ${doctor.clinic}. ${doctor.shortBio} Digital card: ${doctor.website}/dr-dishani-jain/`)}`,
     // CATEGORIES is itself a comma-separated list, so the separator here is
     // structural and must not be escaped the way a text value would be.
     "CATEGORIES:Dentist,Healthcare",

@@ -10,13 +10,13 @@ import { addressOneLine, doctor, siteUrl } from "@/lib/doctor";
 
 const title = `${doctor.fullName} — ${doctor.specialization} | ${doctor.clinic}`;
 const description = `Save Dr. Dishani Jain's contact card, call or WhatsApp the clinic, get directions to ${doctor.clinic}, ${doctor.address.street}, ${doctor.address.locality}, or book an appointment.`;
-const cardUrl = `${siteUrl}/contact/`;
+const cardUrl = `${siteUrl}/dr-dishani-jain/`;
 const ogImage = `${siteUrl}${doctor.photo}`;
 
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/dr-dishani-jain" },
   openGraph: {
     title: `${doctor.fullName} · ${doctor.clinic}`,
     description,

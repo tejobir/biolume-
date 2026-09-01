@@ -40,7 +40,7 @@ export function Footer() {
         <div className="mt-14 grid md:grid-cols-12 gap-10 pt-10 border-t border-plum/12">
           <div className="md:col-span-5">
             <p className="text-[14px] leading-[1.75] text-plum/80 max-w-sm">
-              A contemporary dental studio in Sector 19B, Vashi, Navi Mumbai. Led by
+              A contemporary dental studio in {doctor.address.locality}. Led by
               Dr.&nbsp;Dishani&nbsp;Jain, implantologist and laser specialist.
             </p>
             <div className="mt-7 flex items-center gap-3">
@@ -122,12 +122,12 @@ export function Footer() {
               Studio
             </div>
             <address className="not-italic text-[14px] leading-[1.75] text-plum/80">
-              Biolume Dental Care
-              <br />
-              Sector 19B, Vashi
-              <br />
-              Navi Mumbai, Maharashtra
-              <br />
+              {doctor.addressLines.map((line) => (
+                <span key={line}>
+                  {line}
+                  <br />
+                </span>
+              ))}
               <a
                 href={doctor.phoneHref}
                 className="hover:text-teal transition-colors cursor-pointer"

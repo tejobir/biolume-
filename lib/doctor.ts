@@ -8,21 +8,13 @@
  * that visitors download from the visiting card. The printed QR code
  * encodes the page URL only, so contact details can change freely
  * without reprinting anything.
- *
- * TODO (client): replace the phone placeholders below with the real
- * clinic number. They intentionally mirror the placeholders that were
- * already on the site so nothing regresses in the meantime.
  */
 
 /** Canonical origin — used for absolute OG/JSON-LD URLs and the vCard. */
 export const siteUrl = "https://www.biolumedentalcare.com";
 
-/**
- * Digits-only, E.164 without the leading "+" — what wa.me expects.
- * DUMMY VALUE — replace with the real clinic number before printing
- * the visiting card or going live.
- */
-const phoneE164Digits = "919876543210";
+/** Digits-only, E.164 without the leading "+" — what wa.me expects. */
+const phoneE164Digits = "919167882211";
 
 export const doctor = {
   // Identity
@@ -47,29 +39,33 @@ export const doctor = {
   role: "Lead Dentist",
 
   // Reachability
-  phoneDisplay: "+91 98765 43210",
+  phoneDisplay: "+91 91678 82211",
   phoneHref: `tel:+${phoneE164Digits}`,
   whatsappHref: `https://wa.me/${phoneE164Digits}`,
   /** vCard TEL value — international form, no spaces. */
   phoneVcard: `+${phoneE164Digits}`,
-  email: "hello@biolumedental.in",
-  emailHref: "mailto:hello@biolumedental.in",
+  email: "drdishani.biolume@gmail.com",
+  emailHref: "mailto:drdishani.biolume@gmail.com",
   website: siteUrl,
   websiteDisplay: "biolumedentalcare.com",
 
   // Address — kept as parts so the vCard ADR field can be built properly
   address: {
-    street: "Sector 19B, Vashi",
+    street: "Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi",
     locality: "Navi Mumbai",
     region: "Maharashtra",
     postalCode: "400703",
     country: "India",
   },
-  addressLines: ["Biolume Dental Care", "Sector 19B, Vashi", "Navi Mumbai, Maharashtra 400703"],
-  /** Opens the native Maps app on both iOS and Android. */
-  directionsHref:
-    "https://www.google.com/maps/search/?api=1&query=" +
-    encodeURIComponent("Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai, Maharashtra 400703"),
+  addressLines: [
+    "Biolume Dental Care",
+    "Shop No. 10, 2nd Floor, Aykon",
+    "Palm Beach Road, above Zudio/Reliance Digital",
+    "Phase 2, Sector 19D, Vashi",
+    "Navi Mumbai, Maharashtra 400703",
+  ],
+  /** Google's own pinned-location link — more accurate than a text search, and opens the native Maps app on both iOS and Android. */
+  directionsHref: "https://maps.app.goo.gl/Vo4YaJ1stCBpV2rg6",
 
   hours: ["Mon–Sat · 10:00 AM–8:00 PM", "Sunday · By appointment"],
 

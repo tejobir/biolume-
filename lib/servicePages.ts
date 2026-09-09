@@ -411,28 +411,28 @@ export const servicePages: ServicePage[] = [
 
   {
     slug: "orthodontics-braces-aligners-vashi-navi-mumbai",
-    title: "Orthodontics — Braces & Clear Aligners",
-    metaTitle: "Braces & Clear Aligners in Vashi, Navi Mumbai | Biolume Dental",
+    title: "Orthodontics — Braces & Aligners",
+    metaTitle: "Braces & Aligners in Vashi, Navi Mumbai | Biolume Dental",
     metaDescription:
-      "Braces and clear aligners planned with digital scans at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. No messy impressions. Led by Dr. Dishani Jain.",
+      "Braces and aligners planned with digital scans at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. No messy impressions. Led by Dr. Dishani Jain.",
     heroImage:
       "https://images.pexels.com/photos/28407749/pexels-photo-28407749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     heroImageAlt:
       "Close-up of orthodontic braces on teeth being examined at a dental clinic in Vashi, Navi Mumbai",
     heroPhotographer: "Laura Beauty Designer",
     heroPhotographerUrl: "https://www.pexels.com/@laura-beauty-designer-brasil",
-    h1: "Braces & Clear Aligners in Vashi, Navi Mumbai",
+    h1: "Braces & Aligners in Vashi, Navi Mumbai",
     intro: [
-      "Orthodontic treatment straightens teeth and corrects bite issues by applying controlled, sustained pressure over time. The two main systems are traditional braces — brackets bonded to the teeth with wires threaded through them — and clear aligners, which are removable transparent trays changed every one to two weeks. Both work. The difference is in visibility, comfort, treatment discipline, and which cases each handles best. At Biolume Dental Care in Vashi, we offer both and help you decide based on your actual situation, not which option has a higher margin.",
+      "Orthodontic treatment straightens teeth and corrects bite issues by applying controlled, sustained pressure over time. The two main systems are traditional braces — brackets bonded to the teeth with wires threaded through them — and aligners, which are removable transparent trays changed every one to two weeks. Both work. The difference is in visibility, comfort, treatment discipline, and which cases each handles best. At Biolume Dental Care in Vashi, we offer both and help you decide based on your actual situation, not which option has a higher margin.",
       "What has changed in recent years is how treatment is planned. At our Sector 19B, Vashi clinic, we use digital intraoral scanning rather than traditional impression trays to map your teeth. Dental impressions involve filling a tray with putty-like material and holding it in your mouth for several minutes — uncomfortable, messy, and prone to distortion. A digital scan takes less than two minutes, creates a precise 3D model of your teeth, and is immediately available for treatment planning. The difference in patient experience is noticeable.",
     ],
     sections: [
       {
-        heading: "Braces vs Clear Aligners: A Practical Comparison",
+        heading: "Braces vs Aligners: A Practical Comparison",
         body: "Both systems can treat most orthodontic problems, but each has genuine trade-offs:",
         bullets: [
           "Braces are fixed — they work continuously without depending on patient compliance; aligners require 20–22 hours of wear per day to work as planned",
-          "Clear aligners are removable — you take them out to eat and brush, which makes oral hygiene easier; braces make cleaning more involved",
+          "Aligners are removable — you take them out to eat and brush, which makes oral hygiene easier; braces make cleaning more involved",
           "Aligners are nearly invisible; metal braces are visible, though tooth-coloured ceramic braces are less so",
           "Complex bite corrections, significant rotations, and vertical tooth movements are often handled more predictably with braces",
           "Aligners tend to be more comfortable day-to-day; braces can cause initial soreness and occasional irritation from brackets",
@@ -462,10 +462,10 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "Can I eat normally with braces?",
-        a: "With braces, you need to avoid hard foods (hard bread, raw carrots, ice), sticky foods (chewing gum, certain candies), and anything that requires biting with force from the front teeth (corn on the cob, apples — cut them instead). These restrictions exist because hard foods can pop brackets off or bend wires. With clear aligners, you remove the trays to eat and drink anything other than plain water, so there are no food restrictions.",
+        a: "With braces, you need to avoid hard foods (hard bread, raw carrots, ice), sticky foods (chewing gum, certain candies), and anything that requires biting with force from the front teeth (corn on the cob, apples — cut them instead). These restrictions exist because hard foods can pop brackets off or bend wires. With aligners, you remove the trays to eat and drink anything other than plain water, so there are no food restrictions.",
       },
       {
-        q: "Are clear aligners as effective as braces?",
+        q: "Are aligners as effective as braces?",
         a: "For most mild to moderate cases, yes — the clinical outcomes are comparable. For more complex cases involving significant rotations, vertical movements, or skeletal components, braces typically produce more reliable results. The key variable with aligners is compliance: they only work when worn the required 20–22 hours per day. Patients who remove them frequently or forget to reinsert them will see slower or incomplete results.",
       },
       {

@@ -14,7 +14,6 @@ const anchorLinks = [
   { href: "/#doctor", label: "Doctor" },
   { href: "/#studio", label: "Studio" },
   { href: "/#testimonials", label: "Stories" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 const mobileAllLinks = [
@@ -22,7 +21,6 @@ const mobileAllLinks = [
   { href: "/#doctor", label: "Doctor" },
   { href: "/#studio", label: "Studio" },
   { href: "/#testimonials", label: "Stories" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -87,7 +85,7 @@ export function Navbar() {
             {/* Services dropdown */}
             <div ref={dropdownRef} className="relative">
               <button
-                onClick={() => setServicesOpen((v) => !v)}
+                onClick={() => setServicesOpen(true)}
                 onMouseEnter={() => setServicesOpen(true)}
                 className="flex items-center gap-1 text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
               >
@@ -140,6 +138,13 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
+
+            <Link
+              href="/contact"
+              className="text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
+            >
+              Contact
+            </Link>
           </nav>
 
           <a
@@ -255,6 +260,21 @@ export function Navbar() {
                     </motion.div>
                   )}
                 </AnimatePresence>
+              </motion.div>
+
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 14 },
+                  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } },
+                }}
+              >
+                <Link
+                  href="/contact"
+                  onClick={() => setOpen(false)}
+                  className="text-3xl font-light uppercase tracking-[0.08em] text-offwhite hover:text-mint transition-colors focus-visible:outline-none focus-visible:text-mint"
+                >
+                  Contact
+                </Link>
               </motion.div>
 
               <motion.a

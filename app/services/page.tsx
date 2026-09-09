@@ -18,11 +18,20 @@ export const metadata: Metadata = {
     url: "/services",
     siteName: "Biolume Dental Care",
     type: "website",
+    images: [
+      {
+        url: "/biolume-social-share.jpg",
+        width: 4500,
+        height: 4500,
+        alt: "Biolume Dental Care",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dental Services in Vashi, Navi Mumbai | Biolume Dental Care",
     description: "Browse all treatments at Biolume Dental Care, Vashi — implants, laser, smile design, aligners, root canal, and more.",
+    images: ["/biolume-social-share.jpg"],
   },
 };
 

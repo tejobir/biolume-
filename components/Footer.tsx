@@ -13,7 +13,6 @@ const navLinks = [
   { href: "/#doctor", label: "Doctor" },
   { href: "/#services", label: "Services" },
   { href: "/#testimonials", label: "Stories" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 export function Footer() {
@@ -94,6 +93,14 @@ export function Footer() {
                   className="text-[14px] text-plum/80 hover:text-teal transition-colors"
                 >
                   All Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-[14px] text-plum/80 hover:text-teal transition-colors"
+                >
+                  Contact
                 </Link>
               </li>
             </ul>

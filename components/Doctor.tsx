@@ -17,7 +17,7 @@ const specialties = [
   "Smile Design",
   "Endodontics",
   "Pediatric Care",
-  "Clear Aligners",
+  "Aligners",
   "Restorative Dentistry",
   "Periodontics",
 ];
@@ -42,11 +42,12 @@ export function Doctor() {
           <Reveal delay={0.08}>
             <p className="mt-7 text-[14px] leading-[1.85] text-plum/80 max-w-xl text-pretty">
               I am the worst patient — I can&rsquo;t bear pain. That&rsquo;s exactly
-              why Biolume works the way it does: transparent, unhurried, and minimally
+              why Biolume works the way it does: transparent, gentle, and minimally
               invasive by default. Six years of clinical practice and Fellowship
               training in dental implants and laser dentistry taught me that the best
               dentistry is the kind you barely feel — care that&rsquo;s explained
-              fully, planned around you, and comfortable from the very first visit.
+              fully, planned around you, and comfortable from your very first visit
+              to our studio in Sector 19B, Vashi.
             </p>
           </Reveal>
           <Reveal delay={0.12}>

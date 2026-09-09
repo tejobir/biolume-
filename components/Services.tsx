@@ -58,7 +58,7 @@ const services = [
   {
     name: "Orthodontics",
     blurb:
-      "Braces and clear aligners planned from digital scans — no messy impressions, more accurate fit, and a more comfortable process.",
+      "Braces and aligners planned from digital scans — no messy impressions, more accurate fit, and a more comfortable process.",
     slug: "orthodontics-braces-aligners-vashi-navi-mumbai",
     image: "https://images.pexels.com/photos/28407749/pexels-photo-28407749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },

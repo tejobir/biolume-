@@ -29,8 +29,8 @@ export function About() {
             <Reveal>
               <div className="relative aspect-[3/4] w-[82%]">
                 <Image
-                  src="https://images.pexels.com/photos/6627594/pexels-photo-6627594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=700"
-                  alt="Restorative treatment in progress at Biolume Dental Care"
+                  src="/best-dental-clinic-in-cranbrook.jpg"
+                  alt="Dentist examining a patient's teeth at Biolume Dental Care, Sector 19B, Vashi"
                   fill
                   quality={80}
                   sizes="(max-width: 768px) 82vw, 34vw"
@@ -41,8 +41,8 @@ export function About() {
             <Reveal delay={0.12} className="absolute -bottom-10 right-0 w-[46%]">
               <div className="relative aspect-square border-[6px] border-offwhite">
                 <Image
-                  src="https://images.pexels.com/photos/6502742/pexels-photo-6502742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
-                  alt="Routine dental check-up at the Biolume studio"
+                  src="/istockphoto-1939508803-612x612.jpg"
+                  alt="Patient smiling after a dental check-up at the Biolume studio"
                   fill
                   quality={80}
                   sizes="(max-width: 768px) 40vw, 18vw"
@@ -63,9 +63,10 @@ export function About() {
             <Reveal delay={0.08}>
               <div className="mt-8 grid sm:grid-cols-2 gap-8">
                 <p className="text-[14px] leading-[1.85] text-plum/80 text-pretty">
-                  Biolume Dental Care is a contemporary clinic in Navi Mumbai built on
-                  two principles: clinical quality and ethical treatment. Every
-                  appointment is unhurried and every plan is explained in full.
+                  Biolume Dental Care is a contemporary clinic in Sector 19B, Vashi,
+                  Navi Mumbai, built on two principles: clinical quality and ethical
+                  treatment. Every appointment is thorough and every plan is
+                  explained in full.
                 </p>
                 <p className="text-[14px] leading-[1.85] text-plum/80 text-pretty">
                   Every decision is made in your long-term interest — not the other

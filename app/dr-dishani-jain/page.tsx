@@ -4,12 +4,12 @@ import { addressOneLine, doctor, siteUrl } from "@/lib/doctor";
 
 /*
  * Digital visiting card — the destination of the QR code printed on
- * Dr. Jain's physical card. The QR encodes this URL and nothing else,
+ * Dr. Chordia's physical card. The QR encodes this URL and nothing else,
  * so the details below can change without reprinting anything.
  */
 
 const title = `${doctor.fullName} — ${doctor.specialization} | ${doctor.clinic}`;
-const description = `Save Dr. Dishani Jain's contact card, call or WhatsApp the clinic, get directions to ${doctor.clinic}, ${doctor.address.street}, ${doctor.address.locality}, or book an appointment.`;
+const description = `Save Dr. Dishani Chordia's contact card, call or WhatsApp the clinic, get directions to ${doctor.clinic}, ${doctor.address.street}, ${doctor.address.locality}, or book an appointment.`;
 const cardUrl = `${siteUrl}/dr-dishani-jain/`;
 const ogImage = `${siteUrl}${doctor.photo}`;
 

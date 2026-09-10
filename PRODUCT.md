@@ -12,7 +12,7 @@ Secondary: parents bringing children for paediatric care, and adults seeking the
 
 ## Product Purpose
 
-Bio Lume is a contemporary dental studio founded by Dr. Dishani Jain (BDS, Implantologist and Laser Specialist). The site exists to do one thing: earn the appointment. It must communicate that this practice is serious, precise, and calm — the antithesis of the anxious, clinical visit patients are trying to avoid. Every section should lower the activation energy to booking.
+Bio Lume is a contemporary dental studio founded by Dr. Dishani Chordia (BDS, Implantologist and Laser Specialist). The site exists to do one thing: earn the appointment. It must communicate that this practice is serious, precise, and calm — the antithesis of the anxious, clinical visit patients are trying to avoid. Every section should lower the activation energy to booking.
 
 Success: a new visitor reads the page and books an appointment without needing to call first to verify the practice is real.
 

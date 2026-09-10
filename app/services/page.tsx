@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dental Services in Vashi, Navi Mumbai | Biolume Dental Care",
     description:
-      "Browse all dental treatments at Biolume Dental Care, Sector 19B, Vashi — led by Dr. Dishani Jain, implantologist and laser specialist.",
+      "Browse all dental treatments at Biolume Dental Care, Sector 19B, Vashi — led by Dr. Dishani Chordia, implantologist and laser specialist.",
     url: "/services",
     siteName: "Biolume Dental Care",
     type: "website",
@@ -78,7 +78,7 @@ export default function ServicesHub() {
             Every service we offer — and why it matters.
           </h1>
           <p className="mt-6 text-[15.5px] leading-[1.8] text-plum/65 max-w-xl text-pretty">
-            Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — led by Dr. Dishani Jain, BDS,
+            Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — led by Dr. Dishani Chordia, BDS,
             Fellowship in Implantology and Laser Dentistry.
           </p>
         </div>

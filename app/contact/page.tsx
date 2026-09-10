@@ -7,7 +7,7 @@ import { addressOneLine, doctor, siteUrl } from "@/lib/doctor";
 export const metadata: Metadata = {
   title: "Contact Us — Dentist Near Me in Vashi, Navi Mumbai | Biolume Dental Care",
   description:
-    "Book an appointment at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Call, WhatsApp, or send a message — Dr. Dishani Jain's team replies within the hour.",
+    "Book an appointment at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Call, WhatsApp, or send a message — Dr. Dishani Chordia's team replies within the hour.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Biolume Dental Care — Sector 19B, Vashi",

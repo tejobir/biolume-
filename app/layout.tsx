@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Best Dentist in Vashi, Navi Mumbai | Biolume Dental Care",
   description:
-    "Searching for a dentist near me? Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai offers implants, laser dentistry, aligners & smile makeovers led by Dr. Dishani Jain, BDS — 6+ years of experience. Book your visit today.",
+    "Searching for a dentist near me? Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai offers implants, laser dentistry, aligners & smile makeovers led by Dr. Dishani Chordia, BDS — 6+ years of experience. Book your visit today.",
   keywords: [
     "dentist near me",
     "dentist in Vashi",
@@ -54,14 +54,14 @@ export const metadata: Metadata = {
     "dental implants",
     "laser dentistry",
     "cosmetic dentistry",
-    "Dr. Dishani Jain",
+    "Dr. Dishani Chordia",
     "Biolume Dental Care",
   ],
   alternates: { canonical: "/" },
   openGraph: {
     title: "Best Dentist in Vashi, Navi Mumbai | Biolume Dental Care",
     description:
-      "Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — implants, laser dentistry, aligners & smile makeovers led by Dr. Dishani Jain, BDS.",
+      "Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — implants, laser dentistry, aligners & smile makeovers led by Dr. Dishani Chordia, BDS.",
     url: siteUrl,
     siteName: "Biolume Dental Care",
     type: "website",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Dentist in Vashi, Navi Mumbai | Biolume Dental Care",
     description:
-      "Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — implants, laser dentistry, aligners & smile makeovers led by Dr. Dishani Jain, BDS.",
+      "Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — implants, laser dentistry, aligners & smile makeovers led by Dr. Dishani Chordia, BDS.",
     images: ["/biolume-social-share.jpg"],
   },
 };

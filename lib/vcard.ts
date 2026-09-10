@@ -95,7 +95,7 @@ export function buildVCard(photoBase64?: string): string {
   return lines.map(fold).join("\r\n") + "\r\n";
 }
 
-/** e.g. `Dr-Dishani-Jain.vcf` — safe on every filesystem. */
+/** e.g. `Dr-Dishani-Chordia.vcf` — safe on every filesystem. */
 export const vcardFileName =
   doctor.fullName.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "") + ".vcf";
 

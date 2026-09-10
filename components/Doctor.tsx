@@ -52,7 +52,7 @@ export function Doctor() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-4 text-[13px] tracking-[0.06em] text-teal font-semibold">
-              — Dr. Dishani Jain
+              — Dr. Dishani Chordia
             </p>
           </Reveal>
 
@@ -91,8 +91,8 @@ export function Doctor() {
           <Reveal>
             <div className="relative aspect-[4/5] w-full max-w-md md:ml-auto">
               <Image
-                src="/dr-dishani-jain.jpeg"
-                alt="Dr. Dishani Jain, Lead Dentist at Biolume Dental Care"
+                src="/dr-dishani-chordia.jpeg"
+                alt="Dr. Dishani Chordia, Lead Dentist at Biolume Dental Care"
                 fill
                 quality={90}
                 sizes="(max-width: 768px) 100vw, 36vw"
@@ -104,7 +104,7 @@ export function Doctor() {
                   Lead Dentist
                 </div>
                 <div className="mt-1.5 text-offwhite text-xl font-medium tracking-wide">
-                  Dr. Dishani Jain
+                  Dr. Dishani Chordia
                 </div>
               </div>
             </div>

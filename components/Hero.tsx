@@ -105,7 +105,7 @@ export function Hero() {
               {...rise(0.5)}
               className="mt-6 text-[14px] leading-[1.8] text-plum/80 max-w-sm"
             >
-              Dr. Dishani Jain &middot; BDS, Implantologist &amp; Laser Specialist.
+              Dr. Dishani Chordia &middot; BDS, Implantologist &amp; Laser Specialist.
               Honest, gentle dentistry in Sector 19B, Vashi, Navi Mumbai.
             </motion.p>
 

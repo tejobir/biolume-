@@ -40,7 +40,7 @@ export function Footer() {
           <div className="md:col-span-5">
             <p className="text-[14px] leading-[1.75] text-plum/80 max-w-sm">
               A contemporary dental studio in {doctor.address.locality}. Led by
-              Dr.&nbsp;Dishani&nbsp;Jain, implantologist and laser specialist.
+              Dr.&nbsp;Dishani&nbsp;Chordia, implantologist and laser specialist.
             </p>
             <div className="mt-7 flex items-center gap-3">
               {(

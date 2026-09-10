@@ -56,7 +56,7 @@ export const servicePages: ServicePage[] = [
     title: "Dental Implants",
     metaTitle: "Dental Implants in Vashi, Navi Mumbai | Biolume Dental Care",
     metaDescription:
-      "Permanent tooth replacement with 3D-planned implants at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Led by Dr. Dishani Jain. Book a consultation.",
+      "Permanent tooth replacement with 3D-planned implants at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Led by Dr. Dishani Chordia. Book a consultation.",
     heroImage:
       "https://images.pexels.com/photos/4687905/pexels-photo-4687905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     heroImageAlt:
@@ -68,7 +68,7 @@ export const servicePages: ServicePage[] = [
       "A titanium root, a custom crown, and a plan built on a 3D scan of your own jaw before we ever pick up a drill.",
     intro: [
       "A dental implant is a titanium post placed directly into your jawbone to replace a missing tooth root. Once the bone fuses around it — a process called osseointegration — a crown is fixed on top, giving you a tooth that functions and looks like the natural one that was lost. At Biolume Dental Care in Vashi, every implant placement is preceded by 3D CBCT imaging so we know exactly what we are working with before the procedure begins.",
-      "Dr. Dishani Jain has completed Fellowship-level training in dental implantology and has been placing implants for six years at our clinic in Sector 19B, Vashi, Navi Mumbai. Whether you need a single tooth replaced or a full arch supported by implants, the process at Biolume is the same: plan thoroughly, operate precisely, and give you a clear picture of what to expect at every stage.",
+      "Dr. Dishani Chordia has completed Fellowship-level training in dental implantology and has been placing implants for six years at our clinic in Sector 19B, Vashi, Navi Mumbai. Whether you need a single tooth replaced or a full arch supported by implants, the process at Biolume is the same: plan thoroughly, operate precisely, and give you a clear picture of what to expect at every stage.",
     ],
     highlightCard: {
       heading: "Signs You May Need an Implant",
@@ -129,7 +129,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         heading: "When an Implant Is Not the Right Answer",
-        body: "Implants are not suitable for everyone. Patients whose jawbone has resorbed significantly may need a bone graft first — this adds time and cost. Uncontrolled diabetes, active gum disease, and heavy smoking all reduce implant success rates, so these need to be addressed before placement. Children and teenagers whose jaws are still developing are not candidates. If an implant is not appropriate for you, Dr. Jain will explain why and what the alternatives are — fixed bridges, partial dentures, or other options — rather than pressing forward when conditions are not right.",
+        body: "Implants are not suitable for everyone. Patients whose jawbone has resorbed significantly may need a bone graft first — this adds time and cost. Uncontrolled diabetes, active gum disease, and heavy smoking all reduce implant success rates, so these need to be addressed before placement. Children and teenagers whose jaws are still developing are not candidates. If an implant is not appropriate for you, Dr. Chordia will explain why and what the alternatives are — fixed bridges, partial dentures, or other options — rather than pressing forward when conditions are not right.",
       },
       {
         heading: "What to Expect at Biolume Dental Care, Vashi",
@@ -172,7 +172,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Ready to discuss dental implants?",
     ctaBody:
-      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Dr. Dishani Jain will review your scans with you and walk you through exactly what your case involves.",
+      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Dr. Dishani Chordia will review your scans with you and walk you through exactly what your case involves.",
   },
 
   {
@@ -191,7 +191,7 @@ export const servicePages: ServicePage[] = [
     tagline:
       "One instrument, used wherever it genuinely outperforms the conventional alternative — from whitening to healing support after surgery.",
     intro: [
-      "Dental laser treatment uses a focused beam of light energy to treat soft tissue — gums, the inner lining of the mouth, and in some cases, early-stage cavities — with considerably more precision than a conventional scalpel. The laser simultaneously cuts and seals, which means less bleeding during the procedure, less swelling afterwards, and in most cases no stitches. At Biolume Dental Care in Vashi, laser dentistry is one of the specialties Dr. Dishani Jain holds Fellowship training in.",
+      "Dental laser treatment uses a focused beam of light energy to treat soft tissue — gums, the inner lining of the mouth, and in some cases, early-stage cavities — with considerably more precision than a conventional scalpel. The laser simultaneously cuts and seals, which means less bleeding during the procedure, less swelling afterwards, and in most cases no stitches. At Biolume Dental Care in Vashi, laser dentistry is one of the specialties Dr. Dishani Chordia holds Fellowship training in.",
       "The most common misconception about dental lasers is that they are a marketing add-on used to charge more for standard procedures. That is not how we use laser treatment at our Sector 19B, Vashi clinic. Laser is offered when it provides a clinically meaningful advantage over the conventional alternative — better healing, less post-procedure discomfort, or a more precise outcome. If the conventional method is equally good or better, we use that instead.",
     ],
     highlightCard: {
@@ -257,11 +257,11 @@ export const servicePages: ServicePage[] = [
       },
       {
         heading: "When Laser Is Not the Better Option",
-        body: "Laser treatment is not universally superior to conventional dentistry. It does not replace orthodontic treatment, implant surgery, or complex restorative work. For deep bone surgery, periodontal flap procedures, or procedures that require working below the gum line at significant depth, a conventional surgical approach is often more appropriate. Patients on anticoagulant medication or with certain systemic conditions may also not be suitable candidates. Dr. Jain will be direct with you about when laser adds genuine value and when it does not.",
+        body: "Laser treatment is not universally superior to conventional dentistry. It does not replace orthodontic treatment, implant surgery, or complex restorative work. For deep bone surgery, periodontal flap procedures, or procedures that require working below the gum line at significant depth, a conventional surgical approach is often more appropriate. Patients on anticoagulant medication or with certain systemic conditions may also not be suitable candidates. Dr. Chordia will be direct with you about when laser adds genuine value and when it does not.",
       },
       {
         heading: "Laser Dentistry at Biolume, Vashi: What the Visit Looks Like",
-        body: "Laser procedures at our Vashi clinic are typically shorter than their conventional equivalents. A gum contouring session, for instance, takes 30 to 60 minutes for the full smile line, with minimal discomfort and no need for sutures. You can usually return to your regular diet within a day. We explain what the laser will do, what you will feel (usually warmth or mild pressure), and what to expect during recovery. Because Dr. Jain holds Fellowship-level training in laser dentistry, there is no outsourcing — your treating dentist is doing the procedure.",
+        body: "Laser procedures at our Vashi clinic are typically shorter than their conventional equivalents. A gum contouring session, for instance, takes 30 to 60 minutes for the full smile line, with minimal discomfort and no need for sutures. You can usually return to your regular diet within a day. We explain what the laser will do, what you will feel (usually warmth or mild pressure), and what to expect during recovery. Because Dr. Chordia holds Fellowship-level training in laser dentistry, there is no outsourcing — your treating dentist is doing the procedure.",
       },
     ],
     faqs: [
@@ -288,7 +288,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Want to know if laser is right for you?",
     ctaBody:
-      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Dr. Dishani Jain will assess your situation and give you a straightforward recommendation.",
+      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Dr. Dishani Chordia will assess your situation and give you a straightforward recommendation.",
   },
 
   {
@@ -308,7 +308,7 @@ export const servicePages: ServicePage[] = [
       "A planned combination of cosmetic and restorative work — previewed digitally before anything is touched.",
     intro: [
       "A smile makeover is a planned combination of cosmetic and restorative procedures aimed at changing the appearance of your teeth, gums, and overall smile. It is not one procedure — it might be veneers alone, or a combination of whitening, bonding, gum contouring, and orthodontics, depending on what your teeth actually need. At Biolume Dental Care in Vashi, we start every smile makeover by understanding what you dislike and what you want, then designing a treatment plan that addresses those specific things.",
-      "The part most patients appreciate is the digital preview. Before any treatment starts, Dr. Dishani Jain uses digital imaging to show you a simulation of the expected result — what the veneers will look like, how the gum line will sit, what happens to the overall proportions. This is not a binding guarantee of outcome, but it is a meaningful starting point that lets you direct the design rather than simply accept whatever we propose. Our Sector 19B, Vashi clinic treats smile design as a collaboration, not a prescription.",
+      "The part most patients appreciate is the digital preview. Before any treatment starts, Dr. Dishani Chordia uses digital imaging to show you a simulation of the expected result — what the veneers will look like, how the gum line will sit, what happens to the overall proportions. This is not a binding guarantee of outcome, but it is a meaningful starting point that lets you direct the design rather than simply accept whatever we propose. Our Sector 19B, Vashi clinic treats smile design as a collaboration, not a prescription.",
     ],
     highlightCard: {
       heading: "Signs a Smile Makeover Could Help",
@@ -414,7 +414,7 @@ export const servicePages: ServicePage[] = [
     title: "Orthodontics — Braces & Aligners",
     metaTitle: "Braces & Aligners in Vashi, Navi Mumbai | Biolume Dental",
     metaDescription:
-      "Braces and aligners planned with digital scans at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. No messy impressions. Led by Dr. Dishani Jain.",
+      "Braces and aligners planned with digital scans at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. No messy impressions. Led by Dr. Dishani Chordia.",
     heroImage:
       "https://images.pexels.com/photos/28407749/pexels-photo-28407749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     heroImageAlt:
@@ -499,7 +499,7 @@ export const servicePages: ServicePage[] = [
       "Clears the infection out of the tooth and seals it shut, so extraction isn't the only option left on the table.",
     intro: [
       "Root canal treatment (also called endodontic treatment) removes infected or damaged pulp tissue from inside a tooth, cleans and shapes the root canals, and seals them to prevent reinfection. The tooth is then restored — usually with a crown — and can function normally for years. The procedure has a reputation for being painful that does not match the clinical reality: a properly anaesthetised root canal is no more uncomfortable than a routine filling. The pain patients associate with root canals is usually the infection before treatment, not the procedure itself.",
-      "At Biolume Dental Care in Vashi, root canal treatment is performed with dental magnification and modern rotary nickel-titanium instruments. Magnification allows Dr. Dishani Jain to see the canal system clearly — locating all canals, including accessory ones that are easily missed with the naked eye — and to work more accurately inside a space that is only a millimetre or two wide. Rotary instruments clean and shape the canals faster and more precisely than manual files, reducing procedure time and increasing the likelihood of complete cleaning.",
+      "At Biolume Dental Care in Vashi, root canal treatment is performed with dental magnification and modern rotary nickel-titanium instruments. Magnification allows Dr. Dishani Chordia to see the canal system clearly — locating all canals, including accessory ones that are easily missed with the naked eye — and to work more accurately inside a space that is only a millimetre or two wide. Rotary instruments clean and shape the canals faster and more precisely than manual files, reducing procedure time and increasing the likelihood of complete cleaning.",
     ],
     highlightCard: {
       heading: "Signs You May Need a Root Canal",
@@ -603,7 +603,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "In pain, or just need a second opinion?",
     ctaBody:
-      "Biolume Dental Care is at Sector 19B, Vashi, Navi Mumbai. Same-day appointments are available for acute pain. Dr. Dishani Jain will diagnose, explain your options, and let you decide.",
+      "Biolume Dental Care is at Sector 19B, Vashi, Navi Mumbai. Same-day appointments are available for acute pain. Dr. Dishani Chordia will diagnose, explain your options, and let you decide.",
   },
 
   {

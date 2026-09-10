@@ -19,9 +19,9 @@ const phoneE164Digits = "919167882211";
 export const doctor = {
   // Identity
   firstName: "Dishani",
-  lastName: "Jain",
+  lastName: "Chordia",
   prefix: "Dr.",
-  fullName: "Dr. Dishani Jain",
+  fullName: "Dr. Dishani Chordia",
   suffix: "BDS",
   specialization: "Implantologist & Laser Dentistry Specialist",
   shortBio:
@@ -31,8 +31,8 @@ export const doctor = {
     "Fellowship — Dental Implants",
     "Fellowship — Laser Dentistry",
   ],
-  photo: "/dr-dishani-jain.jpeg",
-  photoAlt: "Dr. Dishani Jain, Lead Dentist at Biolume Dental Care",
+  photo: "/dr-dishani-chordia.jpeg",
+  photoAlt: "Dr. Dishani Chordia, Lead Dentist at Biolume Dental Care",
 
   // Clinic
   clinic: "Biolume Dental Care",

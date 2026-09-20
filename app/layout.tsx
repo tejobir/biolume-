@@ -58,6 +58,9 @@ export const metadata: Metadata = {
     "Biolume Dental Care",
   ],
   alternates: { canonical: "/" },
+  verification: {
+    google: "Lm9-fEbUaQXI4Ia9XTrRqRaCDTnb91djCdwqG0Xxyvo",
+  },
   openGraph: {
     title: "Best Dentist in Vashi, Navi Mumbai | Biolume Dental Care",
     description:

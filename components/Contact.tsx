@@ -39,6 +39,7 @@ const clinicInfo = [
     icon: MapPin,
     label: "Studio",
     value: doctor.addressLines.join("\n"),
+    href: doctor.directionsHref,
   },
   {
     icon: Phone,
@@ -243,6 +244,8 @@ export function Contact() {
                         {item.href ? (
                           <a
                             href={item.href}
+                            target={item.href.startsWith("http") ? "_blank" : undefined}
+                            rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                             className="mt-1 block text-[14.5px] text-plum hover:text-teal transition-colors whitespace-pre-line"
                           >
                             {item.value}
@@ -263,7 +266,7 @@ export function Contact() {
               <div className="relative overflow-hidden border border-plum/12 shadow-soft aspect-[5/4]">
                 <iframe
                   title="Biolume Dental Care Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823914!2d72.92!3d19.0330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1cdd11b6d3b%3A0xc60660ddd1c1bea4!2sNavi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5356170156624!2d73.00197977886027!3d19.084144636025158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c167a1a9991d%3A0xab0d7fd485f9734a!2sBiolume%20Dental%20Care!5e0!3m2!1sen!2sin!4v1789926340016!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "grayscale(0.15) contrast(0.95)" }}

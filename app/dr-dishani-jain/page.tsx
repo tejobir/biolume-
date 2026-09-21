@@ -16,7 +16,7 @@ const ogImage = `${siteUrl}${doctor.photo}`;
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/dr-dishani-jain" },
+  alternates: { canonical: "/dr-dishani-jain/" },
   openGraph: {
     title: `${doctor.fullName} · ${doctor.clinic}`,
     description,

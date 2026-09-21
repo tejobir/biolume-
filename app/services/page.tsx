@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Dental Services in Vashi, Navi Mumbai | Biolume Dental Care",
   description:
     "Browse all dental treatments at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — implants, laser dentistry, smile makeover, braces, root canal, and preventive care.",
-  alternates: { canonical: "/services" },
+  alternates: { canonical: "/services/" },
   openGraph: {
     title: "Dental Services in Vashi, Navi Mumbai | Biolume Dental Care",
     description:
       "Browse all dental treatments at Biolume Dental Care, Sector 19B, Vashi — led by Dr. Dishani Chordia, implantologist and laser specialist.",
-    url: "/services",
+    url: "/services/",
     siteName: "Biolume Dental Care",
     type: "website",
     images: [
@@ -42,7 +42,7 @@ const jsonLd = {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.biolumedentalcare.com/" },
-        { "@type": "ListItem", position: 2, name: "Services", item: "https://www.biolumedentalcare.com/services" },
+        { "@type": "ListItem", position: 2, name: "Services", item: "https://www.biolumedentalcare.com/services/" },
       ],
     },
     {
@@ -51,7 +51,7 @@ const jsonLd = {
       itemListElement: servicePages.map((s, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://www.biolumedentalcare.com/services/${s.slug}`,
+        url: `https://www.biolumedentalcare.com/services/${s.slug}/`,
         name: s.title,
       })),
     },

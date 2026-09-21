@@ -19,11 +19,11 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: page.metaTitle,
     description: page.metaDescription,
-    alternates: { canonical: `/services/${page.slug}` },
+    alternates: { canonical: `/services/${page.slug}/` },
     openGraph: {
       title: page.metaTitle,
       description: page.metaDescription,
-      url: `/services/${page.slug}`,
+      url: `/services/${page.slug}/`,
       siteName: "Biolume Dental Care",
       images: [{ url: page.heroImage, alt: page.heroImageAlt }],
       type: "website",
@@ -73,8 +73,8 @@ function buildJsonLd(page: ReturnType<typeof getServicePage>) {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${base}/` },
-          { "@type": "ListItem", position: 2, name: "Services", item: `${base}/services` },
-          { "@type": "ListItem", position: 3, name: page.title, item: `${base}/services/${page.slug}` },
+          { "@type": "ListItem", position: 2, name: "Services", item: `${base}/services/` },
+          { "@type": "ListItem", position: 3, name: page.title, item: `${base}/services/${page.slug}/` },
         ],
       },
     ],

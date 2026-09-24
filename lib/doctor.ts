@@ -51,7 +51,7 @@ export const doctor = {
 
   // Address — kept as parts so the vCard ADR field can be built properly
   address: {
-    street: "Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19B, Vashi",
+    street: "Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi",
     locality: "Navi Mumbai",
     region: "Maharashtra",
     postalCode: "400703",
@@ -61,7 +61,7 @@ export const doctor = {
     "Biolume Dental Care",
     "Shop No. 10, 2nd Floor, Aykon",
     "Palm Beach Road, above Zudio/Reliance Digital",
-    "Phase 2, Sector 19B, Vashi",
+    "Phase 2, Sector 19D, Vashi",
     "Navi Mumbai, Maharashtra 400703",
   ],
   /** Google's own pinned-location link — more accurate than a text search, and opens the native Maps app on both iOS and Android. */

@@ -56,7 +56,7 @@ export const servicePages: ServicePage[] = [
     title: "Dental Implants",
     metaTitle: "Dental Implants in Vashi, Navi Mumbai | Biolume Dental Care",
     metaDescription:
-      "Permanent tooth replacement with 3D-planned implants at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Led by Dr. Dishani Chordia. Book a consultation.",
+      "Permanent tooth replacement with 3D-planned implants at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Led by Dr. Dishani Chordia. Book a consultation.",
     heroImage:
       "https://images.pexels.com/photos/4687905/pexels-photo-4687905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     heroImageAlt:
@@ -68,7 +68,7 @@ export const servicePages: ServicePage[] = [
       "A titanium root, a custom crown, and a plan built on a 3D scan of your own jaw before we ever pick up a drill.",
     intro: [
       "A dental implant is a titanium post placed directly into your jawbone to replace a missing tooth root. Once the bone fuses around it — a process called osseointegration — a crown is fixed on top, giving you a tooth that functions and looks like the natural one that was lost. At Biolume Dental Care in Vashi, every implant placement is preceded by 3D CBCT imaging so we know exactly what we are working with before the procedure begins.",
-      "Dr. Dishani Chordia has completed Fellowship-level training in dental implantology and has been placing implants for six years at our clinic in Sector 19B, Vashi, Navi Mumbai. Whether you need a single tooth replaced or a full arch supported by implants, the process at Biolume is the same: plan thoroughly, operate precisely, and give you a clear picture of what to expect at every stage.",
+      "Dr. Dishani Chordia has completed Fellowship-level training in dental implantology and has been placing implants for six years at our clinic in Sector 19D, Vashi, Navi Mumbai. Whether you need a single tooth replaced or a full arch supported by implants, the process at Biolume is the same: plan thoroughly, operate precisely, and give you a clear picture of what to expect at every stage.",
     ],
     highlightCard: {
       heading: "Signs You May Need an Implant",
@@ -172,7 +172,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Ready to discuss dental implants?",
     ctaBody:
-      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Dr. Dishani Chordia will review your scans with you and walk you through exactly what your case involves.",
+      "Book a consultation at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Dr. Dishani Chordia will review your scans with you and walk you through exactly what your case involves.",
   },
 
   {
@@ -192,7 +192,7 @@ export const servicePages: ServicePage[] = [
       "One instrument, used wherever it genuinely outperforms the conventional alternative — from whitening to healing support after surgery.",
     intro: [
       "Dental laser treatment uses a focused beam of light energy to treat soft tissue — gums, the inner lining of the mouth, and in some cases, early-stage cavities — with considerably more precision than a conventional scalpel. The laser simultaneously cuts and seals, which means less bleeding during the procedure, less swelling afterwards, and in most cases no stitches. At Biolume Dental Care in Vashi, laser dentistry is one of the specialties Dr. Dishani Chordia holds Fellowship training in.",
-      "The most common misconception about dental lasers is that they are a marketing add-on used to charge more for standard procedures. That is not how we use laser treatment at our Sector 19B, Vashi clinic. Laser is offered when it provides a clinically meaningful advantage over the conventional alternative — better healing, less post-procedure discomfort, or a more precise outcome. If the conventional method is equally good or better, we use that instead.",
+      "The most common misconception about dental lasers is that they are a marketing add-on used to charge more for standard procedures. That is not how we use laser treatment at our Sector 19D, Vashi clinic. Laser is offered when it provides a clinically meaningful advantage over the conventional alternative — better healing, less post-procedure discomfort, or a more precise outcome. If the conventional method is equally good or better, we use that instead.",
     ],
     highlightCard: {
       heading: "Where We Use Laser Treatment",
@@ -288,7 +288,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Want to know if laser is right for you?",
     ctaBody:
-      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Dr. Dishani Chordia will assess your situation and give you a straightforward recommendation.",
+      "Book a consultation at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Dr. Dishani Chordia will assess your situation and give you a straightforward recommendation.",
   },
 
   {
@@ -308,7 +308,7 @@ export const servicePages: ServicePage[] = [
       "A planned combination of cosmetic and restorative work — previewed digitally before anything is touched.",
     intro: [
       "A smile makeover is a planned combination of cosmetic and restorative procedures aimed at changing the appearance of your teeth, gums, and overall smile. It is not one procedure — it might be veneers alone, or a combination of whitening, bonding, gum contouring, and orthodontics, depending on what your teeth actually need. At Biolume Dental Care in Vashi, we start every smile makeover by understanding what you dislike and what you want, then designing a treatment plan that addresses those specific things.",
-      "The part most patients appreciate is the digital preview. Before any treatment starts, Dr. Dishani Chordia uses digital imaging to show you a simulation of the expected result — what the veneers will look like, how the gum line will sit, what happens to the overall proportions. This is not a binding guarantee of outcome, but it is a meaningful starting point that lets you direct the design rather than simply accept whatever we propose. Our Sector 19B, Vashi clinic treats smile design as a collaboration, not a prescription.",
+      "The part most patients appreciate is the digital preview. Before any treatment starts, Dr. Dishani Chordia uses digital imaging to show you a simulation of the expected result — what the veneers will look like, how the gum line will sit, what happens to the overall proportions. This is not a binding guarantee of outcome, but it is a meaningful starting point that lets you direct the design rather than simply accept whatever we propose. Our Sector 19D, Vashi clinic treats smile design as a collaboration, not a prescription.",
     ],
     highlightCard: {
       heading: "Signs a Smile Makeover Could Help",
@@ -406,7 +406,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Start your smile design consultation.",
     ctaBody:
-      "Visit Biolume Dental Care at Sector 19B, Vashi, Navi Mumbai. We will map out your smile goals, run the digital preview, and build a plan that fits both your teeth and your timeline.",
+      "Visit Biolume Dental Care at Sector 19D, Vashi, Navi Mumbai. We will map out your smile goals, run the digital preview, and build a plan that fits both your teeth and your timeline.",
   },
 
   {
@@ -414,7 +414,7 @@ export const servicePages: ServicePage[] = [
     title: "Orthodontics — Braces & Aligners",
     metaTitle: "Braces & Aligners in Vashi, Navi Mumbai | Biolume Dental",
     metaDescription:
-      "Braces and aligners planned with digital scans at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. No messy impressions. Led by Dr. Dishani Chordia.",
+      "Braces and aligners planned with digital scans at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. No messy impressions. Led by Dr. Dishani Chordia.",
     heroImage:
       "https://images.pexels.com/photos/28407749/pexels-photo-28407749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     heroImageAlt:
@@ -424,7 +424,7 @@ export const servicePages: ServicePage[] = [
     h1: "Braces & Aligners in Vashi, Navi Mumbai",
     intro: [
       "Orthodontic treatment straightens teeth and corrects bite issues by applying controlled, sustained pressure over time. The two main systems are traditional braces — brackets bonded to the teeth with wires threaded through them — and aligners, which are removable transparent trays changed every one to two weeks. Both work. The difference is in visibility, comfort, treatment discipline, and which cases each handles best. At Biolume Dental Care in Vashi, we offer both and help you decide based on your actual situation, not which option has a higher margin.",
-      "What has changed in recent years is how treatment is planned. At our Sector 19B, Vashi clinic, we use digital intraoral scanning rather than traditional impression trays to map your teeth. Dental impressions involve filling a tray with putty-like material and holding it in your mouth for several minutes — uncomfortable, messy, and prone to distortion. A digital scan takes less than two minutes, creates a precise 3D model of your teeth, and is immediately available for treatment planning. The difference in patient experience is noticeable.",
+      "What has changed in recent years is how treatment is planned. At our Sector 19D, Vashi clinic, we use digital intraoral scanning rather than traditional impression trays to map your teeth. Dental impressions involve filling a tray with putty-like material and holding it in your mouth for several minutes — uncomfortable, messy, and prone to distortion. A digital scan takes less than two minutes, creates a precise 3D model of your teeth, and is immediately available for treatment planning. The difference in patient experience is noticeable.",
     ],
     sections: [
       {
@@ -479,7 +479,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Ready to start your orthodontic assessment?",
     ctaBody:
-      "Book a consultation at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. We will scan your teeth digitally, assess your bite, and give you a clear picture of what treatment involves.",
+      "Book a consultation at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. We will scan your teeth digitally, assess your bite, and give you a clear picture of what treatment involves.",
   },
 
   {
@@ -603,7 +603,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "In pain, or just need a second opinion?",
     ctaBody:
-      "Biolume Dental Care is at Sector 19B, Vashi, Navi Mumbai. Same-day appointments are available for acute pain. Dr. Dishani Chordia will diagnose, explain your options, and let you decide.",
+      "Biolume Dental Care is at Sector 19D, Vashi, Navi Mumbai. Same-day appointments are available for acute pain. Dr. Dishani Chordia will diagnose, explain your options, and let you decide.",
   },
 
   {
@@ -621,7 +621,7 @@ export const servicePages: ServicePage[] = [
     h1: "Preventive Dentistry in Vashi, Navi Mumbai",
     intro: [
       "Preventive dentistry is the most straightforward category in dentistry: catching and addressing problems before they become more complex or expensive. A cavity found at 1mm deep is treated in fifteen minutes with a small filling. Found at 5mm, it may need a root canal and crown. Found as an abscess, it may require extraction. The gap between these outcomes is usually one or two missed check-ups. At Biolume Dental Care in Vashi, the preventive visit is not a formality — it is the most clinically important appointment in the year.",
-      "A preventive check-up at our Sector 19B, Vashi clinic includes a clinical exam, intraoral camera review, and digital X-rays where indicated. The intraoral camera is a small wand that captures high-resolution images of every tooth surface, including areas that are difficult to see with the naked eye. The images are displayed on a screen so you can see what we see — a crack, an early cavity, gum recession, staining at a filling margin. This transparency is not a technique; it is how we think dentistry should be done.",
+      "A preventive check-up at our Sector 19D, Vashi clinic includes a clinical exam, intraoral camera review, and digital X-rays where indicated. The intraoral camera is a small wand that captures high-resolution images of every tooth surface, including areas that are difficult to see with the naked eye. The images are displayed on a screen so you can see what we see — a crack, an early cavity, gum recession, staining at a filling margin. This transparency is not a technique; it is how we think dentistry should be done.",
     ],
     sections: [
       {
@@ -678,7 +678,7 @@ export const servicePages: ServicePage[] = [
     ],
     ctaHeading: "Due for a check-up?",
     ctaBody:
-      "Book your preventive visit at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Routine appointments are kept on time, and we will give you a clear picture of where things stand.",
+      "Book your preventive visit at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Routine appointments are kept on time, and we will give you a clear picture of where things stand.",
   },
 ];
 

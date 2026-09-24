@@ -53,7 +53,7 @@ function buildJsonLd(page: ReturnType<typeof getServicePage>) {
           name: "Biolume Dental Care",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Sector 19B",
+            streetAddress: "Sector 19D",
             addressLocality: "Vashi",
             addressRegion: "Navi Mumbai",
             addressCountry: "IN",

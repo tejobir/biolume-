@@ -9,12 +9,12 @@ import { servicePages } from "@/lib/servicePages";
 export const metadata: Metadata = {
   title: "Dental Services in Vashi, Navi Mumbai | Biolume Dental Care",
   description:
-    "Browse all dental treatments at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — implants, laser dentistry, smile makeover, braces, root canal, and preventive care.",
+    "Browse all dental treatments at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai — implants, laser dentistry, smile makeover, braces, root canal, and preventive care.",
   alternates: { canonical: "/services/" },
   openGraph: {
     title: "Dental Services in Vashi, Navi Mumbai | Biolume Dental Care",
     description:
-      "Browse all dental treatments at Biolume Dental Care, Sector 19B, Vashi — led by Dr. Dishani Chordia, implantologist and laser specialist.",
+      "Browse all dental treatments at Biolume Dental Care, Sector 19D, Vashi — led by Dr. Dishani Chordia, implantologist and laser specialist.",
     url: "/services/",
     siteName: "Biolume Dental Care",
     type: "website",
@@ -78,7 +78,7 @@ export default function ServicesHub() {
             Every service we offer — and why it matters.
           </h1>
           <p className="mt-6 text-[15.5px] leading-[1.8] text-plum/65 max-w-xl text-pretty">
-            Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai — led by Dr. Dishani Chordia, BDS,
+            Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai — led by Dr. Dishani Chordia, BDS,
             Fellowship in Implantology and Laser Dentistry.
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function ServicesHub() {
             Not sure where to start?
           </h2>
           <p className="mt-4 text-[15.5px] text-plum/65 max-w-lg mx-auto text-pretty">
-            Book a general consultation at Biolume Dental Care, Sector 19B, Vashi. We will
+            Book a general consultation at Biolume Dental Care, Sector 19D, Vashi. We will
             assess your teeth, answer your questions, and recommend only what you actually need.
           </p>
           <Link

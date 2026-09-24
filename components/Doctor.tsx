@@ -47,7 +47,7 @@ export function Doctor() {
               training in dental implants and laser dentistry taught me that the best
               dentistry is the kind you barely feel — care that&rsquo;s explained
               fully, planned around you, and comfortable from your very first visit
-              to our studio in Sector 19B, Vashi.
+              to our studio in Sector 19D, Vashi.
             </p>
           </Reveal>
           <Reveal delay={0.12}>

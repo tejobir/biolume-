@@ -106,7 +106,7 @@ export function Hero() {
               className="mt-6 text-[14px] leading-[1.8] text-plum/80 max-w-sm"
             >
               Dr. Dishani Chordia &middot; BDS, Implantologist &amp; Laser Specialist.
-              Honest, gentle dentistry in Sector 19B, Vashi, Navi Mumbai.
+              Honest, gentle dentistry in Sector 19D, Vashi, Navi Mumbai.
             </motion.p>
 
             <motion.div {...rise(0.62)} className="mt-9 flex flex-wrap items-center gap-6">

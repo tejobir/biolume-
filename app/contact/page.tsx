@@ -7,12 +7,12 @@ import { addressOneLine, doctor, siteUrl } from "@/lib/doctor";
 export const metadata: Metadata = {
   title: "Contact Us — Dentist Near Me in Vashi, Navi Mumbai | Biolume Dental Care",
   description:
-    "Book an appointment at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai. Call, WhatsApp, or send a message — Dr. Dishani Chordia's team replies within the hour.",
+    "Book an appointment at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Call, WhatsApp, or send a message — Dr. Dishani Chordia's team replies within the hour.",
   alternates: { canonical: "/contact/" },
   openGraph: {
-    title: "Contact Biolume Dental Care — Sector 19B, Vashi",
+    title: "Contact Biolume Dental Care — Sector 19D, Vashi",
     description:
-      "Get directions, call, WhatsApp, or book an appointment at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai.",
+      "Get directions, call, WhatsApp, or book an appointment at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai.",
     url: "/contact/",
     siteName: "Biolume Dental Care",
     type: "website",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Biolume Dental Care — Sector 19B, Vashi",
+    title: "Contact Biolume Dental Care — Sector 19D, Vashi",
     description:
-      "Get directions, call, WhatsApp, or book an appointment at Biolume Dental Care, Sector 19B, Vashi, Navi Mumbai.",
+      "Get directions, call, WhatsApp, or book an appointment at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai.",
     images: ["/biolume-social-share.jpg"],
   },
 };
@@ -80,7 +80,7 @@ export default function ContactPage() {
             Contact
           </div>
           <h1 className="font-display text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.05] tracking-tight text-plum text-balance max-w-2xl">
-            Find us in Sector 19B, Vashi.
+            Find us in Sector 19D, Vashi.
           </h1>
           <p className="mt-6 text-[15.5px] leading-[1.8] text-plum/65 max-w-xl text-pretty">
             Call, WhatsApp, or send a message below — we typically confirm

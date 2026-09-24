@@ -30,7 +30,7 @@ export function About() {
               <div className="relative aspect-[3/4] w-[82%]">
                 <Image
                   src="/best-dental-clinic-in-cranbrook.jpg"
-                  alt="Dentist examining a patient's teeth at Biolume Dental Care, Sector 19B, Vashi"
+                  alt="Dentist examining a patient's teeth at Biolume Dental Care, Sector 19D, Vashi"
                   fill
                   quality={80}
                   sizes="(max-width: 768px) 82vw, 34vw"
@@ -63,7 +63,7 @@ export function About() {
             <Reveal delay={0.08}>
               <div className="mt-8 grid sm:grid-cols-2 gap-8">
                 <p className="text-[14px] leading-[1.85] text-plum/80 text-pretty">
-                  Biolume Dental Care is a contemporary clinic in Sector 19B, Vashi,
+                  Biolume Dental Care is a contemporary clinic in Sector 19D, Vashi,
                   Navi Mumbai, built on two principles: clinical quality and ethical
                   treatment. Every appointment is thorough and every plan is
                   explained in full.

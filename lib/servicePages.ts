@@ -680,6 +680,237 @@ export const servicePages: ServicePage[] = [
     ctaBody:
       "Book your preventive visit at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Routine appointments are kept on time, and we will give you a clear picture of where things stand.",
   },
+
+  {
+    slug: "childrens-dentistry-vashi-navi-mumbai",
+    title: "Children's Dentistry",
+    metaTitle: "Children's Dentist in Vashi, Navi Mumbai | Biolume Dental Care",
+    metaDescription:
+      "Gentle dental care for children at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Check-ups, sealants, fluoride and fillings for milk teeth. Book now.",
+    heroImage:
+      "https://images.pexels.com/photos/12917374/pexels-photo-12917374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    heroImageAlt:
+      "Smiling child giving a thumbs up with her dentist after a check-up at a children's dental clinic in Vashi, Navi Mumbai",
+    heroPhotographer: "iam luisao",
+    heroPhotographerUrl: "https://www.pexels.com/@iamluisao",
+    h1: "Children's Dentistry in Vashi, Navi Mumbai",
+    tagline:
+      "Unhurried visits, simple explanations, and a first experience of the dentist that your child won't dread coming back to.",
+    intro: [
+      "Children's dentistry covers the dental care of infants, children, and teenagers — from the first milk tooth to the full set of permanent teeth. Milk teeth are temporary, but they are not unimportant: they hold space for the adult teeth underneath, guide them into position, and let your child chew and speak properly. A decayed milk tooth left untreated can cause pain, infection, and crowding problems years later. At Biolume Dental Care in Vashi, children's visits focus on keeping teeth healthy early, so treatment is rarely needed at all.",
+      "Just as important as the clinical work is how the visit feels. A child's first experiences at the dentist tend to shape how they feel about dental care as an adult. At our Sector 19D, Vashi clinic, we take the time to show children what each instrument does before we use it, keep the language simple and honest, and never rush a nervous child through a procedure. Parents stay in the room, and we explain every finding to you in plain terms.",
+    ],
+    highlightCard: {
+      heading: "When to Bring Your Child In",
+      items: [
+        "By their first birthday, or within six months of the first tooth appearing",
+        "White, brown, or black spots on the teeth",
+        "Complaints of pain, or avoiding chewing on one side",
+        "Thumb-sucking or dummy use continuing past age four",
+        "A knocked, chipped, or loose tooth after a fall",
+      ],
+    },
+    appointmentSteps: [
+      {
+        title: "Getting comfortable",
+        body: "We start with a chat and let your child sit in the chair, try the light, and see the instruments before anything goes in their mouth.",
+      },
+      {
+        title: "Gentle check-up",
+        body: "A look at every tooth and the gums, bite, and jaw development. Low-radiation digital X-rays are taken only when they are genuinely needed.",
+      },
+      {
+        title: "Cleaning & protection",
+        body: "A light polish, and where useful, fluoride varnish or sealants to protect the deep grooves of the back teeth from decay.",
+      },
+      {
+        title: "Talk with parents",
+        body: "We show you what we found, explain whether anything needs attention, and share brushing and diet advice suited to your child's age.",
+      },
+    ],
+    aftercare: {
+      intro: "Most of a child's dental health is decided at home, between visits.",
+      items: [
+        "Brush twice a day with a fluoride toothpaste — a smear for under-threes, a pea-sized amount after that — and help with brushing until around age seven or eight.",
+        "Keep sugary snacks and drinks to mealtimes rather than grazing through the day; how often sugar is eaten matters more than how much.",
+        "Avoid putting babies to bed with a bottle of milk or juice.",
+        "After fluoride varnish, avoid eating or brushing for the time we advise so it has time to work.",
+        "Book check-ups every six months, or sooner if we have recommended a shorter interval.",
+      ],
+    },
+    sections: [
+      {
+        heading: "What Children's Dental Care Includes at Biolume",
+        body: "Care is matched to your child's age and what we actually find, and covers the following:",
+        bullets: [
+          "Check-ups and cleaning — monitoring every tooth, the gums, and how the jaws are developing",
+          "Fluoride varnish — a quick, painless coating that strengthens enamel against decay",
+          "Pit and fissure sealants — a thin protective layer over the grooves of back teeth, where most childhood cavities start",
+          "Tooth-coloured fillings — for milk and permanent teeth when decay is found early",
+          "Pulp treatment for milk teeth — to save a decayed tooth that would otherwise need removing too early",
+          "Space maintainers — to hold the gap when a milk tooth is lost early, so adult teeth have room to come through",
+          "Habit counselling — for thumb-sucking, dummy use, and mouth breathing",
+        ],
+      },
+      {
+        heading: "Why Milk Teeth Deserve Treatment",
+        body: "A common question from parents is why a milk tooth should be filled if it will fall out anyway. The answer depends on timing. Some back milk teeth stay in the mouth until age eleven or twelve. A cavity in one of these teeth can progress to the nerve within months, causing pain, infection, and in some cases damage to the permanent tooth developing underneath. Losing a milk tooth early can also let neighbouring teeth drift into the gap, leaving too little room for the adult tooth. Treating a small cavity early is quicker, cheaper, and far easier on your child than dealing with an infection later.",
+      },
+      {
+        heading: "Making the Visit Easy for Nervous Children",
+        body: "Many children are anxious at the dentist, often because of what they have heard from others rather than their own experience. We use a simple approach: tell the child what we are going to do, show them how it works, then do it. Instruments are given friendly, honest explanations. Short, positive first visits come before any treatment wherever possible, so the first thing your child associates with the clinic is not a procedure. We would rather split treatment over two short visits than push a frightened child through one long one.",
+      },
+      {
+        heading: "Early Orthodontic Assessment",
+        body: "By around age seven, a child has a mix of milk and permanent teeth, and it becomes possible to spot developing bite and crowding problems. Most children won't need early treatment, but some — crossbites, severe crowding, or habits affecting jaw growth — are easier to correct while the jaws are still growing. We monitor this at routine check-ups and let you know if and when an orthodontic assessment makes sense.",
+        link: {
+          label: "Learn about braces and aligners",
+          href: "/services/orthodontics-braces-aligners-vashi-navi-mumbai",
+        },
+      },
+      {
+        heading: "Honest About What We Treat",
+        body: "Routine care, prevention, and most fillings and treatments for children are handled at our Vashi clinic. If a child needs extensive treatment under sedation or general anaesthesia, or has specific medical needs, we will tell you so and refer you to a paediatric dental specialist we trust — rather than attempting treatment in a setting that isn't right for your child.",
+      },
+    ],
+    faqs: [
+      {
+        q: "When should my child first see a dentist?",
+        a: "By their first birthday, or within six months of the first tooth appearing. The first visit is short and mostly about checking early development, spotting any risk of decay, and giving you advice on brushing, feeding, and teething. Early visits also mean the dentist becomes a familiar place long before any treatment is ever needed.",
+      },
+      {
+        q: "Are dental X-rays safe for children?",
+        a: "We use digital X-rays, which need far less radiation than older film systems, and we take them only when there is a clear reason — for example, to check between back teeth where cavities cannot be seen directly. Many young children with healthy teeth need very few X-rays.",
+      },
+      {
+        q: "What are dental sealants, and does my child need them?",
+        a: "Sealants are a thin, tooth-coloured coating painted onto the chewing surfaces of back teeth, sealing off the deep grooves where food and bacteria collect. Applying them is painless — no drilling or injections. They are most useful soon after the permanent molars come in, around age six and again around age twelve, particularly in children with a higher risk of cavities.",
+      },
+      {
+        q: "My child is very scared of the dentist. What can we do?",
+        a: "Tell us before the appointment, so we can plan a slower first visit. Avoid words like 'hurt' or 'injection' at home, and don't promise that nothing will be done — simple honesty works better. At the clinic, we explain everything first, go at your child's pace, and keep early visits short and positive.",
+      },
+      {
+        q: "What should I do if my child knocks out a tooth?",
+        a: "Call us straight away. If it is a permanent tooth, hold it by the crown (not the root), rinse it briefly in milk if dirty, and try to place it back in the socket — or keep it in milk and come in immediately. Time matters. A knocked-out milk tooth should not be put back, but the child should still be seen to check for injury to the adult tooth underneath.",
+      },
+    ],
+    ctaHeading: "Book your child's check-up",
+    ctaBody:
+      "Visit Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. We keep children's appointments calm and unhurried, and explain everything to you as we go.",
+  },
+
+  {
+    slug: "tooth-jewellery-vashi-navi-mumbai",
+    title: "Tooth Jewellery",
+    metaTitle: "Tooth Jewellery & Tooth Gems in Vashi, Navi Mumbai | Biolume Dental",
+    metaDescription:
+      "Painless, drill-free tooth gems bonded by a dentist at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. Safe for enamel and removable any time. Book now.",
+    heroImage:
+      "https://images.pexels.com/photos/6627574/pexels-photo-6627574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    heroImageAlt:
+      "Woman admiring her smile in a hand mirror after a cosmetic dental treatment at a clinic in Vashi, Navi Mumbai",
+    heroPhotographer: "Kaboompics",
+    heroPhotographerUrl: "https://www.pexels.com/@karola-g",
+    h1: "Tooth Jewellery in Vashi, Navi Mumbai",
+    tagline:
+      "A small sparkle on your smile — bonded without drilling, safe for your enamel, and removable whenever you like.",
+    intro: [
+      "Tooth jewellery is a small crystal or gem attached to the front surface of a tooth, usually an upper front tooth or canine. It is a purely cosmetic addition — a subtle way to personalise your smile, for a special occasion or simply because you like it. At Biolume Dental Care in Vashi, gems are placed using the same dental bonding technique we use for tooth-coloured fillings: the gem is fixed to the enamel surface with a dental adhesive. There is no drilling, no injection, and nothing is removed from your tooth.",
+      "Because the tooth is left intact, the process is fully reversible. When you want the gem removed, we take it off and polish the surface smooth, leaving the enamel as it was. The key is that placement is done by a dentist — on a tooth that has been checked first, using dental-grade materials, under clean clinical conditions. Tooth gems applied at salons or at home with non-dental glues can trap plaque, irritate gums, or damage enamel on removal.",
+    ],
+    highlightCard: {
+      heading: "Is Tooth Jewellery Right for You?",
+      items: [
+        "You want a subtle, temporary change to your smile",
+        "The tooth you'd like the gem on is healthy, with no decay or large filling",
+        "You're 16 or older, with fully developed permanent teeth",
+        "You're comfortable keeping the area clean with careful brushing",
+        "You'd like something for a wedding, celebration, or photo shoot",
+      ],
+    },
+    appointmentSteps: [
+      {
+        title: "Check & choose",
+        body: "A quick look at the tooth to confirm it's healthy, then we help you choose the gem and the exact position that suits your smile.",
+      },
+      {
+        title: "Prepare the surface",
+        body: "The tooth is cleaned and lightly conditioned so the adhesive bonds properly. There's no drilling and no numbing needed.",
+      },
+      {
+        title: "Bond the gem",
+        body: "The gem is placed with a dental adhesive and set hard with a curing light in a few seconds.",
+      },
+      {
+        title: "Final check",
+        body: "We smooth any excess adhesive and check that it feels comfortable against your lip. The whole visit usually takes under 30 minutes.",
+      },
+    ],
+    aftercare: {
+      intro: "A little care in the first day or two helps the gem last as long as possible.",
+      items: [
+        "Avoid eating or drinking for about an hour, and avoid hard or sticky food on that tooth for the first 24 hours.",
+        "Brush normally but gently around the gem, and avoid scrubbing directly over it with a hard brush.",
+        "Don't pick at the gem or try to remove it yourself — come in and we will take it off safely.",
+        "Keep up regular check-ups so we can check the gem and the tooth around it.",
+        "If the gem comes loose, keep it and contact us; it can often be re-bonded.",
+      ],
+    },
+    sections: [
+      {
+        heading: "How Tooth Gems Are Attached",
+        body: "Tooth jewellery is bonded, not drilled. The surface of the tooth is cleaned and prepared, a dental adhesive (the same family of materials used for tooth-coloured fillings) is applied, and the gem is pressed into place. A curing light hardens the adhesive in seconds. The gem sits on the surface of the enamel — the tooth structure itself is not cut or altered, which is what makes the procedure reversible.",
+        bullets: [
+          "No drilling, no injections, and no pain",
+          "Takes around 20–30 minutes",
+          "Removable at any time without harming the tooth",
+          "Done on a healthy tooth that has been checked first",
+        ],
+      },
+      {
+        heading: "Why Have It Done at a Dental Clinic",
+        body: "Tooth gems are increasingly offered in salons and sold as home kits. The risk is not the gem itself but how it's attached. Non-dental glues are not designed for use in the mouth and may not bond or release cleanly. Excess adhesive left at the gum line traps plaque and can cause gum inflammation. And placing a gem over an undetected cavity hides the problem while it grows. At Biolume Dental Care, the tooth is examined first, dental-grade materials are used, and removal is done with proper polishing instruments so your enamel is left intact.",
+      },
+      {
+        heading: "How Long Does Tooth Jewellery Last?",
+        body: "It varies from person to person. Depending on your bite, your diet, and how you care for it, a gem can last anywhere from a few months to a couple of years. Biting directly into hard foods with that tooth and brushing hard over the gem are the most common reasons for it coming off early. If a gem does come loose, it is harmless — keep it and let us know.",
+      },
+      {
+        heading: "Pairing It With a Brighter Smile",
+        body: "A gem draws attention to your smile, so some patients like to have a professional cleaning or whitening first. If you want to whiten, it's best done before the gem is placed, since whitening gel won't reach the enamel underneath the gem. We can talk through timing at your visit.",
+        link: {
+          label: "See our smile makeover options",
+          href: "/services/smile-makeover-vashi-navi-mumbai",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: "Does getting a tooth gem hurt?",
+        a: "No. There's no drilling and no injection — the gem is bonded to the surface of the tooth. Most people describe it as feeling no different from having their teeth polished.",
+      },
+      {
+        q: "Will a tooth gem damage my enamel?",
+        a: "When placed and removed by a dentist, no. The gem is bonded to the enamel surface rather than set into the tooth, and on removal we polish away the adhesive and leave the surface smooth. Damage is more likely with non-dental glues or if someone tries to pry a gem off themselves.",
+      },
+      {
+        q: "Can the gem be removed?",
+        a: "Yes, at any time. Removal is quick and painless, and the tooth is polished afterwards. Many patients have a gem for an event and remove it later, or swap it for a different style.",
+      },
+      {
+        q: "Can I eat normally with a tooth gem?",
+        a: "Yes, after the first 24 hours. It's still best to avoid biting directly into very hard foods with that tooth, as that is the most common reason gems come off early.",
+      },
+      {
+        q: "Can children have tooth jewellery?",
+        a: "We don't place tooth gems on milk teeth or on permanent teeth that have only recently come through. We generally recommend it from around age 16, once the front teeth are fully developed.",
+      },
+    ],
+    ctaHeading: "Ready to add a little sparkle?",
+    ctaBody:
+      "Book a tooth jewellery appointment at Biolume Dental Care, Sector 19D, Vashi, Navi Mumbai. We'll check the tooth, help you choose a gem and position, and have you done in under half an hour.",
+  },
 ];
 
 export function getServicePage(slug: string): ServicePage | undefined {

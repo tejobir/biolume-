@@ -91,7 +91,7 @@ export function Doctor() {
           <Reveal>
             <div className="relative aspect-[4/5] w-full max-w-md md:ml-auto">
               <Image
-                src="/dr-dishani-chordia.jpeg"
+                src="/dr-dishani-chordia.jpg"
                 alt="Dr. Dishani Chordia, Lead Dentist at Biolume Dental Care"
                 fill
                 quality={90}

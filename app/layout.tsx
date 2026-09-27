@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { addressOneLine, doctor, siteUrl } from "@/lib/doctor";
+import { siteUrl } from "@/lib/doctor";
 
 /*
  * Nunito — the brand's supporting typeface, self-hosted from the
@@ -86,41 +86,10 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "@id": `${siteUrl}/#clinic`,
-  name: doctor.clinic,
-  url: siteUrl,
-  image: `${siteUrl}${doctor.photo}`,
-  telephone: doctor.phoneVcard,
-  email: doctor.email,
-  priceRange: "₹₹",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: addressOneLine,
-    addressLocality: doctor.address.locality,
-    addressRegion: doctor.address.region,
-    postalCode: doctor.address.postalCode,
-    addressCountry: "IN",
-  },
-  hasMap: doctor.directionsHref,
-  medicalSpecialty: "Dentistry",
-  founder: {
-    "@type": "Person",
-    name: doctor.fullName,
-    jobTitle: doctor.specialization,
-  },
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${body.variable} ${logo.variable}`}>
       <body className="font-sans antialiased bg-offwhite text-plum">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
         {children}
       </body>
     </html>

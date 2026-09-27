@@ -1,9 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import Image from "next/image";
-import { Sparkle } from "./Sparkle";
 
 const easeExpo = [0.16, 1, 0.3, 1] as const;
 
@@ -54,6 +52,11 @@ function RotatingWord() {
 
 export function Hero() {
   const reduce = useReducedMotion();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (reduce) videoRef.current?.pause();
+  }, [reduce]);
 
   const rise = (delay: number) => ({
     initial: reduce ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 },
@@ -62,68 +65,66 @@ export function Hero() {
   });
 
   return (
-    <section id="top" className="relative bg-offwhite pt-20 overflow-hidden">
-      <div className="container-x">
-        <div className="grid grid-cols-12 gap-x-4 md:gap-x-6">
-          {/* Image block — starts flush under the nav, offset from the left edge */}
-          <motion.div
-            {...rise(0.1)}
-            className="relative col-span-12 md:col-span-7 md:col-start-1 h-[58vh] min-h-[380px] md:h-[76vh] md:min-h-[520px] md:max-h-[820px]"
+    <section
+      id="top"
+      className="relative flex min-h-[620px] h-[100svh] max-h-[1000px] items-end overflow-hidden bg-teal"
+    >
+      <div className="absolute inset-0">
+        <video
+          ref={videoRef}
+          className="h-full w-full object-cover"
+          src="/videos/biolume-hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+        />
+        {/* Scrim keeps white type legible over any frame of the video */}
+        <div className="absolute inset-0 bg-gradient-to-t from-plum/85 via-plum/35 to-plum/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-plum/50 via-transparent to-transparent" />
+        {/* Soft top fade so the transparent navbar stays readable */}
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-plum/40 to-transparent" />
+      </div>
+
+      <div className="container-x relative w-full pb-16 md:pb-24">
+        <div className="max-w-2xl">
+          <motion.h1
+            {...rise(0.25)}
+            className="font-display text-offwhite font-medium leading-[1.08] tracking-[0.01em] text-balance text-[clamp(2.1rem,4.4vw,3.6rem)]"
           >
-            <Image
-              src="/ai-generated-young-woman-smiling-during-a-dental-check-up-photo.jpeg"
-              alt="Patient smiling during a dental check-up at Biolume Dental Care, Vashi"
-              fill
-              priority
-              quality={90}
-              sizes="(max-width: 768px) 100vw, 58vw"
-              className="object-cover object-top"
-            />
-            {/* Soft scrim so the overlaid headline stays legible */}
-            <div className="absolute inset-0 bg-gradient-to-b from-plum/45 via-plum/5 to-transparent" />
+            Boutique dental studio in Vashi
+          </motion.h1>
 
-            {/* Overlaid headline, template-style: white uppercase on the image */}
-            <h1 className="absolute top-8 left-6 md:top-12 md:left-10 lg:left-14 text-offwhite font-display font-medium leading-[1.06] tracking-[0.02em] text-[clamp(2rem,5.2vw,4.2rem)] max-w-[10ch]">
-              Boutique dental studio
-            </h1>
-          </motion.div>
+          <motion.p
+            {...rise(0.4)}
+            className="mt-5 italic text-offwhite/90 leading-[1.4] text-[clamp(1.05rem,1.6vw,1.3rem)]"
+          >
+            <RotatingWord /> that deserve to last.
+          </motion.p>
 
-          {/* Right column — statement on cream */}
-          <div className="col-span-12 md:col-span-5 md:col-start-8 flex flex-col justify-end pb-2 md:pb-16 pt-10 md:pt-0 md:pl-6 lg:pl-10">
-            <motion.div {...rise(0.35)} className="relative">
-              <Sparkle
-                size={30}
-                strokeWidth={1}
-                className="hidden md:block absolute -top-16 right-0 text-mint"
-              />
-              <p className="font-display text-teal font-medium leading-[1.25] tracking-[0.02em] text-[clamp(1.6rem,3.4vw,2.8rem)] text-balance">
-                <RotatingWord /> that deserve to last.
-              </p>
-            </motion.div>
+          <motion.p
+            {...rise(0.5)}
+            className="mt-3 text-[13px] tracking-wide text-offwhite/70"
+          >
+            Dr. Dishani Chordia &middot; Implantologist &amp; Laser Specialist
+          </motion.p>
 
-            <motion.p
-              {...rise(0.5)}
-              className="mt-6 text-[14px] leading-[1.8] text-plum/80 max-w-sm"
+          <motion.div {...rise(0.62)} className="mt-9 flex flex-wrap items-center gap-6">
+            <a
+              href="#contact"
+              className="inline-flex items-center border border-offwhite bg-offwhite px-7 py-3 text-[11px] uppercase tracking-[0.2em] text-teal hover:bg-transparent hover:text-offwhite transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60 focus-visible:ring-offset-2 focus-visible:ring-offset-teal"
             >
-              Dr. Dishani Chordia &middot; BDS, Implantologist &amp; Laser Specialist.
-              Honest, gentle dentistry in Sector 19D, Vashi, Navi Mumbai.
-            </motion.p>
-
-            <motion.div {...rise(0.62)} className="mt-9 flex flex-wrap items-center gap-6">
-              <a
-                href="#contact"
-                className="inline-flex items-center border border-teal bg-teal px-7 py-3 text-[11px] uppercase tracking-[0.2em] text-offwhite hover:bg-transparent hover:text-teal transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint/60 focus-visible:ring-offset-2"
-              >
-                Book an Appointment
-              </a>
-              <a
-                href="#services"
-                className="text-[11px] uppercase tracking-[0.18em] text-plum/70 hover:text-teal underline underline-offset-[6px] decoration-plum/25 hover:decoration-teal transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
-              >
-                Our Services
-              </a>
-            </motion.div>
-          </div>
+              Book an Appointment
+            </a>
+            <a
+              href="#services"
+              className="text-[11px] uppercase tracking-[0.18em] text-offwhite/80 hover:text-offwhite underline underline-offset-[6px] decoration-offwhite/30 hover:decoration-offwhite transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offwhite/60 focus-visible:rounded"
+            >
+              Our Services
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

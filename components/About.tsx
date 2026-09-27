@@ -29,10 +29,10 @@ export function About() {
             <Reveal>
               <div className="relative aspect-[3/4] w-[82%]">
                 <Image
-                  src="/best-dental-clinic-in-cranbrook.jpg"
-                  alt="Dentist examining a patient's teeth at Biolume Dental Care, Sector 19D, Vashi"
+                  src="/clinic/reception.webp"
+                  alt="Reception at Biolume Dental Care, Sector 19D, Vashi"
                   fill
-                  quality={80}
+                  quality={85}
                   sizes="(max-width: 768px) 82vw, 34vw"
                   className="object-cover"
                 />
@@ -41,10 +41,10 @@ export function About() {
             <Reveal delay={0.12} className="absolute -bottom-10 right-0 w-[46%]">
               <div className="relative aspect-square border-[6px] border-offwhite">
                 <Image
-                  src="/istockphoto-1939508803-612x612.jpg"
-                  alt="Patient smiling after a dental check-up at the Biolume studio"
+                  src="/clinic/digital-equipment.webp"
+                  alt="Intraoral scanner, dental laser and digital X-ray unit at Biolume Dental Care"
                   fill
-                  quality={80}
+                  quality={85}
                   sizes="(max-width: 768px) 40vw, 18vw"
                   className="object-cover"
                 />

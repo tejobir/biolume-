@@ -31,7 +31,7 @@ export const doctor = {
     "Fellowship — Dental Implants",
     "Fellowship — Laser Dentistry",
   ],
-  photo: "/dr-dishani-chordia.jpeg",
+  photo: "/dr-dishani-chordia.jpg",
   photoAlt: "Dr. Dishani Chordia, Lead Dentist at Biolume Dental Care",
 
   // Clinic

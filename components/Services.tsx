@@ -70,10 +70,18 @@ const services = [
     image: "https://images.pexels.com/photos/6812494/pexels-photo-6812494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
-    name: "Pediatric Dentistry",
+    name: "Children's Dentistry",
     blurb:
       "Gentle cleanings, sealants, and low-radiation X-rays designed for young patients — making every visit easy and fear-free.",
+    slug: "childrens-dentistry-vashi-navi-mumbai",
     image: "https://images.pexels.com/photos/7800561/pexels-photo-7800561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  },
+  {
+    name: "Tooth Jewellery",
+    blurb:
+      "A small gem bonded to the tooth surface — no drilling, no pain, and removable any time without harming your enamel.",
+    slug: "tooth-jewellery-vashi-navi-mumbai",
+    image: "https://images.pexels.com/photos/6627574/pexels-photo-6627574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
     name: "TMJ / TMD Management",

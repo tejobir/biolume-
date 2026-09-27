@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { servicePages } from "@/lib/servicePages";
+import { blogPosts } from "@/lib/blog";
 
 const base = "https://www.biolumedentalcare.com";
 
@@ -15,6 +16,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.85,
+    })),
+    { url: `${base}/blog/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    ...blogPosts.map((p) => ({
+      url: `${base}/blog/${p.slug}/`,
+      lastModified: new Date(p.isoDate),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
     })),
   ];
 }

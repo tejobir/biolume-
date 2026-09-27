@@ -146,14 +146,13 @@ export function Services() {
                 {s.blurb}
               </p>
 
-              {"slug" in s && s.slug && (
-                <Link
-                  href={`/services/${s.slug}`}
-                  className="mt-4 inline-block text-[10.5px] uppercase tracking-[0.18em] text-plum/70 hover:text-teal underline underline-offset-4 decoration-plum/25 hover:decoration-teal transition-colors"
-                >
-                  View details
-                </Link>
-              )}
+              {/* Every card links somewhere: its own page if it has one, otherwise the full treatments list. */}
+              <Link
+                href={"slug" in s && s.slug ? `/services/${s.slug}` : "/services"}
+                className="mt-4 inline-block text-[10.5px] uppercase tracking-[0.18em] text-plum/70 hover:text-teal underline underline-offset-4 decoration-plum/25 hover:decoration-teal transition-colors"
+              >
+                {"slug" in s && s.slug ? "View details" : "See all treatments"}
+              </Link>
             </motion.article>
           ))}
         </motion.div>

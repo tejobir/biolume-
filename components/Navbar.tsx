@@ -140,6 +140,13 @@ export function Navbar() {
             ))}
 
             <Link
+              href="/blog/"
+              className="text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
+            >
+              Blog
+            </Link>
+
+            <Link
               href="/contact"
               className="text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
             >
@@ -260,6 +267,21 @@ export function Navbar() {
                     </motion.div>
                   )}
                 </AnimatePresence>
+              </motion.div>
+
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 14 },
+                  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } },
+                }}
+              >
+                <Link
+                  href="/blog/"
+                  onClick={() => setOpen(false)}
+                  className="text-3xl font-light uppercase tracking-[0.08em] text-offwhite hover:text-mint transition-colors focus-visible:outline-none focus-visible:text-mint"
+                >
+                  Blog
+                </Link>
               </motion.div>
 
               <motion.div

@@ -167,17 +167,11 @@ export function Navbar() {
               </a>
             ))}
 
-            <Link
-              href="/blog/"
-              className="text-[11.5px] uppercase tracking-[0.18em] text-plum/75 hover:text-teal transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-teal/50 focus-visible:rounded"
-            >
+            <Link href="/blog/" className={linkCls}>
               Blog
             </Link>
 
-            <Link
-              href="/contact"
-              className={linkCls}
-            >
+            <Link href="/contact" className={linkCls}>
               Contact
             </Link>
           </nav>

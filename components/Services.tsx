@@ -99,9 +99,49 @@ const services = [
 
 const INITIAL_COUNT = 6;
 
+type Service = (typeof services)[number];
+
+function ServiceCard({ s }: { s: Service }) {
+  return (
+    <motion.article variants={staggerItem} className="group">
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <Image
+          src={s.image}
+          alt={`${s.name} at Biolume Dental Care, Vashi`}
+          fill
+          quality={75}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover object-center transition-transform duration-700 ease-out-expo group-hover:scale-[1.04]"
+        />
+        {"specialty" in s && s.specialty && (
+          <span className="absolute top-3 right-3 text-[9px] uppercase tracking-[0.2em] text-offwhite border border-offwhite/70 px-2.5 py-1 bg-teal/70">
+            Specialty
+          </span>
+        )}
+      </div>
+
+      <h3 className="mt-6 text-[13px] uppercase tracking-[0.16em] font-semibold text-teal">
+        {s.name}
+      </h3>
+      <p className="mt-3 text-[13.5px] leading-[1.75] text-plum/75 text-pretty">
+        {s.blurb}
+      </p>
+
+      {/* Every card links somewhere: its own page if it has one, otherwise the full treatments list. */}
+      <Link
+        href={"slug" in s && s.slug ? `/services/${s.slug}` : "/services"}
+        className="mt-4 inline-block text-[10.5px] uppercase tracking-[0.18em] text-plum/70 hover:text-teal underline underline-offset-4 decoration-plum/25 hover:decoration-teal transition-colors"
+      >
+        {"slug" in s && s.slug ? "View details" : "See all treatments"}
+      </Link>
+    </motion.article>
+  );
+}
+
 export function Services() {
   const [expanded, setExpanded] = useState(false);
-  const visible = expanded ? services : services.slice(0, INITIAL_COUNT);
+  const initial = services.slice(0, INITIAL_COUNT);
+  const rest = services.slice(INITIAL_COUNT);
 
   return (
     <section id="services" className="relative py-24 md:py-32 bg-offwhite">
@@ -122,6 +162,15 @@ export function Services() {
           </Reveal>
         </div>
 
+        {/*
+         * Two separate grids, not one list re-sliced. The first is
+         * scroll-revealed (whileInView, once: true) since it's below the
+         * fold on load. The expanded batch mounts already in view (the
+         * user just clicked a button inside this section), so it animates
+         * in on mount instead — whileInView never fires a second time once
+         * "once: true" has already resolved, which left newly-added cards
+         * stuck at opacity: 0 (the "clicking shows nothing" bug).
+         */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -129,41 +178,26 @@ export function Services() {
           viewport={{ once: true, margin: "-60px" }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 md:gap-x-6 gap-y-14"
         >
-          {visible.map((s) => (
-            <motion.article key={s.name} variants={staggerItem} className="group">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src={s.image}
-                  alt={`${s.name} at Biolume Dental Care, Vashi`}
-                  fill
-                  quality={75}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover object-center transition-transform duration-700 ease-out-expo group-hover:scale-[1.04]"
-                />
-                {"specialty" in s && s.specialty && (
-                  <span className="absolute top-3 right-3 text-[9px] uppercase tracking-[0.2em] text-offwhite border border-offwhite/70 px-2.5 py-1 bg-teal/70">
-                    Specialty
-                  </span>
-                )}
-              </div>
-
-              <h3 className="mt-6 text-[13px] uppercase tracking-[0.16em] font-semibold text-teal">
-                {s.name}
-              </h3>
-              <p className="mt-3 text-[13.5px] leading-[1.75] text-plum/75 text-pretty">
-                {s.blurb}
-              </p>
-
-              {/* Every card links somewhere: its own page if it has one, otherwise the full treatments list. */}
-              <Link
-                href={"slug" in s && s.slug ? `/services/${s.slug}` : "/services"}
-                className="mt-4 inline-block text-[10.5px] uppercase tracking-[0.18em] text-plum/70 hover:text-teal underline underline-offset-4 decoration-plum/25 hover:decoration-teal transition-colors"
-              >
-                {"slug" in s && s.slug ? "View details" : "See all treatments"}
-              </Link>
-            </motion.article>
+          {initial.map((s) => (
+            <ServiceCard key={s.name} s={s} />
           ))}
         </motion.div>
+
+        <AnimatePresence>
+          {expanded && (
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 md:gap-x-6 gap-y-14"
+            >
+              {rest.map((s) => (
+                <ServiceCard key={s.name} s={s} />
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Expand / collapse */}
         <AnimatePresence initial={false}>

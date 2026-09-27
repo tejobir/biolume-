@@ -2,7 +2,7 @@
 ## Brightspan SEO Client Config File
 **Last Updated:** 27 September 2026
 **Managed by:** Tejobir Bishnoi, Brightspan
-**Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. No blog posts yet, and no blog engine exists yet.
+**Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. Blog engine built and first blog post published 27 Sep 2026.
 
 > Repo visibility: **PUBLIC** (`github.com/tejobir/biolume-`). Do not record
 > retainer, billing or any other commercial terms in this file while the repo
@@ -165,7 +165,7 @@ Never emit `aggregateRating` or `Review` JSON-LD, whatever the GBP rating turns 
 
 ## 6. SEO CURRENT STATE
 
-**Baseline:** Site is live and GSC-verified. Rank has never been checked, and there are 0 blog posts.
+**Baseline:** Site is live and GSC-verified. Rank has never been checked. 1 blog post published (see section 7).
 
 **Rank keywords given by operator (27 Sep 2026). Target is #1 for every one of them:**
 
@@ -185,6 +185,7 @@ Never emit `aggregateRating` or `Review` JSON-LD, whatever the GBP rating turns 
 - `/services/[slug]/`: 6 service pages live on `main` (implants, laser, smile makeover, orthodontics, root canal, preventive), plus children's dentistry and tooth jewellery once PR #1 merges
 - `/contact/`: address, hours, map, booking form
 - `/dr-dishani-jain/`: digital visiting card (the route name is legacy; see section 1)
+- `/blog/`: blog index. Posts live at `/blog/[slug]/`
 - `/#contact`: booking anchor (`bookingHref`). There is no third-party booking system yet
 
 **Service areas to reference:** Vashi, Navi Mumbai. Areas beyond Vashi are **TBC with client**. The site names no others, apart from placeholder testimonials.
@@ -194,14 +195,15 @@ Never emit `aggregateRating` or `Review` JSON-LD, whatever the GBP rating turns 
 
 ## 7. CONTENT CALENDAR
 
-No blog engine exists yet. The first blog run must build it first (ONBOARDING.md Step 3.2) and install the schema guard (Step 3.3). Every topic below is a **suggestion only**. Each post still needs the standard keyword plan, the cannibalisation check, an H1 check against `topics-used/vashi-dental-topics.md` in the hub, and operator approval.
+The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Every unpublished topic below is a **suggestion only**. Each post still needs the standard keyword plan, the cannibalisation check, an H1 check against `topics-used/vashi-dental-topics.md` in the hub, and operator approval.
 
 | # | Topic (working) | Target Keyword | Search Intent | Links up to | Status |
 |---|---|---|---|---|---|
-| 1 | What laser dentistry can (and can't) do: an honest guide | laser dentistry Vashi (informational cluster: laser gum treatment, laser vs traditional, does laser dentistry hurt) | Informational / decision | `/services/laser-dentistry-vashi-navi-mumbai/` | Suggested |
-| 2 | How to choose a dentist in Vashi when you're nervous | dentist in Vashi | Local commercial-informational. ⚠️ The Sector 17 client already has a "how to choose the right one for your family" checklist, so this post needs a different H1 and angle (anxiety-led, not family-checklist) | `/`, `/contact/` | Suggested |
-| 3 | Cosmetic dentistry options explained: whitening vs bonding vs veneers | cosmetic dentist in Vashi | Comparison / decision. ⚠️ The Sector 17 client has whitening, bonding, reshaping and veneers-vs-crowns posts, so pick a distinct angle | `/services/smile-makeover-vashi-navi-mumbai/` | Suggested |
-| 4 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | Suggested |
+| 1 | Dark Gums Treatment in Vashi: What Causes Them and Whether Laser Is Worth It | dark gums treatment Vashi (cluster: black gums causes, gum depigmentation Vashi, gum depigmentation cost Navi Mumbai, is gum depigmentation permanent, does laser gum depigmentation hurt, laser gum bleaching) | Informational / decision guide | `/services/laser-dentistry-vashi-navi-mumbai/`, `/services/smile-makeover-vashi-navi-mumbai/` | ✅ Published 27 Sep 2026: `/blog/dark-gums-treatment-vashi/` |
+| 2 | What laser dentistry can (and can't) do: an honest guide | laser dentistry Vashi | Informational / decision | `/services/laser-dentistry-vashi-navi-mumbai/` | ⏸ Deferred. The laser service page already answers pain, recovery, safety, children and laser vs scalpel, so a general laser post would echo it. Prefer single-procedure laser topics (frenectomy, crown lengthening, ulcer care) that the page covers in one bullet only |
+| 3 | How to choose a dentist in Vashi when you're nervous | dentist in Vashi | Local commercial-informational. ⚠️ The Sector 17 client already has a "how to choose the right one for your family" checklist, so this post needs a different H1 and angle (anxiety-led, not family-checklist) | `/`, `/contact/` | Suggested |
+| 4 | Cosmetic dentistry options explained: whitening vs bonding vs veneers | cosmetic dentist in Vashi | Comparison / decision. ⚠️ The Sector 17 client has whitening, bonding, reshaping and veneers-vs-crowns posts, so pick a distinct angle | `/services/smile-makeover-vashi-navi-mumbai/` | Suggested |
+| 5 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | Suggested |
 
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
 
@@ -250,8 +252,8 @@ Real clinic photos exist in `public/clinic/` (reception, treatment rooms, lounge
 - **Framework:** Next.js 14 App Router, TypeScript, Tailwind, `trailingSlash: true`. **No `src/` directory.**
 - **NAP / doctor data:** `lib/doctor.ts` (`siteUrl`, `doctor`, `addressOneLine`).
 - **Service pages:** typed objects in `lib/servicePages.ts` (`ServicePage` interface: `slug`, `metaTitle`, `h1`, `faqs`, …), rendered by `app/services/[slug]/page.tsx` via `components/ServicePageContent.tsx`. The sitemap (`app/sitemap.ts`) maps over `servicePages`, so a blog engine must add its own entries there.
-- **Blog:** none. There is no `/blog/` route and no posts data file. Build it at the first blog run (ONBOARDING.md Step 3.2) as its own commit.
-- **LocalBusiness schema:** ⚠️ `@type: Dentist` is currently emitted from **`app/layout.tsx`**, so it leaks onto every page. At the first blog run (Step 3.3), move it to `app/page.tsx` (homepage only) and install `scripts/check-schema.mjs` as `postbuild`. It has no `aggregateRating` today. Keep it that way.
+- **Blog:** posts are typed objects appended to `lib/blog.ts` (`BlogPost` interface). The body is a block array (`h2`/`h3`/`p`/`ul`), and `[label](/path/)` inside text becomes a link. FAQs use `{ q, a }`, matching the service pages. `app/blog/[slug]/page.tsx` emits Article + FAQPage + BreadcrumbList JSON-LD. `/blog/` lists the posts, and `app/sitemap.ts` maps over `blogPosts`. Hero images go in `public/images/blog/[slug]-hero.jpg`.
+- **LocalBusiness schema:** `@type: Dentist` is emitted from `app/page.tsx` (homepage). It was moved out of `app/layout.tsx` on 27 Sep 2026. `scripts/check-schema.mjs` runs as `postbuild` and fails the build if `aggregateRating` or `Review` ever appears. ⚠️ `/contact/` and `/dr-dishani-jain/` each define their own Dentist block (no rating). The hub rule says homepage only; left in place pending an operator decision.
 - **Images:** `next.config.mjs` already allows `images.pexels.com`. Real clinic photography lives in `public/clinic/*.webp`. Prefer it over stock wherever a real photo fits.
 - **Brand:** colours `#146155` / `#86ac8e` / `#efeae4`, DAZZLE Unicase (logo only) + Nunito. See `DESIGN.md`.
 - **Pexels image preferences:** calm, natural-light clinic interiors and real-looking adults. Avoid cold blue-white clinical stock, gloved open-mouth close-ups and marble/spa clichés (`PRODUCT.md` anti-references).

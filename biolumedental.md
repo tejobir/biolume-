@@ -1,6 +1,6 @@
 # biolumedental.md
 ## Brightspan SEO Client Config File
-**Last Updated:** 27 September 2026
+**Last Updated:** 6 October 2026
 **Managed by:** Tejobir Bishnoi, Brightspan
 **Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. Blog engine built and first blog post published 27 Sep 2026.
 
@@ -203,7 +203,7 @@ The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Eve
 | 2 | What laser dentistry can (and can't) do: an honest guide | laser dentistry Vashi | Informational / decision | `/services/laser-dentistry-vashi-navi-mumbai/` | ⏸ Deferred. The laser service page already answers pain, recovery, safety, children and laser vs scalpel, so a general laser post would echo it. Prefer single-procedure laser topics (frenectomy, crown lengthening, ulcer care) that the page covers in one bullet only |
 | 3 | How to choose a dentist in Vashi when you're nervous | dental anxiety Vashi (re-targeted: the homepage owns "dentist in Vashi") | Local commercial-informational. ⚠️ The Sector 17 client already has a "how to choose the right one for your family" checklist, so this post needs a different H1 and angle (anxiety-led, not family-checklist) | `/`, `/contact/` | ✅ Published 1 Oct 2026: `/blog/dental-anxiety-dentist-vashi/` |
 | 4 | Cosmetic dentistry options explained: whitening vs bonding vs veneers | cosmetic dentist in Vashi | Comparison / decision. ⚠️ The Sector 17 client has whitening, bonding, reshaping and veneers-vs-crowns posts, so pick a distinct angle | `/services/smile-makeover-vashi-navi-mumbai/` | Suggested |
-| 5 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | Suggested |
+| 5 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | ✅ Published 6 Oct 2026: `/blog/implant-planning-3d-scan-vashi/` |
 
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
 

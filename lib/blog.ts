@@ -373,6 +373,192 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "implant-planning-3d-scan-vashi",
+    title: "Before the Implant: What Your 3D Scan Shows, and What Happens Next",
+    excerpt:
+      "What an implant planning visit in Vashi actually involves: the 3D scan, what Dr. Chordia checks on screen, the three possible outcomes, and what to ask.",
+    metaTitle: "Dental Implant Planning in Vashi: The 3D Scan | Biolume",
+    metaDescription:
+      "Wondering what happens before a dental implant? See what a 3D scan shows, what planning involves and what to ask at Biolume Dental Care, Vashi. Book a visit.",
+    isoDate: "2026-10-06",
+    dateDisplay: "October 6, 2026",
+    heroImage: {
+      src: "/images/blog/implant-planning-3d-scan-vashi-hero.jpg",
+      alt: "Dental X-ray on a monitor during dental implant planning in Vashi, Navi Mumbai",
+      photographer: "Polina Zimmerman",
+      photographerUrl: "https://www.pexels.com/@polina-zimmerman",
+    },
+    content: [
+      {
+        type: "p",
+        text: "Most people picture an implant as the surgery. The part that decides how it goes happens earlier, at a desk, looking at a screen. Dental implant planning in Vashi starts with a 3D scan of your jaw, and at Biolume Dental Care in Sector 19D, you look at that scan together with Dr. Dishani Chordia before anything is booked. Here's what that visit involves.",
+      },
+      {
+        type: "h2",
+        text: "Why Implant Planning Comes Before the Implant",
+      },
+      {
+        type: "p",
+        text: "An implant sits inside bone, so the question is never just where the gap is. It's how much bone is there, how dense it is, and what runs through it. A normal dental X-ray is flat. It can show how tall the bone is, but not how wide.",
+      },
+      {
+        type: "p",
+        text: "A 3D scan fills that in. The dentist can then pick the size, angle and position of the implant on screen, instead of finding out mid-procedure. That's the whole point of planning: fewer surprises for you, and fewer decisions made on the day.",
+      },
+      {
+        type: "h2",
+        text: "What a 3D Scan for Dental Implants Actually Is",
+      },
+      {
+        type: "p",
+        text: "The scan is called CBCT, short for cone-beam computed tomography. You stand or sit still while a machine rotates once around your head. It takes under a minute, and nothing touches you. The images are stitched into a 3D model of your jaw that can be turned and sliced on screen.",
+      },
+      {
+        type: "p",
+        text: "It's an X-ray technique, so it isn't used casually. The [FDA's page on dental cone-beam CT](https://www.fda.gov/radiation-emitting-products/medical-x-ray-imaging/dental-cone-beam-computed-tomography) notes that dental X-ray exams, CBCT included, should be done only when they're needed to diagnose or plan treatment. Implant planning is one of the clearest cases where that's true.",
+      },
+      {
+        type: "h2",
+        text: "What Dr. Chordia Checks on Screen",
+      },
+      {
+        type: "p",
+        text: "Once the model is up, you see it too. Dr. Chordia, who holds Fellowships in Dental Implants and Laser Dentistry, walks through the same short list each time:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bone width and height at the gap, measured in millimetres, so the implant size fits the bone you have.",
+          "Bone density, which affects how the implant is placed and how long healing may take.",
+          "The nerve canal in the lower jaw, so the implant stays a safe distance from it.",
+          "The sinus floor in the upper jaw, which limits how long an implant can be in some spots.",
+          "Neighbouring teeth and any leftover root pieces at the site.",
+        ],
+      },
+      {
+        type: "p",
+        text: "You don't need to understand every grey shape. Ask her to point at the bone, then at the nerve, and the picture makes sense quickly. People tend to relax once they can see the plan instead of imagining it.",
+      },
+      {
+        type: "h2",
+        text: "Do I Need a Bone Graft Before a Dental Implant?",
+      },
+      {
+        type: "p",
+        text: "This is the question most people carry into the room, and the scan answers it. If the bone is wide and dense enough, you may not need one. If it's thin, a graft adds bone first, and that means more time before the implant itself.",
+      },
+      {
+        type: "p",
+        text: "A graft isn't a failure of anything. Bone often shrinks after a tooth has been missing for a while, so a gap that's years old is more likely to need support than a recent one. Knowing that at the planning stage is far better than discovering it halfway through.",
+      },
+      {
+        type: "h2",
+        text: "The Three Outcomes of an Implant Consultation in Vashi",
+      },
+      {
+        type: "p",
+        text: "After the scan and the exam, you'll land in one of three places. All three are normal.",
+      },
+      {
+        type: "h3",
+        text: "1. You're ready to go ahead",
+      },
+      {
+        type: "p",
+        text: "The bone is suitable and your gums and general health are in good shape. You get a plan with the stages, the rough timeline and what each visit involves. Nothing is booked until you agree.",
+      },
+      {
+        type: "h3",
+        text: "2. Something needs sorting first",
+      },
+      {
+        type: "p",
+        text: "That could be a bone graft, gum treatment, or a tooth that needs to come out or be saved. Conditions like active gum disease, uncontrolled diabetes and heavy smoking all affect how an implant heals, so they get dealt with first. It adds a step, but it protects the result.",
+      },
+      {
+        type: "h3",
+        text: "3. An implant isn't the right choice right now",
+      },
+      {
+        type: "p",
+        text: "Sometimes a bridge or a partial denture suits you better, and sometimes it's simply too early, for example in a teenager whose jaw is still growing. If that's the case, Dr. Chordia will say so and explain why. An honest \"not yet\" is part of good planning, and it costs you less than a rushed yes.",
+      },
+      {
+        type: "h2",
+        text: "What to Bring and What to Ask",
+      },
+      {
+        type: "p",
+        text: "You don't need to prepare much. A little homework makes the visit more useful:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bring any old dental X-rays or reports, and a list of your medicines.",
+          "Mention diabetes, blood pressure, smoking or any blood thinners. They change the plan.",
+          "Ask how many visits there will be, and how long healing usually takes.",
+          "Ask what happens if the bone turns out to be thin.",
+          "Ask what the crown will look like and when you'd get it.",
+          "Ask what you can't eat, and for how long, after placement.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Cost depends on the number of implants and whether anything else is needed first, so it's settled at the consultation once the scan has been read. Nobody can quote it fairly before that.",
+      },
+      {
+        type: "h2",
+        text: "Where This Fits in the Whole Treatment",
+      },
+      {
+        type: "p",
+        text: "Planning is stage one of four: scan and plan, placement, healing, then the crown. Placement is done under local anaesthesia, and healing takes a few months while bone grows around the implant. Our [dental implants page](/services/dental-implants-vashi-navi-mumbai/) covers the whole sequence, and the [American Dental Association's implant overview](https://www.mouthhealthy.org/all-topics-a-z/implants) explains the same process in general terms.",
+      },
+      {
+        type: "p",
+        text: "Laser plays a small supporting role at certain points, such as shaping gum tissue around the site. It isn't the main event, and it's only used where it helps. You can read where on our [laser dentistry page](/services/laser-dentistry-vashi-navi-mumbai/).",
+      },
+      {
+        type: "p",
+        text: "If the idea of any of this makes you tense, you're not the only one. Our piece on [choosing a dentist in Vashi when you're nervous](/blog/dental-anxiety-dentist-vashi/) lists what to ask before you book, and a planning visit is a good low-pressure place to start, because nothing is done to you.",
+      },
+      {
+        type: "h2",
+        text: "Book an Implant Planning Visit in Vashi",
+      },
+      {
+        type: "p",
+        text: "Biolume Dental Care is at Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703. We're open Monday to Saturday, 10 AM to 8 PM, and Sundays by appointment. Use the form on our [contact page](/contact/) to book a consultation, and bring your questions.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What is a 3D scan for dental implants?",
+        a: "It's a CBCT scan, where a machine rotates once around your head and builds a 3D model of your jaw. It takes under a minute and shows bone width, density, nerves and the sinus, so the implant can be planned precisely.",
+      },
+      {
+        q: "Is a CBCT scan before a dental implant necessary?",
+        a: "For implant planning it's the standard way to see what a flat X-ray can't, such as how wide the bone is and where the nerve runs. Your dentist will confirm whether it's needed in your case.",
+      },
+      {
+        q: "Do I need a bone graft before a dental implant?",
+        a: "Not always. If your bone is wide and dense enough at the gap, you may not need one. The 3D scan shows this, and if a graft is needed, Dr. Chordia explains the options and the extra time.",
+      },
+      {
+        q: "How long does it take before a dental implant is placed?",
+        a: "If the planning visit shows everything is suitable, placement can be scheduled soon after. If a graft or gum treatment comes first, that adds healing time. You get a realistic timeline at the consultation.",
+      },
+      {
+        q: "What happens at an implant consultation in Vashi?",
+        a: "You have an exam, a review of your dental and medical history, and a 3D scan if it's needed. Then you look at the scan with Dr. Chordia and get a plan in plain words. No treatment starts until you agree.",
+      },
+      {
+        q: "Can everyone get dental implants?",
+        a: "No. Active gum disease, uncontrolled diabetes, heavy smoking and a jaw that's still growing all affect suitability. Some of these can be treated first. If an implant isn't right for you, you'll be told why and what the alternatives are.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

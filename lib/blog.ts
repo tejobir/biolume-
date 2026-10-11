@@ -559,6 +559,172 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cosmetic-dentist-vashi-whitening-bonding-veneers",
+    title:
+      "Cosmetic Dentist in Vashi: Whitening, Bonding or Veneers, Which One Fits What You See?",
+    excerpt:
+      "Start from what bothers you in the mirror, colour, a chip or the shape, and see whether whitening, bonding or veneers fits. A guide from a cosmetic dentist in Vashi.",
+    metaTitle: "Cosmetic Dentist in Vashi: Which Fix? | Biolume Dental Care",
+    metaDescription:
+      "Not sure if you need whitening, bonding or veneers? Dr. Dishani Chordia explains how to choose at Biolume Dental Care, Vashi. Book a consultation.",
+    isoDate: "2026-10-11",
+    dateDisplay: "October 11, 2026",
+    heroImage: {
+      src: "/images/blog/cosmetic-dentist-vashi-whitening-bonding-veneers-hero.jpg",
+      alt: "Young woman smiling outdoors, cosmetic dentist in Vashi, Navi Mumbai",
+      photographer: "Min An",
+      photographerUrl: "https://www.pexels.com/@minan1398",
+    },
+    content: [
+      {
+        type: "p",
+        text: "You catch your smile in a photo and something is off. Maybe the colour, a chipped edge, or the shape of one tooth. Most people searching for a cosmetic dentist in Vashi already know what bothers them. What they don't know is which fix matches it. Here's how Dr. Dishani Chordia at Biolume Dental Care in Sector 19D sorts it out.",
+      },
+      {
+        type: "h2",
+        text: "Start With What You See, Not the Treatment",
+      },
+      {
+        type: "p",
+        text: "Whitening, bonding and veneers get compared as if they were rivals. They aren't. Each one solves a different problem, so the useful question is what exactly bothers you.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your teeth look yellow or dull, but their shape is fine: that's a colour problem.",
+          "You have a small chip, a little gap or one uneven edge: that's a repair problem.",
+          "Several front teeth are worn, misshapen or stained in a way that won't lift: that's a design problem.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Colour points to whitening, repair points to bonding, and design points to veneers. Plenty of people have more than one of these, which is where the order of treatment starts to matter.",
+      },
+      {
+        type: "h2",
+        text: "Whitening vs Veneers in Vashi: When Colour Is the Only Issue",
+      },
+      {
+        type: "p",
+        text: "If your teeth are healthy and simply darker than you'd like, whitening is usually the first thing to try. It changes the shade of natural tooth and leaves the shape alone. It's also the gentlest option, because nothing is cut away.",
+      },
+      {
+        type: "p",
+        text: "There's one catch. Whitening only works on natural enamel. Fillings, crowns and veneers don't change colour, so a whitened smile can end up with a few teeth that no longer match. That's worth knowing before you start, not after.",
+      },
+      {
+        type: "p",
+        text: "Some stains also sit inside the tooth rather than on it, often after a root canal or from medicines taken in childhood. Those respond differently, and a quick exam tells you which kind you have. A veneer is rarely the right answer to a colour problem that whitening hasn't been tried on.",
+      },
+      {
+        type: "p",
+        text: "Expect some sensitivity to cold during whitening. It usually settles within a day or two. If your teeth already zing at cold water, say so at the start, because it changes how the whitening is done and how strong it is.",
+      },
+      {
+        type: "h2",
+        text: "Composite Bonding vs Veneers in Navi Mumbai: Fixing Small Flaws",
+      },
+      {
+        type: "p",
+        text: "Bonding uses tooth-coloured resin that is shaped onto the tooth and set with a light. It's done in one visit, and often needs little or no drilling. For a chipped corner or a small gap, it's a sensible, conservative choice.",
+      },
+      {
+        type: "p",
+        text: "The trade-off is durability. Resin can chip and pick up stains over time, especially with tea, coffee or turmeric in your routine, and it may need touching up. If you grind your teeth at night, mention it, because grinding is hard on bonding.",
+      },
+      {
+        type: "p",
+        text: "Veneers are thin shells, usually porcelain, made in a lab and fixed to the front of the tooth. They resist stains better and many last a decade or more with care. The cost is that some enamel is usually shaved away first, and that part can't be undone. The [American Dental Association's veneers page](https://www.mouthhealthy.org/all-topics-a-z/veneers) explains the same trade-off in general terms.",
+      },
+      {
+        type: "p",
+        text: "Day to day, both need ordinary care. Brush twice a day, floss, and go easy on ice, pen caps and fingernails. Bonded and veneered teeth can chip like natural ones, and a night guard is worth considering if you clench. Keep your six-month check-ups, because that's when small edge problems get spotted early and fixed before they grow.",
+      },
+      {
+        type: "p",
+        text: "Neither option is a one-time purchase you forget about. Think of both as work that needs a little looking after, the way a good watch does. That's a fair thing to ask any clinic before you commit: what will upkeep look like in year three?",
+      },
+      {
+        type: "h2",
+        text: "Whitening Before Bonding or Veneers: Why the Order Matters",
+      },
+      {
+        type: "p",
+        text: "If you want more than one of these, whitening comes first. Bonding resin and veneers are matched to the shade of your teeth on the day. Whiten afterwards and your natural teeth lighten while the new work stays put.",
+      },
+      {
+        type: "p",
+        text: "So the usual sequence is whitening, a short wait for the shade to settle, then bonding or veneers matched to the new colour. Gum shape counts too. If one tooth looks short because of an uneven gum line, reshaping it with a laser can come before any of this. Our [dark gums guide](/blog/dark-gums-treatment-vashi/) shows what laser work on gums involves.",
+      },
+      {
+        type: "h2",
+        text: "When None of These Is the Right Move",
+      },
+      {
+        type: "p",
+        text: "Sometimes the honest advice is to fix something else first. Active gum disease, untreated decay and sensitive teeth all need attention before anything cosmetic. Cosmetic work placed over a weak foundation won't hold up.",
+      },
+      {
+        type: "p",
+        text: "If your teeth are crooked rather than discoloured, braces or aligners may suit you better than covering the problem. And if you only need a clean, a professional scale and polish can lift surface stains enough that you won't need whitening at all. Dr. Chordia will tell you if that's the case.",
+      },
+      {
+        type: "h2",
+        text: "What a Cosmetic Consultation at Biolume Looks Like",
+      },
+      {
+        type: "p",
+        text: "You start by saying what you don't like, in your own words. Dr. Chordia examines your teeth and gums, takes photographs, and explains which option fits and in what order. You see what we see, using an intraoral camera, so the advice isn't abstract.",
+      },
+      {
+        type: "p",
+        text: "Nothing starts until you agree. Cost depends on how many teeth are involved and which treatment suits them, so it's confirmed after the consultation. When several treatments are combined, our [smile makeover page](/services/smile-makeover-vashi-navi-mumbai/) explains how they're planned together, including the digital preview.",
+      },
+      {
+        type: "p",
+        text: "A tip for the visit: bring a photo of a smile you like, or a picture of yourself from a few years back. It tells the dentist more than adjectives do.",
+      },
+      {
+        type: "h2",
+        text: "Book a Cosmetic Dentist Visit in Vashi",
+      },
+      {
+        type: "p",
+        text: "Biolume Dental Care is at Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703. We're open Monday to Saturday, 10 AM to 8 PM, and Sundays by appointment. Use the form on our [contact page](/contact/) to book a consultation, and tell us what you'd like to change.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Which is better, teeth whitening or veneers?",
+        a: "They solve different problems. Whitening changes the colour of natural teeth and removes nothing. Veneers change colour, shape and size, but need some enamel removed. If colour is the only issue, whitening usually comes first.",
+      },
+      {
+        q: "Is composite bonding or veneers better for a chipped tooth?",
+        a: "For a small chip, bonding is usually the conservative choice and is done in one visit. For several worn or damaged front teeth, veneers can give a more durable result. The exam decides.",
+      },
+      {
+        q: "Should I whiten my teeth before getting veneers or bonding?",
+        a: "Yes, in most cases. Veneers and bonding are colour-matched to the shade you have at the time and don't change colour with whitening. Whiten first, let the shade settle, then match the new work to it.",
+      },
+      {
+        q: "How long do veneers last?",
+        a: "Many last a decade or more with good care, though it varies by person. Habits such as grinding, biting hard objects and skipping check-ups shorten their life.",
+      },
+      {
+        q: "Can bonded teeth or veneers be whitened?",
+        a: "No. Whitening only works on natural enamel, so bonding, veneers, crowns and fillings keep their original shade. This is why whitening comes before other cosmetic work.",
+      },
+      {
+        q: "Where can I find a cosmetic dentist near me in Vashi?",
+        a: "Biolume Dental Care is in Sector 19D, Palm Beach Road, Vashi, with Dr. Dishani Chordia leading cosmetic and laser care. Book a consultation through the contact page and bring photos of what you'd like to change.",
+      },
+      {
+        q: "What does cosmetic dentistry cost in Navi Mumbai?",
+        a: "It depends on the treatment and the number of teeth. Whitening, bonding and veneers differ widely, so the exact cost varies from patient to patient and Dr. Chordia confirms it after the consultation.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

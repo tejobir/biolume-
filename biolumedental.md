@@ -1,6 +1,6 @@
 # biolumedental.md
 ## Brightspan SEO Client Config File
-**Last Updated:** 6 October 2026
+**Last Updated:** 11 October 2026
 **Managed by:** Tejobir Bishnoi, Brightspan
 **Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. Blog engine built and first blog post published 27 Sep 2026.
 
@@ -202,7 +202,7 @@ The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Eve
 | 1 | Dark Gums Treatment in Vashi: What Causes Them and Whether Laser Is Worth It | dark gums treatment Vashi (cluster: black gums causes, gum depigmentation Vashi, gum depigmentation cost Navi Mumbai, is gum depigmentation permanent, does laser gum depigmentation hurt, laser gum bleaching) | Informational / decision guide | `/services/laser-dentistry-vashi-navi-mumbai/`, `/services/smile-makeover-vashi-navi-mumbai/` | ✅ Published 27 Sep 2026: `/blog/dark-gums-treatment-vashi/` |
 | 2 | What laser dentistry can (and can't) do: an honest guide | laser dentistry Vashi | Informational / decision | `/services/laser-dentistry-vashi-navi-mumbai/` | ⏸ Deferred. The laser service page already answers pain, recovery, safety, children and laser vs scalpel, so a general laser post would echo it. Prefer single-procedure laser topics (frenectomy, crown lengthening, ulcer care) that the page covers in one bullet only |
 | 3 | How to choose a dentist in Vashi when you're nervous | dental anxiety Vashi (re-targeted: the homepage owns "dentist in Vashi") | Local commercial-informational. ⚠️ The Sector 17 client already has a "how to choose the right one for your family" checklist, so this post needs a different H1 and angle (anxiety-led, not family-checklist) | `/`, `/contact/` | ✅ Published 1 Oct 2026: `/blog/dental-anxiety-dentist-vashi/` |
-| 4 | Cosmetic dentistry options explained: whitening vs bonding vs veneers | cosmetic dentist in Vashi | Comparison / decision. ⚠️ The Sector 17 client has whitening, bonding, reshaping and veneers-vs-crowns posts, so pick a distinct angle | `/services/smile-makeover-vashi-navi-mumbai/` | Suggested |
+| 4 | Cosmetic dentistry options explained: whitening vs bonding vs veneers | cosmetic dentist in Vashi | Comparison / decision. ⚠️ The Sector 17 client has whitening, bonding, reshaping and veneers-vs-crowns posts, so pick a distinct angle | `/services/smile-makeover-vashi-navi-mumbai/` | ✅ Published 11 Oct 2026: `/blog/cosmetic-dentist-vashi-whitening-bonding-veneers/` |
 | 5 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | ✅ Published 6 Oct 2026: `/blog/implant-planning-3d-scan-vashi/` |
 
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
@@ -215,7 +215,21 @@ No publishing cadence has been agreed yet. Pick the next topic when asked rather
 
 | Date | Post Topic | Type | Photo Used | CTA | Status |
 |---|---|---|---|---|---|
-| none yet | | | | | |
+| 11 Oct 2026 | Whitening comes before bonding or veneers (shade matching) | Service education | `public/clinic/reception.webp` or `treatment-room-window.webp` (pick one) | Learn more, button to `/blog/cosmetic-dentist-vashi-whitening-bonding-veneers/` | **Drafted, not posted.** GBP link and manager access unconfirmed |
+
+**Draft #1 text** *(about 1,000 characters; no phone, no URL in text, one emoji)*:
+
+> Planning to whiten your teeth and fix a chipped edge too? Do the whitening first.
+>
+> Bonding and veneers are colour-matched to the shade your teeth are on the day. Whiten afterwards and your natural teeth get lighter while the new work stays the same, so they stop matching. Whitening only works on natural enamel, which is why the order matters.
+>
+> Not sure whether you need whitening, bonding or veneers? Start with what bothers you: the colour, a small chip, or the shape of a few teeth. Dr. Dishani Chordia will look at your teeth, explain which option fits and in what order, and nothing starts until you agree.
+>
+> Biolume Dental Care
+> Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703
+> Mon to Sat, 10 AM to 8 PM. Sundays by appointment. 😊
+
+Next GBP post: due 10 to 15 days after this one is posted (2 per month).
 
 Real clinic photos exist in `public/clinic/` (reception, treatment rooms, lounge, OPG, digital equipment). Once PR #1 merges they are the GBP photo pool. Never use stock photos on GBP.
 

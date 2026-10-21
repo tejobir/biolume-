@@ -725,6 +725,188 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "frenectomy-tongue-tie-lip-tie-vashi",
+    title:
+      "Tongue Tie or Lip Tie? What a Frenectomy in Vashi Involves, and Who Really Needs One",
+    excerpt:
+      "Not every tongue tie or lip tie needs treatment. Here is how to tell, what a laser frenectomy in Vashi involves, and what healing looks like for babies, children and adults.",
+    metaTitle: "Frenectomy in Vashi: Tongue and Lip Tie | Biolume",
+    metaDescription:
+      "Wondering if you or your child needs a frenectomy in Vashi? Dr. Dishani Chordia explains laser tongue and lip tie release at Biolume. Book a visit.",
+    isoDate: "2026-10-21",
+    dateDisplay: "October 21, 2026",
+    heroImage: {
+      src: "/images/blog/frenectomy-tongue-tie-lip-tie-vashi-hero.jpg",
+      alt: "Mother holding a smiling baby by a window, frenectomy in Vashi, Navi Mumbai",
+      photographer: "Mohamad Mekawi",
+      photographerUrl: "https://www.pexels.com/@mohamad-mekawi-74909946",
+    },
+    content: [
+      {
+        type: "p",
+        text: "Your baby keeps slipping off the latch. Or your five-year-old can't lick an ice cream cone properly. Or you've never been able to stick your own tongue out very far. Most people searching for a frenectomy in Vashi are describing something like this. Dr. Dishani Chordia at Biolume Dental Care in Sector 19D explains what tongue and lip ties are, and who needs them released.",
+      },
+      {
+        type: "h2",
+        text: "What a Frenulum Is, and What Tongue Tie and Lip Tie Mean",
+      },
+      {
+        type: "p",
+        text: "A frenulum is a small fold of tissue that anchors one part of your mouth to another. You have one under your tongue and one between your upper lip and your gum. Everyone does, and most are perfectly fine.",
+      },
+      {
+        type: "p",
+        text: "A tongue tie means the fold under the tongue is short or tight, so the tongue can't move as freely as it should. A lip tie means the fold under the upper lip is thick or low, and holds the lip close to the gum. A frenectomy is the small procedure that releases one of these folds.",
+      },
+      {
+        type: "p",
+        text: "Having a tight-looking frenulum is not the same as having a problem. What matters is whether it gets in the way of feeding, speech, eating or your teeth and gums.",
+      },
+      {
+        type: "h2",
+        text: "Lip Tie Treatment for Babies and Children: Who Needs One",
+      },
+      {
+        type: "p",
+        text: "In newborns, the usual reason to look at a tie is trouble with feeding. That can mean a shallow latch, clicking sounds, long feeds, or a baby who stays hungry. The NHS is clear that [not every tongue tie needs treatment](https://www.nhs.uk/best-start-in-life/baby/feeding-your-baby/breastfeeding/breastfeeding-challenges/tongue-tie/), because some babies feed well despite one.",
+      },
+      {
+        type: "p",
+        text: "So the first step for a baby is a feeding assessment, not a procedure. A lactation consultant or paediatrician can tell you whether the tie is actually the cause. Many feeding problems turn out to be positioning issues that are fixed without any cutting.",
+      },
+      {
+        type: "p",
+        text: "In older children, the signs shift. A parent might notice a child who struggles to say certain sounds, can't lift the tongue to the roof of the mouth, or avoids foods that need a lot of tongue movement. A lip tie can show up as a gap between the front teeth or gum that looks pulled when the lip lifts.",
+      },
+      {
+        type: "p",
+        text: "If you're worried, bring your child in for a look. Dr. Chordia will tell you whether the tie matters, whether it can wait, or whether a speech therapist or paediatric specialist should see your child first.",
+      },
+      {
+        type: "h2",
+        text: "Tongue Tie in Adults: Yes, It Happens",
+      },
+      {
+        type: "p",
+        text: "Plenty of adults have a tongue tie that was never noticed. Many have simply adapted. You might find it hard to clean food from your back teeth with your tongue, or feel your tongue pulling when you try to reach the roof of your mouth.",
+      },
+      {
+        type: "p",
+        text: "A tight lip frenulum in an adult can sit right against the gum between the upper front teeth. It can make brushing there uncomfortable, and it sometimes pulls on the gum. In those cases, releasing it can be part of the plan before braces or gum work.",
+      },
+      {
+        type: "p",
+        text: "If nothing bothers you, you don't need to do anything. A tie that causes no trouble is just a feature of your mouth.",
+      },
+      {
+        type: "h2",
+        text: "Laser Frenectomy in Navi Mumbai: How It Works Step by Step",
+      },
+      {
+        type: "p",
+        text: "At Biolume, Dr. Chordia holds a Fellowship in Laser Dentistry, and a frenectomy is one of the soft-tissue procedures a dental laser is well suited to. The laser cuts and seals the tissue at the same time. For suitable cases, that can mean less bleeding and faster healing, often without stitches.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Examination and a clear explanation",
+      },
+      {
+        type: "p",
+        text: "You see the tie on the intraoral camera screen, so you know what is being talked about. Dr. Chordia checks how far the tongue or lip actually moves and explains whether release will help.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Numbing, where needed",
+      },
+      {
+        type: "p",
+        text: "Older children and adults usually get a local anaesthetic so the area is numb. Very small ties may need less. If you or your child is nervous, say so at this point. Our [guide for nervous patients](/blog/dental-anxiety-dentist-vashi/) explains how we slow things down.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: The release itself",
+      },
+      {
+        type: "p",
+        text: "The laser releases the fold in a short procedure. It is usually over in minutes, though the visit as a whole takes longer because of the explanation and aftercare.",
+      },
+      {
+        type: "h3",
+        text: "Step 4: Aftercare instructions",
+      },
+      {
+        type: "p",
+        text: "You'll be told what to eat, how to keep the area clean, and what to watch for. For tongue ties, gentle tongue exercises are often advised so the tissue doesn't tighten again as it heals.",
+      },
+      {
+        type: "p",
+        text: "Our [laser dentistry page](/services/laser-dentistry-vashi-navi-mumbai/) lists the other soft-tissue procedures Dr. Chordia does with the laser.",
+      },
+      {
+        type: "h2",
+        text: "Healing After a Frenectomy: What to Expect",
+      },
+      {
+        type: "p",
+        text: "The area usually looks white or yellowish for a few days, which is normal healing and not an infection. Mild soreness is common, and soft, cool foods help. Most people find the first few days the most noticeable, with the area settling over the next one to two weeks.",
+      },
+      {
+        type: "p",
+        text: "Healing varies with age and how deep the release was. The exercises matter more than people expect, and skipping them is the usual reason a tie tightens up again. Tell us at the follow-up if anything feels wrong, and we'll check it.",
+      },
+      {
+        type: "h2",
+        text: "When You Do Not Need a Frenectomy",
+      },
+      {
+        type: "p",
+        text: "You don't need one if the tie causes no trouble with feeding, speech, eating or cleaning your teeth. You also don't need one just because someone online called it a tongue tie. And a baby who is feeding well usually needs nothing at all.",
+      },
+      {
+        type: "p",
+        text: "A frenectomy also isn't a fix for every speech delay or feeding difficulty. Those have many causes, which is why an assessment comes first and the procedure second, if at all.",
+      },
+      {
+        type: "h2",
+        text: "Book a Frenectomy Consultation in Vashi",
+      },
+      {
+        type: "p",
+        text: "Biolume Dental Care is at Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703. We're open Monday to Saturday, 10 AM to 8 PM, and Sundays by appointment. Use the form on our [contact page](/contact/) to book, and tell us what you or your child has been struggling with. Cost depends on the case and is confirmed after the consultation.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What is a frenectomy?",
+        a: "A frenectomy is a short procedure that releases a tight frenulum, the fold of tissue under the tongue or under the upper lip. It's done to help movement, feeding, speech or gum comfort when the tie is causing a real problem.",
+      },
+      {
+        q: "Does a tongue tie always need to be treated?",
+        a: "No. Many tongue ties cause no trouble at all. Treatment is considered when a tie affects feeding, speech, eating or oral hygiene. A proper assessment tells you which group you're in.",
+      },
+      {
+        q: "Is a frenectomy painful?",
+        a: "Older children and adults are usually numbed first, so the procedure itself is comfortable. Some soreness for a few days afterwards is normal and manageable with soft foods and the aftercare you're given.",
+      },
+      {
+        q: "How long does it take to recover from a tongue tie release?",
+        a: "Most people feel the area settle over about one to two weeks. Full healing can take a little longer, depending on age and the type of release. Exercises help keep the tissue from tightening again.",
+      },
+      {
+        q: "Can adults have a frenectomy in Vashi?",
+        a: "Yes. Adults with a tight tongue or lip frenulum can be assessed and treated. It may be considered if the tie affects cleaning, comfort or gum health, or before braces and gum treatment.",
+      },
+      {
+        q: "Is laser frenectomy better than a scalpel?",
+        a: "The laser seals as it cuts, so for suitable cases there is often less bleeding and no stitches. A scalpel is still a sound option. Dr. Chordia will recommend the tool that suits the case, not the other way round.",
+      },
+      {
+        q: "What does a frenectomy cost in Navi Mumbai?",
+        a: "It depends on the type of tie and the age of the patient. The exact cost varies from patient to patient, and Dr. Chordia confirms it after the consultation.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

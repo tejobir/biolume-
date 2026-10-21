@@ -1,6 +1,6 @@
 # biolumedental.md
 ## Brightspan SEO Client Config File
-**Last Updated:** 11 October 2026
+**Last Updated:** 21 October 2026
 **Managed by:** Tejobir Bishnoi, Brightspan
 **Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. Blog engine built and first blog post published 27 Sep 2026.
 
@@ -205,6 +205,8 @@ The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Eve
 | 4 | Cosmetic dentistry options explained: whitening vs bonding vs veneers | cosmetic dentist in Vashi | Comparison / decision. ⚠️ The Sector 17 client has whitening, bonding, reshaping and veneers-vs-crowns posts, so pick a distinct angle | `/services/smile-makeover-vashi-navi-mumbai/` | ✅ Published 11 Oct 2026: `/blog/cosmetic-dentist-vashi-whitening-bonding-veneers/` |
 | 5 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | ✅ Published 6 Oct 2026: `/blog/implant-planning-3d-scan-vashi/` |
 
+| 6 | Tongue tie or lip tie: who needs a frenectomy (calendar #2 single-procedure laser topic) | frenectomy Vashi | Decision guide. Partial overlap with the laser service page (one bullet + one FAQ), de-cannibalised by the decision-guide angle | `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 21 Oct 2026: `/blog/frenectomy-tongue-tie-lip-tie-vashi/` |
+
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
 
 **Area tracker:** `topics-used/vashi-dental-topics.md` in the hub (shared with the Sector 17 client).
@@ -229,7 +231,23 @@ No publishing cadence has been agreed yet. Pick the next topic when asked rather
 > Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703
 > Mon to Sat, 10 AM to 8 PM. Sundays by appointment. 😊
 
-Next GBP post: due 10 to 15 days after this one is posted (2 per month).
+| 21 Oct 2026 | Tongue tie isn't only a baby thing (frenectomy) | Service education | `public/clinic/treatment-room.webp` (pick any real clinic photo) | Learn more, button to `/blog/frenectomy-tongue-tie-lip-tie-vashi/` | **Drafted, not posted.** GBP link and manager access unconfirmed |
+
+**Draft #2 text** *(about 1,000 characters; no phone, no URL in text, one emoji)*:
+
+> Tongue tie isn't only a baby thing.
+>
+> Plenty of adults have a tight tongue or lip frenulum and never realise it. The clues are small: food that's hard to clear from your back teeth, a tongue that pulls when you reach for the roof of your mouth, or a lip that tugs at the gum between your front teeth.
+>
+> Most ties cause no trouble and need nothing. When one does get in the way, a dental laser can release it in a short visit, often with less bleeding and no stitches for suitable cases. For babies, a feeding assessment comes first.
+>
+> Dr. Dishani Chordia holds a Fellowship in Laser Dentistry. She will look at the tie, explain whether it matters, and nothing starts until you agree.
+>
+> Biolume Dental Care
+> Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703
+> Mon to Sat, 10 AM to 8 PM. Sundays by appointment. 😊
+
+Post #1 and #2 should go out 10 to 15 days apart (2 per month). Posting #1 first, then #2 about 10 to 15 days later, keeps the cadence.
 
 Real clinic photos exist in `public/clinic/` (reception, treatment rooms, lounge, OPG, digital equipment). Once PR #1 merges they are the GBP photo pool. Never use stock photos on GBP.
 

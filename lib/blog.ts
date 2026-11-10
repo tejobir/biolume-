@@ -907,6 +907,198 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "gummy-smile-treatment-vashi",
+    title:
+      "Too Much Gum When You Smile? What Gummy Smile Treatment in Vashi Involves, and When Laser Is Enough",
+    excerpt:
+      "A gummy smile has more than one cause, and the cause decides the treatment. Here is what laser gum contouring in Vashi can do, what it can't, and how to tell if you need it.",
+    metaTitle: "Gummy Smile Treatment in Vashi | Biolume Dental Care",
+    metaDescription:
+      "Gummy smile in Vashi? Learn what causes it and when laser gum contouring helps. Dr. Chordia at Biolume Dental Care explains. Book a consultation.",
+    isoDate: "2026-11-10",
+    dateDisplay: "November 10, 2026",
+    heroImage: {
+      src: "/images/blog/gummy-smile-treatment-vashi-hero.jpg",
+      alt: "Woman smiling in natural light, gummy smile treatment in Vashi, Navi Mumbai",
+      photographer: "Andrea Piacquadio",
+      photographerUrl: "https://www.pexels.com/@olly",
+    },
+    content: [
+      {
+        type: "p",
+        text: "You look at a photo from a wedding and notice it: a wide band of gum above your top teeth. Since then you've been smiling with your lips closed. If that sounds familiar, you're far from alone, and gummy smile treatment in Vashi has more than one route. Dr. Dishani Chordia at Biolume Dental Care in Sector 19D explains what causes it, what laser contouring can do, and when it isn't the answer.",
+      },
+      {
+        type: "h2",
+        text: "What Makes a Smile Gummy",
+      },
+      {
+        type: "p",
+        text: "A gummy smile means a lot of gum shows when you smile, usually above the top front teeth. There's no single cause, and the cause decides the treatment. That's why a proper look comes before any plan.",
+      },
+      {
+        type: "p",
+        text: "The usual reasons are these:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gum sitting too low on the teeth. The teeth are a normal length, but gum covers part of them, so they look short. Dentists call this altered passive eruption.",
+          "An upper lip that lifts high. When the lip moves up more than usual as you smile, it shows more gum.",
+          "A short upper lip, or a tall upper jaw. These come from the structure of your face and jaw, not from the gum itself.",
+          "Gum overgrowth. Some medicines can thicken gum tissue, and so can long-standing plaque and inflammation.",
+          "Worn or short teeth. Grinding can wear teeth down, which makes the gum look like it's taking over.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Many people have more than one of these at once. A [review of gummy smile correction](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11679169/) names the position of the gum and the movement of the lip as two of the most common causes. It also says that working out which one you have is what decides the treatment.",
+      },
+      {
+        type: "p",
+        text: "Dr. Chordia checks this first. She looks at your smile at rest and at full stretch, and you see the same pictures on the intraoral camera screen. Nothing is decided until you've seen what she sees.",
+      },
+      {
+        type: "h2",
+        text: "Gum Contouring in Vashi: How Laser Reshapes the Gum Line",
+      },
+      {
+        type: "p",
+        text: "If the gum sits too low on healthy teeth, the usual answer is to move the gum edge up and show more of the tooth. This is called gum contouring. When the bone needs attention too, it's called crown lengthening.",
+      },
+      {
+        type: "p",
+        text: "Dr. Chordia holds a Fellowship in Laser Dentistry, and the laser is one of the tools she uses for this. For suitable cases, a laser can mean less bleeding and no stitches. Here is how a visit usually goes.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Mapping the new gum line",
+      },
+      {
+        type: "p",
+        text: "Before anything is touched, Dr. Chordia marks where the new gum line would sit. The new line follows the shape of your lip and your teeth, so the smile looks balanced and not simply shorter on top. You approve the plan before she starts.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Numbing the area",
+      },
+      {
+        type: "p",
+        text: "The gum is numbed with a local anaesthetic. The aim is that you feel pressure and not pain, and you can ask her to pause at any point.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: Reshaping with the laser",
+      },
+      {
+        type: "p",
+        text: "The laser removes the extra gum tissue and shapes the new edge, sealing as it goes. For a small number of teeth, the reshaping is often finished in a single visit.",
+      },
+      {
+        type: "h3",
+        text: "Step 4: Aftercare and a check-up",
+      },
+      {
+        type: "p",
+        text: "You leave with written advice on food, cleaning and what to avoid. Dr. Chordia sees you again to check how the gum is settling.",
+      },
+      {
+        type: "p",
+        text: "Gum contouring also fits inside the wider picture of smile design. Our [smile makeover page](/services/smile-makeover-vashi-navi-mumbai/) explains how it sits alongside whitening, bonding and veneers, and our [laser dentistry page](/services/laser-dentistry-vashi-navi-mumbai/) lists the other soft-tissue work Dr. Chordia does with the laser.",
+      },
+      {
+        type: "h2",
+        text: "Gummy Smile Laser Treatment in Navi Mumbai: When Contouring Is Enough",
+      },
+      {
+        type: "p",
+        text: "Laser contouring works when the problem is gum tissue. It doesn't change how high your lip lifts or how tall your upper jaw is.",
+      },
+      {
+        type: "p",
+        text: "If bone sits too close to the gum edge, the plan changes, because the bone may need reshaping too. Dr. Chordia will tell you at the consultation if that applies to you.",
+      },
+      {
+        type: "p",
+        text: "If a lip that lifts too high is the main cause, the options are different. Muscle-relaxing injections and lip repositioning surgery are both used for that, and they usually involve another specialist. A tall upper jaw can mean orthodontic or jaw-surgery planning. Removing gum alone in those cases would leave you with short-looking teeth, so Dr. Chordia would refer you instead.",
+      },
+      {
+        type: "p",
+        text: "The reason for an honest assessment is simple: you only do what will help. If you'd like some general background first, Cleveland Clinic has a clear page on [gingivectomy](https://my.clevelandclinic.org/health/treatments/24749-gingivectomy), which is the removal of excess gum tissue.",
+      },
+      {
+        type: "h2",
+        text: "Healing After Gum Contouring: What to Expect",
+      },
+      {
+        type: "p",
+        text: "The gum can look swollen, and a little white or red, for the first few days. Soft, cool foods help, and gentle cleaning keeps the area from getting irritated. Many people are back to their routine soon after, but it depends on how much was done.",
+      },
+      {
+        type: "p",
+        text: "The final gum line takes a few weeks to show. In some cases the gum edge can drift back down a little as it heals. That's why Dr. Chordia checks it again and doesn't call it finished on the day.",
+      },
+      {
+        type: "p",
+        text: "Results tend to last when the cause was gum position and you keep your gums healthy. They depend on the case, so ask about your own at the consultation.",
+      },
+      {
+        type: "h2",
+        text: "When You Do Not Need Treatment for a Gummy Smile",
+      },
+      {
+        type: "p",
+        text: "You don't need to do anything if the gum showing doesn't bother you. A smile with some gum in it is still a smile. Candid photos tend to catch everyone at their least rehearsed, and that's often all it is.",
+      },
+      {
+        type: "p",
+        text: "Hold off if your gums are red, swollen or bleeding. Overgrowth from inflammation needs sorting out first, and a thorough clean may be all you need. If you're not sure which smile fix suits you, our guide to [whitening, bonding or veneers](/blog/cosmetic-dentist-vashi-whitening-bonding-veneers/) starts from what you see in the mirror.",
+      },
+      {
+        type: "p",
+        text: "And if the thing pulling at your upper lip is a thick band of tissue between lip and gum, that's a separate question. Our [frenectomy guide](/blog/frenectomy-tongue-tie-lip-tie-vashi/) covers it.",
+      },
+      {
+        type: "h2",
+        text: "Book a Gummy Smile Consultation in Vashi",
+      },
+      {
+        type: "p",
+        text: "Biolume Dental Care is at Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703. We're open Monday to Saturday, 10 AM to 8 PM, and Sundays by appointment. Use the form on our [contact page](/contact/) to book, and tell us what you notice when you smile. Cost depends on the case, and the exact figure is confirmed after the consultation.",
+      },
+    ],
+    faqs: [
+      {
+        q: "What causes a gummy smile?",
+        a: "Gum sitting too low on the teeth, an upper lip that lifts high, a short lip or tall upper jaw, gum overgrowth and worn teeth are the usual ones. Many people have more than one. A check of your smile tells you which applies.",
+      },
+      {
+        q: "Does gum contouring hurt?",
+        a: "The gum is numbed first, so you should feel pressure and not pain during the procedure. Some tenderness for a few days afterwards is normal. Soft foods and the aftercare advice you're given help.",
+      },
+      {
+        q: "Is gum contouring permanent?",
+        a: "Results tend to last when the cause was gum position and your gums stay healthy. In some cases the gum edge drifts back down a little during healing, so a follow-up visit is part of the plan.",
+      },
+      {
+        q: "Is laser gum contouring better than surgery with a scalpel?",
+        a: "The laser seals as it cuts, so for suitable cases there is often less bleeding and no stitches. A scalpel is still a sound option. Dr. Chordia recommends the tool that suits your case.",
+      },
+      {
+        q: "Can a gummy smile be fixed without surgery?",
+        a: "Sometimes. If your teeth are short, bonding or veneers can lengthen them. If the lip is the cause, injections are one option. Whether you need anything at all depends on the cause.",
+      },
+      {
+        q: "How long does recovery take after gum contouring?",
+        a: "The gum usually feels settled within a week or two, though the final shape takes a few weeks to show. How long depends on how much gum was reshaped.",
+      },
+      {
+        q: "What does gummy smile treatment cost in Navi Mumbai?",
+        a: "It depends on how many teeth are involved and whether bone needs attention. The exact cost varies from patient to patient, and Dr. Chordia confirms it after the consultation.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

@@ -1,6 +1,6 @@
 # biolumedental.md
 ## Brightspan SEO Client Config File
-**Last Updated:** 21 October 2026
+**Last Updated:** 10 November 2026
 **Managed by:** Tejobir Bishnoi, Brightspan
 **Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. Blog engine built and first blog post published 27 Sep 2026.
 
@@ -206,6 +206,7 @@ The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Eve
 | 5 | Implant planning with a 3D scan: what happens before the implant | dental implant planning Vashi | Informational / what-to-expect | `/services/dental-implants-vashi-navi-mumbai/` | ✅ Published 6 Oct 2026: `/blog/implant-planning-3d-scan-vashi/` |
 
 | 6 | Tongue tie or lip tie: who needs a frenectomy (calendar #2 single-procedure laser topic) | frenectomy Vashi | Decision guide. Partial overlap with the laser service page (one bullet + one FAQ), de-cannibalised by the decision-guide angle | `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 21 Oct 2026: `/blog/frenectomy-tongue-tie-lip-tie-vashi/` |
+| 7 | Gummy smile: causes, laser gum contouring, and when it is not enough (calendar exhausted, new topic) | gummy smile treatment Vashi | Decision guide. Partial overlap with the smile makeover page (gum contouring section) and the laser page (one bullet), de-cannibalised by the cause-led angle and a symptom slug | `/services/smile-makeover-vashi-navi-mumbai/`, `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 10 Nov 2026: `/blog/gummy-smile-treatment-vashi/` |
 
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
 

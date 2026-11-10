@@ -1099,6 +1099,180 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "mouth-ulcer-treatment-vashi",
+    title:
+      "A Mouth Ulcer That Won't Go Away? When to Wait, and When to Get It Looked At in Vashi",
+    excerpt:
+      "Most mouth ulcers heal on their own in a week or two. Here is where the line sits, what a check involves, and what laser can and can't do for a mouth ulcer in Vashi.",
+    metaTitle: "Mouth Ulcer Treatment in Vashi | Biolume Dental Care",
+    metaDescription:
+      "Mouth ulcer in Vashi that won't heal? Learn what's normal, when to get it checked and how laser can help. Dr. Chordia at Biolume explains. Book a visit.",
+    isoDate: "2026-11-10",
+    dateDisplay: "November 10, 2026",
+    heroImage: {
+      src: "/images/blog/mouth-ulcer-treatment-vashi-hero.jpg",
+      alt: "Woman holding a warm drink by a sunlit window, mouth ulcer treatment in Vashi, Navi Mumbai",
+      photographer: "Fvno Fotografía",
+      photographerUrl: "https://www.pexels.com/@stefanoph",
+    },
+    content: [
+      {
+        type: "p",
+        text: "Most mouth ulcers clear up on their own within a week or two. If yours hasn't, you're probably wondering whether to keep waiting or look for mouth ulcer treatment in Vashi. This guide sets out where the line sits: what's ordinary, what needs a check, and what a visit involves. Dr. Dishani Chordia at Biolume Dental Care in Sector 19D explains.",
+      },
+      {
+        type: "h2",
+        text: "How Long a Mouth Ulcer Should Last, and Why Most Are Harmless",
+      },
+      {
+        type: "p",
+        text: "The NHS says mouth ulcers are common and [should clear up on their own within a week or two](https://www.nhs.uk/conditions/mouth-ulcers/). They hurt more than their size suggests. The tongue also finds them within seconds and refuses to leave them alone.",
+      },
+      {
+        type: "p",
+        text: "Most single ulcers have an ordinary cause. The usual ones are:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Biting the inside of your cheek or lip",
+          "A rough filling, a sharp tooth edge, or a denture or brace that rubs",
+          "A burn from hot food or drink",
+          "A toothbrush that catches the gum, or a toothpaste that irritates",
+          "Feeling tired, stressed or anxious",
+          "Low levels of some vitamins or minerals, such as iron or folic acid",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you can point to one of these, and the ulcer is shrinking, you can usually leave it alone. The cause matters more than the ulcer. A sharp tooth edge, for example, will keep making new ulcers until someone smooths it.",
+      },
+      {
+        type: "h2",
+        text: "A Mouth Ulcer That Won't Heal: When to Get It Checked",
+      },
+      {
+        type: "p",
+        text: "The NHS advice is to see a dentist or GP if an ulcer [lasts longer than three weeks](https://www.nhs.uk/conditions/mouth-ulcers/). Most are still harmless, but a long-lasting one is sometimes a sign of something more serious, which is why it's worth having it looked at. Waiting longer doesn't help.",
+      },
+      {
+        type: "p",
+        text: "Book sooner if you notice any of these:",
+      },
+      {
+        type: "ul",
+        items: [
+          "An ulcer that is getting bigger instead of smaller",
+          "A hard lump near it, or a red or white patch in your mouth",
+          "Ulcers that keep coming back in the same spot",
+          "Bleeding you can't explain, or trouble chewing or swallowing",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of these means something is wrong. They're simply the things worth showing someone, so a professional can tell you.",
+      },
+      {
+        type: "h2",
+        text: "What a Mouth Ulcer Check at Biolume Involves",
+      },
+      {
+        type: "h3",
+        text: "Step 1: A careful look and a few questions",
+      },
+      {
+        type: "p",
+        text: "Dr. Chordia asks how long the ulcer has been there, whether it hurts, and whether you've had others. She looks at it closely, and you see the same view on the intraoral camera screen. If you're nervous about someone looking inside your mouth, our [guide for nervous patients](/blog/dental-anxiety-dentist-vashi/) explains how we slow things down.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Looking for the cause",
+      },
+      {
+        type: "p",
+        text: "She checks nearby teeth, fillings and any denture or brace for a sharp or rough spot. Many ulcers that keep returning in one place turn out to be a mechanical problem that takes minutes to fix.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: Deciding what happens next",
+      },
+      {
+        type: "p",
+        text: "There are three usual outcomes. It may be fine to wait and watch. The cause may need fixing, and a soothing gel or rinse may help in the meantime. Or the ulcer may need a closer look. In that case the next step is a small tissue sample or a referral, so it can be examined properly.",
+      },
+      {
+        type: "h3",
+        text: "Step 4: A follow-up",
+      },
+      {
+        type: "p",
+        text: "If you're waiting and watching, Dr. Chordia tells you exactly how long to wait and what change would mean you should come back sooner.",
+      },
+      {
+        type: "h2",
+        text: "Laser for Mouth Ulcers in Navi Mumbai: What It Can and Can't Do",
+      },
+      {
+        type: "p",
+        text: "Dr. Chordia holds a Fellowship in Laser Dentistry, and a dental laser is one tool she can use on some ulcers and soft-tissue sores. For suitable cases, it can ease discomfort and may help the area heal sooner. Our [laser dentistry page](/services/laser-dentistry-vashi-navi-mumbai/) lists what else it is used for.",
+      },
+      {
+        type: "p",
+        text: "It has limits. Laser doesn't stop new ulcers from appearing, and it doesn't replace finding the cause. It's the same soft-tissue approach she uses for [gum contouring](/blog/gummy-smile-treatment-vashi/) and for a [frenectomy](/blog/frenectomy-tongue-tie-lip-tie-vashi/), and it's offered only when it suits the problem.",
+      },
+      {
+        type: "h2",
+        text: "What Helps at Home, and When You Do Not Need to Come In",
+      },
+      {
+        type: "p",
+        text: "You can ease a mouth ulcer at home while it heals. The NHS suggests avoiding spicy, salty and acidic food, avoiding very hot drinks, and rinsing with warm salt water. A pharmacist can suggest a gel or mouthwash for the pain.",
+      },
+      {
+        type: "p",
+        text: "You don't need to come in if the ulcer is under two weeks old and getting smaller. An obvious cause, like a cheek bite, makes that even safer. Give it time. If it's still there after three weeks, or you're worried sooner, come in anyway.",
+      },
+      {
+        type: "h2",
+        text: "Book a Mouth Ulcer Check in Vashi",
+      },
+      {
+        type: "p",
+        text: "Biolume Dental Care is at Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703. We're open Monday to Saturday, 10 AM to 8 PM, and Sundays by appointment. Use the form on our [contact page](/contact/) to book, and tell us how long the ulcer has been there. Cost depends on what is needed, and the exact figure is confirmed after the consultation.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How long does a mouth ulcer take to heal?",
+        a: "Most heal on their own within a week or two. If an ulcer is still there after three weeks, get it checked by a dentist or GP.",
+      },
+      {
+        q: "When should I see a dentist for a mouth ulcer?",
+        a: "Come in if it lasts more than three weeks, keeps growing, or keeps returning in the same spot. A lump or a red or white patch nearby is another reason. You can also come in sooner just to be sure.",
+      },
+      {
+        q: "Is a mouth ulcer that won't heal serious?",
+        a: "Usually not, but a long-lasting one is sometimes a sign of something that needs treatment. That's why it's worth getting it looked at rather than waiting.",
+      },
+      {
+        q: "What causes mouth ulcers?",
+        a: "Common causes include biting your cheek, a sharp tooth or rough filling, hot food and a rubbing denture or brace. Stress, tiredness and low levels of some vitamins also play a part. Often the cause is simple and fixable.",
+      },
+      {
+        q: "Can laser treatment help mouth ulcers?",
+        a: "For some ulcers, a dental laser can ease discomfort and may help healing along. It doesn't stop new ulcers from appearing. Dr. Chordia will say whether it suits yours.",
+      },
+      {
+        q: "Can stress cause mouth ulcers?",
+        a: "Yes. Feeling stressed, anxious or run down is a recognised trigger for some people. If they keep returning, a check can rule out other causes.",
+      },
+      {
+        q: "What does mouth ulcer treatment cost in Vashi?",
+        a: "It depends on whether the ulcer needs a check, a cause fixed, or a procedure. The exact cost varies from patient to patient, and Dr. Chordia confirms it after the consultation.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

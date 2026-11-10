@@ -207,6 +207,7 @@ The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Eve
 
 | 6 | Tongue tie or lip tie: who needs a frenectomy (calendar #2 single-procedure laser topic) | frenectomy Vashi | Decision guide. Partial overlap with the laser service page (one bullet + one FAQ), de-cannibalised by the decision-guide angle | `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 21 Oct 2026: `/blog/frenectomy-tongue-tie-lip-tie-vashi/` |
 | 7 | Gummy smile: causes, laser gum contouring, and when it is not enough (calendar exhausted, new topic) | gummy smile treatment Vashi | Decision guide. Partial overlap with the smile makeover page (gum contouring section) and the laser page (one bullet), de-cannibalised by the cause-led angle and a symptom slug | `/services/smile-makeover-vashi-navi-mumbai/`, `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 10 Nov 2026: `/blog/gummy-smile-treatment-vashi/` |
+| 8 | Mouth ulcers: when to wait and when to get one checked, and what laser can do (single-procedure laser topic) | mouth ulcer treatment Vashi | Decision guide. Partial overlap with the laser page (one ulcer bullet, one detail line, a short FAQ mention), de-cannibalised by the when-to-wait-or-get-checked angle and a symptom slug | `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 10 Nov 2026: `/blog/mouth-ulcer-treatment-vashi/` |
 
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
 

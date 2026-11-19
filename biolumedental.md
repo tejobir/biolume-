@@ -1,6 +1,6 @@
 # biolumedental.md
 ## Brightspan SEO Client Config File
-**Last Updated:** 10 November 2026
+**Last Updated:** 19 November 2026
 **Managed by:** Tejobir Bishnoi, Brightspan
 **Status:** Live at https://www.biolumedentalcare.com/ (checked 27 Sep 2026: HTTP 200 on www, served by Vercel, and the apex domain 308-redirects to www). GSC-verified via the metadata tag in `app/layout.tsx`. Onboarded 27 Sep 2026. Blog engine built and first blog post published 27 Sep 2026.
 
@@ -209,6 +209,8 @@ The blog engine and schema guard were built on 27 Sep 2026 (see section 11). Eve
 | 7 | Gummy smile: causes, laser gum contouring, and when it is not enough (calendar exhausted, new topic) | gummy smile treatment Vashi | Decision guide. Partial overlap with the smile makeover page (gum contouring section) and the laser page (one bullet), de-cannibalised by the cause-led angle and a symptom slug | `/services/smile-makeover-vashi-navi-mumbai/`, `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 10 Nov 2026: `/blog/gummy-smile-treatment-vashi/` |
 | 8 | Mouth ulcers: when to wait and when to get one checked, and what laser can do (single-procedure laser topic) | mouth ulcer treatment Vashi | Decision guide. Partial overlap with the laser page (one ulcer bullet, one detail line, a short FAQ mention), de-cannibalised by the when-to-wait-or-get-checked angle and a symptom slug | `/services/laser-dentistry-vashi-navi-mumbai/` | ✅ Published 10 Nov 2026: `/blog/mouth-ulcer-treatment-vashi/` |
 
+| 9 | Jaw clicking or aching: when TMJ pain needs a dentist and when it doesn't (new topic, TMJ / TMD Management is a listed service with no page) | tmj jaw pain treatment vashi | Decision guide. Partial overlap with the laser page (one "TMJ therapy" bullet), de-cannibalised by the when-to-get-checked angle and a symptom slug | `/services/laser-dentistry-vashi-navi-mumbai/`, `/services/smile-makeover-vashi-navi-mumbai/` | ✅ Published 19 Nov 2026: `/blog/tmj-jaw-pain-treatment-vashi/` |
+
 No publishing cadence has been agreed yet. Pick the next topic when asked rather than assuming a fixed interval.
 
 **Area tracker:** `topics-used/vashi-dental-topics.md` in the hub (shared with the Sector 17 client).
@@ -249,7 +251,23 @@ No publishing cadence has been agreed yet. Pick the next topic when asked rather
 > Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703
 > Mon to Sat, 10 AM to 8 PM. Sundays by appointment. 😊
 
-Post #1 and #2 should go out 10 to 15 days apart (2 per month). Posting #1 first, then #2 about 10 to 15 days later, keeps the cadence.
+| 19 Nov 2026 | A clicking jaw isn't always a problem (TMJ) | Service education | `public/clinic/consultation-room.webp` (pick any real clinic photo) | Learn more, button to `/blog/tmj-jaw-pain-treatment-vashi/` | **Drafted, not posted.** GBP link and manager access unconfirmed |
+
+**Draft #3 text** *(about 850 characters; no phone, no URL in text, one emoji)*:
+
+> A clicking jaw isn't always a problem.
+>
+> If it doesn't hurt and your mouth opens fully, it's usually just a noise and you can leave it alone. The NHS says jaw trouble is not usually serious and often settles by itself.
+>
+> It's worth a check if the click comes with pain around the jaw, ear or temple, if the jaw catches when you open wide, or if the ache has lasted more than a couple of weeks. Soft food, and keeping your teeth apart when you're not eating, help in the meantime.
+>
+> Dr. Dishani Chordia will feel the joint, look at your teeth and bite, explain what is behind it, and start with the gentlest option. Nothing begins until you agree.
+>
+> Biolume Dental Care
+> Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703
+> Mon to Sat, 10 AM to 8 PM. Sundays by appointment. 😊
+
+Posts #1, #2 and #3 are all unposted. Post them 10 to 15 days apart (2 per month): #1 first, then #2, then #3 in the following month. Do not post two on the same day.
 
 Real clinic photos exist in `public/clinic/` (reception, treatment rooms, lounge, OPG, digital equipment). Once PR #1 merges they are the GBP photo pool. Never use stock photos on GBP.
 

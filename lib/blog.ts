@@ -1273,6 +1273,200 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "tmj-jaw-pain-treatment-vashi",
+    title:
+      "Jaw Clicking or Aching? When TMJ Pain in Vashi Needs a Dentist, and When It Doesn't",
+    excerpt:
+      "A clicking jaw is often harmless. Here is when jaw pain is worth a check, what the visit involves, and what usually helps with TMJ pain in Vashi.",
+    metaTitle: "TMJ Jaw Pain Treatment in Vashi | Biolume Dental Care",
+    metaDescription:
+      "Jaw clicking or pain when you chew? TMJ jaw pain treatment in Vashi: what is normal, when to get checked. Dr. Chordia, Biolume Dental Care. Book a visit.",
+    isoDate: "2026-11-19",
+    dateDisplay: "November 19, 2026",
+    heroImage: {
+      src: "/images/blog/tmj-jaw-pain-treatment-vashi-hero.jpg",
+      alt: "Man closing his eyes and rubbing his temples, TMJ jaw pain treatment in Vashi, Navi Mumbai",
+      photographer: "Vitaly Gariev",
+      photographerUrl: "https://www.pexels.com/@silverkblack",
+    },
+    content: [
+      {
+        type: "p",
+        text: "You bite into breakfast and your jaw clicks. Or you wake up with a dull ache in front of your ear and a tight feeling when you open wide. Most people searching for TMJ jaw pain treatment in Vashi start from a moment like that. Dr. Dishani Chordia at Biolume Dental Care in Sector 19D explains what the jaw joint is doing, when a click is harmless, and when it deserves a proper look.",
+      },
+      {
+        type: "h2",
+        text: "Why Your Jaw Clicks, and Why a Click Alone Is Usually Fine",
+      },
+      {
+        type: "p",
+        text: "You have a joint just in front of each ear that hinges and slides every time you talk, chew or yawn. It is called the temporomandibular joint, or TMJ. When something in that system is off, the problem is called temporomandibular disorder, or TMD.",
+      },
+      {
+        type: "p",
+        text: "The NHS describes TMD as a condition affecting the movement of the jaw that is [not usually serious and generally gets better on its own](https://www.nhs.uk/conditions/temporomandibular-disorder-tmd/). That is worth hearing first, because a clicking jaw sounds worse than it usually is.",
+      },
+      {
+        type: "p",
+        text: "The same page lists the usual causes:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Teeth grinding or clenching",
+          "Wear and tear in the joint",
+          "A blow to the head or face",
+          "Stress, which makes people tense their jaw without noticing",
+          "An uneven bite",
+        ],
+      },
+      {
+        type: "p",
+        text: "A click that doesn't hurt and doesn't stop you opening wide is a noise, not a problem. Plenty of people have one for years. If that is you, leave it alone.",
+      },
+      {
+        type: "h2",
+        text: "Jaw Pain When Chewing: Signs Worth Getting Checked",
+      },
+      {
+        type: "p",
+        text: "The line moves once the click comes with company. Book a visit if you notice any of these:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Pain around the jaw, ear or temple, especially when you chew",
+          "A click or pop that hurts",
+          "Trouble opening your mouth fully, or the jaw catching on the way",
+          "A dull headache around the temples, or a sore jaw when you wake",
+          "Pain that has lasted more than a couple of weeks",
+        ],
+      },
+      {
+        type: "p",
+        text: "Some jaw pain isn't from the joint at all. A tooth, an ear problem or a sinus issue can all feel like jaw pain, so a check also helps rule those out.",
+      },
+      {
+        type: "p",
+        text: "One thing shouldn't wait. If your jaw locks and won't release, or the pain stops you eating or drinking, get help the same day from a dentist, a doctor or the nearest emergency service.",
+      },
+      {
+        type: "h2",
+        text: "What a Jaw Pain Check at Biolume Involves",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Your story",
+      },
+      {
+        type: "p",
+        text: "Dr. Chordia asks which side hurts, when it started and whether mornings are worse. She also asks about stress, past knocks to the face, and whether anyone has noticed you grinding at night. Your answers narrow things down faster than any scan.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Feel and move",
+      },
+      {
+        type: "p",
+        text: "She rests her fingers on the joint and the chewing muscles while you open, close and move your jaw side to side. She is checking how far it opens, where it clicks, and which muscles are tender. If you're nervous about being examined, our [guide for nervous patients](/blog/dental-anxiety-dentist-vashi/) explains how we slow things down.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: Teeth and bite",
+      },
+      {
+        type: "p",
+        text: "Worn edges, a cracked tooth or a bite that meets unevenly can all load the joint. She looks at these on the intraoral camera, so you see what she sees. A digital X-ray is taken only if she needs to look further.",
+      },
+      {
+        type: "h3",
+        text: "Step 4: A plan that starts gently",
+      },
+      {
+        type: "p",
+        text: "For most people the plan begins with easing the strain, not with a procedure. She tells you what she thinks is behind it, what to try first, and when to come back if it hasn't settled. Nothing starts until you agree.",
+      },
+      {
+        type: "h2",
+        text: "TMJ Treatment in Navi Mumbai: What Usually Helps",
+      },
+      {
+        type: "p",
+        text: "Because TMD often settles by itself, the first steps are simple. The NHS suggests eating soft food, using a warm or cold pack on the jaw, gently massaging the sore muscles, and asking a pharmacist about a suitable painkiller. It also suggests staying away from chewing gum, biting your nails and yawning very wide.",
+      },
+      {
+        type: "p",
+        text: "One habit is worth fixing for most people: keep your teeth apart whenever you're not eating. Notice how often they're touching while you work or scroll. Many people find they clench without knowing it.",
+      },
+      {
+        type: "p",
+        text: "If grinding looks like the cause, Dr. Chordia will talk through ways to protect your teeth and rest the muscles at night, and tell you whether a custom night guard suits you. If the pain stays, she may suggest jaw exercises with a physiotherapist or refer you to a specialist.",
+      },
+      {
+        type: "h3",
+        text: "Where laser fits in",
+      },
+      {
+        type: "p",
+        text: "Dr. Chordia holds a Fellowship in Laser Dentistry, and our [laser dentistry page](/services/laser-dentistry-vashi-navi-mumbai/) lists TMJ therapy among its uses. Think of laser as an add-on for some muscle and joint discomfort in suitable cases. It is not a first step, and it won't change the habits behind the problem. She will say plainly whether it is worth it for you.",
+      },
+      {
+        type: "p",
+        text: "If worn or chipped teeth are part of the picture, repairing them is a separate conversation, and our [smile makeover page](/services/smile-makeover-vashi-navi-mumbai/) explains those options.",
+      },
+      {
+        type: "h2",
+        text: "Jaw Pain That Isn't Worth a Visit Yet",
+      },
+      {
+        type: "p",
+        text: "You don't need to come in for a click that doesn't hurt. You also don't need to rush for a sore jaw after a long dental visit, a hard bite into something chewy, or a very wide yawn. These usually ease within a few days if you stick to soft food and rest the joint.",
+      },
+      {
+        type: "p",
+        text: "Give it two weeks. If the ache is still there, it's getting worse, or your jaw has started to catch, come in. A check is quick, and it is better than guessing.",
+      },
+      {
+        type: "h2",
+        text: "Book a Jaw Pain Check in Vashi",
+      },
+      {
+        type: "p",
+        text: "Biolume Dental Care is at Shop No. 10, 2nd Floor, Aykon, Palm Beach Road, above Zudio/Reliance Digital, Phase 2, Sector 19D, Vashi, Navi Mumbai 400703. We're open Monday to Saturday, 10 AM to 8 PM, and Sundays by appointment. Use the form on our [contact page](/contact/) to book, and tell us which side hurts and for how long. Cost depends on what is needed, and the exact figure is confirmed after the consultation.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a clicking jaw serious?",
+        a: "Usually not. The NHS says TMD is not usually serious and generally gets better on its own. A click that doesn't hurt and doesn't limit how far you can open is nothing to worry about.",
+      },
+      {
+        q: "When should I see a dentist for jaw pain?",
+        a: "Come in if the pain has lasted more than a couple of weeks, the click hurts, or your jaw catches when you open it. If your jaw locks or you can't eat or drink, get help the same day.",
+      },
+      {
+        q: "Can stress cause jaw pain?",
+        a: "Yes. Stress makes many people clench or grind without noticing, which strains the jaw muscles and the joint. Keeping your teeth apart when you're not eating often helps.",
+      },
+      {
+        q: "Does a clicking jaw need treatment?",
+        a: "Not if it doesn't hurt or restrict movement. Treatment is for pain, locking or trouble opening wide, and it usually starts with simple measures like soft food and easing the strain on the jaw.",
+      },
+      {
+        q: "Can TMJ pain go away on its own?",
+        a: "Often it does. The NHS says TMD usually gets better without treatment, though self-care can ease it faster. If it hasn't improved in a couple of weeks, get it checked.",
+      },
+      {
+        q: "Which dentist should I see for TMJ pain in Vashi?",
+        a: "A dentist who examines the joint, muscles, teeth and bite together. Dr. Chordia at Biolume Dental Care in Sector 19D does this and will refer you to another specialist if the cause is outside dentistry.",
+      },
+      {
+        q: "What does TMJ treatment cost in Vashi?",
+        a: "It depends on whether you need advice, a night guard or further care. The exact cost varies from patient to patient, and Dr. Chordia confirms it after the consultation.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Reveal, staggerContainer, staggerItem } from "./Reveal";
-import { Star } from "lucide-react";
+import { ArrowUpRight, Star } from "lucide-react";
 import { Sparkle } from "./Sparkle";
 
 /**
@@ -13,39 +13,51 @@ import { Sparkle } from "./Sparkle";
 const avatarGradient = (hue: number, chroma: number) =>
   `linear-gradient(140deg, oklch(40% ${chroma} ${hue}) 0%, oklch(65% ${chroma} ${hue}) 100%)`;
 
-const stories = [
+/**
+ * Google rating + reviews — copied from the clinic's Google Business Profile
+ * (operator-supplied, 26 Nov 2026). Quotes are verbatim; do not edit the wording.
+ * Never turn these into Review / aggregateRating JSON-LD (hub rule,
+ * enforced by scripts/check-schema.mjs).
+ */
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/maps/place/Biolume+Dental+Care/@19.0841439,73.0044679,17z/data=!3m1!5s0x3be7c13aeb8b8827:0x6d541509a1cfe714!4m8!3m7!1s0x3be7c167a1a9991d:0xab0d7fd485f9734a!8m2!3d19.0841388!4d73.0070428!9m1!1b1!16s%2Fg%2F11zfb8d40x?entry=ttu";
+
+const reviews = [
   {
     quote:
-      "Six months of consultations and I'd resigned to losing two molars. Dr. Dishani's implant plan saved them. Calmest dental visit of my life.",
-    name: "Aarav Mehta",
-    initials: "AM",
-    detail: "Implant Patient · Vashi",
+      "I visited Biolume Dental Care in Vashi for laser dental treatment and had a good experience. The dentist explained the procedure beforehand and answered my questions patiently, which helped me feel more comfortable. The clinic was clean, and the staff were welcoming. It’s nice to have modern dental treatment options available locally in Vashi. I’d recommend booking a consultation if you’re considering laser dentistry. Thank you Dr. Dishani!",
+    name: "Gaurav Jain",
+    initials: "GJ",
+    detail: "Laser Dentistry · Google review",
     avatar: avatarGradient(178, 0.07), // Pine
   },
   {
     quote:
-      "Brought my eight-year-old in dreading a meltdown. She walked out clutching a sticker, asking when we're coming back. That's a magic trick.",
-    name: "Priya Shenoy",
-    initials: "PS",
-    detail: "Parent · Nerul",
+      "Have been looking for a good clinic in vashi for a while now. found Biolume dental clinic that provides amazing smile makeovers. the treatment is really smooth and systematic. Dr. Dishani is the sweetest. the clinic too is very aesthetic and clean.",
+    name: "Shrishti Soni",
+    initials: "SS",
+    detail: "Smile Makeover · Google review",
     avatar: avatarGradient(152, 0.06), // Sage
   },
   {
     quote:
-      "I came for whitening, stayed for the consultation. They redesigned my smile in restrained, beautiful proportions: exactly what I wanted.",
-    name: "Kabir Sethi",
-    initials: "KS",
-    detail: "Smile Design · Belapur",
+      "I went to Biolume Dental Care to get dental implants done. The clinic felt very clean and hygienic during my time there. I am happy with how everything went during the process and the state of the place was definitely something I noticed.",
+    name: "Rampadarth Yadav",
+    initials: "RY",
+    detail: "Dental Implants · Google review",
     avatar: avatarGradient(45, 0.05), // Bark
   },
 ];
 
-const smallAvatarHues: Array<[number, number]> = [
-  [178, 0.07], // Pine
-  [152, 0.06], // Sage
-  [45, 0.05], // Bark
-  [188, 0.065], // Deep pine
-];
+function Stars({ size = 12 }: { size?: number }) {
+  return (
+    <div className="flex items-center gap-0.5" aria-label="5 out of 5 stars">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star key={i} size={size} strokeWidth={1.5} className="fill-mint text-mint" />
+      ))}
+    </div>
+  );
+}
 
 export function Testimonials() {
   return (
@@ -66,37 +78,6 @@ export function Testimonials() {
               </h2>
             </Reveal>
           </div>
-          <Reveal delay={0.05} className="lg:col-span-5">
-            <div className="flex items-center gap-5 lg:justify-end">
-              <div className="flex -space-x-3">
-                {smallAvatarHues.map(([h, c], i) => (
-                  <div
-                    key={i}
-                    className="h-11 w-11 rounded-full ring-2 ring-teal"
-                    style={{ backgroundImage: avatarGradient(h, c) }}
-                  />
-                ))}
-                <div className="h-11 w-11 rounded-full bg-offwhite text-teal ring-2 ring-teal flex items-center justify-center text-[11px] font-semibold">
-                  200+
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star
-                      key={i}
-                      size={12}
-                      strokeWidth={1.5}
-                      className="fill-mint text-mint"
-                    />
-                  ))}
-                </div>
-                <div className="text-[12px] text-offwhite/75 mt-1">
-                  4.9 from 200+ reviews
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </div>
 
         <motion.div
@@ -106,16 +87,19 @@ export function Testimonials() {
           viewport={{ once: true, margin: "-60px" }}
           className="grid md:grid-cols-3 gap-6 lg:gap-7"
         >
-          {stories.map((t, i) => (
+          {reviews.map((t, i) => (
             <motion.figure
               key={i}
               variants={staggerItem}
-              className="relative border border-offwhite/20 p-8 hover:border-mint/60 transition-colors duration-500"
+              className="relative flex flex-col border border-offwhite/20 p-8 hover:border-mint/60 transition-colors duration-500"
             >
-              <blockquote className="text-[16px] font-light leading-[1.75] text-offwhite/95 text-pretty">
+              <div className="mb-5">
+                <Stars size={13} />
+              </div>
+              <blockquote className="text-[16px] font-light leading-[1.75] text-offwhite/95 text-pretty mb-8">
                 &#8220;{t.quote}&#8221;
               </blockquote>
-              <figcaption className="mt-8 pt-6 border-t border-offwhite/15 flex items-center gap-3.5">
+              <figcaption className="mt-auto pt-6 border-t border-offwhite/15 flex items-center gap-3.5">
                 <div className="relative flex-shrink-0">
                   <div
                     className="h-11 w-11 rounded-full flex items-center justify-center text-[12px] font-semibold text-offwhite"
@@ -135,6 +119,29 @@ export function Testimonials() {
             </motion.figure>
           ))}
         </motion.div>
+
+        <Reveal delay={0.1}>
+          <div className="mt-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 pt-8 border-t border-offwhite/15">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-offwhite/55">
+              Reviews from Google
+            </p>
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
+              <a
+                href={GOOGLE_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 text-[13.5px] text-offwhite hover:text-mint transition-colors"
+              >
+                View all of our Google reviews
+                <ArrowUpRight
+                  size={15}
+                  strokeWidth={1.5}
+                  className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                />
+              </a>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

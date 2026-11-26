@@ -25,7 +25,7 @@ Single source of truth in the repo: `lib/doctor.ts`. Every phone number, address
 | Email | drdishani.biolume@gmail.com |
 | Website | https://www.biolumedentalcare.com/ (www is canonical) |
 | Google Maps | https://maps.app.goo.gl/Vo4YaJ1stCBpV2rg6 |
-| Google Rating | **Not confirmed.** See section 5 before using any rating |
+| Google Rating | **5.0 from 33 Google reviews** (operator-confirmed 26 Nov 2026). Not shown on the site (removed at operator request); homepage links to the GBP reviews instead |
 | Clinic Opened | TBC with client |
 | GBP Status | TBC. There is a review QR standee in `collateral/review-qr-standee`, so a listing likely exists. Confirm the link and manager access |
 
@@ -153,8 +153,8 @@ Established in `PRODUCT.md` (the site's own brand brief). This is the confirmed 
 - Six years of clinical practice *(site copy; confirm with the client)*
 
 **Do NOT use until confirmed:**
-- Any Google rating or review count. The homepage shows **"4.9 from 200+ reviews"** in `components/Testimonials.tsx`, and nothing on file verifies it against the GBP
-- The three homepage testimonials (Aarav Mehta, Priya Shenoy, Kabir Sethi). Treat them as **placeholders** until the client confirms they are real patients who approved their use
+- Any Google rating or review count other than the confirmed **5.0 from 33** (26 Nov 2026). Re-check before quoting it in content; it changes
+- Testimonials other than the three real Google reviews now on the homepage (Gaurav Jain, Shrishti Soni, Rampadarth Yadav; operator-supplied 26 Nov 2026, quoted verbatim)
 - "X patients treated" or any procedure count
 - Success rates of any kind
 - Year the clinic opened
@@ -288,7 +288,7 @@ Real clinic photos exist in `public/clinic/` (reception, treatment rooms, lounge
 - [ ] Which treatments get no price figure at all, or leave it to judgement per topic?
 - [ ] Soften the "We do not publish prices online" service-page FAQ wording to match the range policy?
 - [ ] Google Business Profile link, current rating and review count, manager access
-- [ ] Whether the homepage "4.9 from 200+ reviews" figure and the three testimonials are real
+- [x] Homepage testimonials replaced with 3 real Google reviews + confirmed 5.0 / 33 (26 Nov 2026)
 - [ ] Services NOT offered
 - [ ] Client's own banned-words list
 - [ ] Preferred CTA: "Book Appointment" / "Call" / "WhatsApp"? (the site currently mixes "Book Now", "Book Appointment", "Book a Consultation")
